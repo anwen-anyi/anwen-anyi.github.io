@@ -12,7 +12,7 @@ export default defineUserConfig({
   //     // exclude:["/encrypt.md/"]
   //   }),
   // ],
-  base: "/doc/",
+  base: "/",
 
   locales: {
     "/": {
