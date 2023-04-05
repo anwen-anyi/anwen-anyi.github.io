@@ -666,7 +666,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 - 勾选后上传到服务器(搭建AList的机器)，再由服务器上传时到网盘时后台似乎能看到（好像是这样的）
 - 未勾选不会看到，具体的大家可以看下图应该能看出什么问题.
 
-![](/img/wenti/46.png)
+![](/img/wenti/46.jpeg)
 
 <br>
 
