@@ -72,8 +72,11 @@ export default hopeTheme({
   },
   plugins: {
     comment: {
-      // @ts-expect-error: You should generate and use your own comment service
-      provider: "Waline",
+      provider: "Giscus",
+      repo: "anwen-anyi/doc",
+      repoId: "R_kgDOJS60kw",
+      category: "Announcements",
+      categoryId: "DIC_kwDOJS60k84CVi7q",
         // 播放器      
     },
     components: {
