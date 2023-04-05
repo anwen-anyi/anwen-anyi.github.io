@@ -208,7 +208,7 @@ copyright: 无版权
 
 或者自己去官网：[**Global Potplayer**](http://potplayer.tv/?lang=zh_CN)，[**官网64位直链下载**](https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe)，[**官网32位直链下载**](https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup.exe)
 
-![](/img/wenti/15.png)
+![](/img/wenti/15.jpg)
 
 <br>
 
