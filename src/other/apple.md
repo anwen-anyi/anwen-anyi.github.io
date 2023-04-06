@@ -31,7 +31,7 @@ copyright: 无版权
 <!-- more -->
 
 :::: center
-:::tip Apple服务状态监控官网
+:::tip Apple 服务状态监控官网
 **https://www.apple.com.cn/cn/support/systemstatus/**
 :::
 ::::
