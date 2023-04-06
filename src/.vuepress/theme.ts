@@ -8,7 +8,7 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "An Wen",
+    name: "安稳",
     url: "/",
   },
 

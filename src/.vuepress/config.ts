@@ -13,7 +13,17 @@ export default defineUserConfig({
   //   }),
   // ],
   base: "/",
-
+  head:[
+    [
+    //  一言API
+      "script",
+      {
+        type: "text/javascript",
+        charset: "UTF-8",
+        src: "https://v1.hitokoto.cn/?encode=js&select=%23hitokoto",
+      }
+    ],
+  ],
   locales: {
     "/": {
       lang: "zh-CN",

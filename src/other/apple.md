@@ -4,7 +4,7 @@ title: Apple状态监测
 # 这是页面的图标
 icon: fa-brands fa-apple
 # 这是侧边栏的顺序
-order: 1
+order: 2
 # 设置作者
 author: 安稳
 # 设置写作时间
@@ -21,9 +21,9 @@ sticky: true
 # 此页面会出现在文章收藏中
 star: true
 # 你可以自定义页脚
-footer: 这是测试显示的页脚
+footer: <p id="hitokoto">  <a href="#" id="hitokoto_text">:D 获取中...</a> </p>
 # 你可以自定义版权信息
-copyright: 无版权
+# copyright: 无版权
 ---
 
 <!-- 你可以通过设置页面的 Frontmatter，在页面禁用功能与布局。 -->
