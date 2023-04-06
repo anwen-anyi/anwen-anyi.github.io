@@ -100,22 +100,19 @@ actions:
   #   details: 包括图标支持、全屏按钮、返回顶部按钮等
   #   link: https://theme-hope.vuejs.press/zh/guide/feature/
 # copyright: <p id="hitokoto"> <rainbow-text> <a href="#" id="hitokoto_text">:D 获取中...</a> </rainbow-text></p>
-copyright: ©
+copyright: © 安稳
 footer: <p id="hitokoto">  <a href="#" id="hitokoto_text">:D 获取中...</a> </p>
 # footer: 使用 <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议, 版权所有 © 2019-present Mr.Hope
 ---
-<script setup lang=ts>
-var xhr = new XMLHttpRequest();
-xhr.open('get', 'https://v1.hitokoto.cn');
-xhr.onreadystatechange = function () {
-  if (xhr.readyState === 4) {
-    const data = JSON.parse(xhr.responseText);
-    const hitokoto = document.querySelector('#hitokoto_text');
-    hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
-    hitokoto.innerText = data.hitokoto;
-  }
-}
-xhr.send();
+<script>
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.querySelector('#hitokoto_text')
+      hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
+      hitokoto.innerText = data.hitokoto
+    })
+    .catch(console.error)
 </script>
 <!-- <p id="hitokoto"> <rainbow-text> :D 获取中...</rainbow-text> -->
 

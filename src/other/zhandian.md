@@ -41,4 +41,4 @@ copyright: 无版权
 
 <iframe src="https://monitor.safe-education.repl.co/status/my" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1150" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
 
-<!-- <iframe src="https://stats.uptimerobot.com/7w9kmszqLQ" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1150" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe> -->
+<iframe src="https://stats.uptimerobot.com/7w9kmszqLQ" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1150" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
