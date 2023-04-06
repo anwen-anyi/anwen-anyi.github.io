@@ -2,7 +2,7 @@
 # 这是文章的标题
 title: 我的站点监控
 # 这是页面的图标
-icon: fa-solid fa-face-smile
+icon: fa-solid fa-house-laptop
 # 这是侧边栏的顺序
 order: 2
 # 设置作者
@@ -31,6 +31,14 @@ copyright: 无版权
 <!-- more -->
 
 
+:::: center
+:::tip 我的站点服务状态监控
+**https://monitor.safe-education.repl.co/status/my**
 
-<iframe src="https://monitor.safe-education.repl.co/status/my" name="iframe_a" scrolling="yes" frameborder="0" width="130%" height="1150" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+**https://stats.uptimerobot.com/7w9kmszqLQ**
+:::
+::::
 
+<iframe src="https://monitor.safe-education.repl.co/status/my" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1150" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+
+<iframe src="https://stats.uptimerobot.com/7w9kmszqLQ" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1150" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>

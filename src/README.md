@@ -1,10 +1,11 @@
 ---
 home: true
-icon: home
+icon: fa-solid fa-galaxy fa-spin fa-spin-reverse
 title: 主页
-heroImage: /logo.svg
+heroImage: /home.png
+# heroImage: /logo.svg
 heroText: AnWen's Docs
-tagline: 安稳个人使用的一些项目自留地。
+tagline: 安稳个人的网络项目自留地。
 actions:
   - text: 点击这里准备愉快的开始使用吧 💡
     link: /index/
@@ -98,9 +99,26 @@ actions:
   #   icon: more
   #   details: 包括图标支持、全屏按钮、返回顶部按钮等
   #   link: https://theme-hope.vuejs.press/zh/guide/feature/
-copyright: false
-footer: 使用 <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议, 版权所有 © 2019-present Mr.Hope
+# copyright: <p id="hitokoto"> <rainbow-text> <a href="#" id="hitokoto_text">:D 获取中...</a> </rainbow-text></p>
+copyright: ©
+footer: <p id="hitokoto">  <a href="#" id="hitokoto_text">:D 获取中...</a> </p>
+# footer: 使用 <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议, 版权所有 © 2019-present Mr.Hope
 ---
+<script setup lang=ts>
+var xhr = new XMLHttpRequest();
+xhr.open('get', 'https://v1.hitokoto.cn');
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4) {
+    const data = JSON.parse(xhr.responseText);
+    const hitokoto = document.querySelector('#hitokoto_text');
+    hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
+    hitokoto.innerText = data.hitokoto;
+  }
+}
+xhr.send();
+</script>
+<!-- <p id="hitokoto"> <rainbow-text> :D 获取中...</rainbow-text> -->
+
 
 :wave:  本美化教程适用于Alist V3版本
 

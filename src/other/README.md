@@ -1,5 +1,5 @@
 ---
-title: 主要使用的功能
+title: 其他
 index: false
 icon: discover
 category:
@@ -7,5 +7,7 @@ category:
 
   
 ---
+
+本页面內站点的监控是一些站点监控检测
 
 <AutoCatalog />

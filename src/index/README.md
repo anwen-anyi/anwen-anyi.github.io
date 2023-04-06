@@ -1,5 +1,5 @@
 ---
-title: 主要使用的功能
+title: 功能
 index: false
 icon: discover
 category:

@@ -8,8 +8,8 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mrhope.site",
+    name: "An Wen",
+    url: "/",
   },
 
   iconAssets: [
@@ -19,9 +19,10 @@ export default hopeTheme({
   ],
   // iconAssets: "iconfont",
 
-  logo: "/logo.svg",
+  logo: "/home.png",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "anwen-anyi/doc",
+  
 
   docsDir: "demo/theme-docs/src",
 
@@ -130,6 +131,7 @@ export default hopeTheme({
       vuePlayground: true,
       
     },
+    
 
     // uncomment these if you want a pwa
     // pwa: {

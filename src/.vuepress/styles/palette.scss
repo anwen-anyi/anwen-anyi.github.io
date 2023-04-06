@@ -3,3 +3,13 @@
 $theme-color: #70c6be;
 // 文章页面内容宽度
 $content-width: 1080px;
+
+// 左侧侧边栏颜色图标颜色
+.sidebar .icon{
+    color: #409EFF;
+}
+
+// 顶部导航栏
+.navbar .nav-link .icon{
+    color: #70c6be;
+}

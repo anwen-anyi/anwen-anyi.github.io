@@ -2,7 +2,7 @@
 # 这是文章的标题
 title: 编译教程
 # 这是页面的图标
-icon: fa-solid fa-face-smile
+icon: fa-solid fa-rocket-launch
 # 这是侧边栏的顺序
 order: 8
 # 设置作者

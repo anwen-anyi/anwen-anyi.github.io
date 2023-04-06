@@ -17,8 +17,8 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "安稳教程自留地",
-      description: "A docs demo for vuepress-theme-hope",
+      title: "安安稳稳",
+      // description: "A docs demo for vuepress-theme-hope",
     },
     // "/zh/": {
     //   lang: "zh-CN",

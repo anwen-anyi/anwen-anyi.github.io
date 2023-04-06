@@ -2,7 +2,7 @@
 # 这是文章的标题
 title: Apple状态监测
 # 这是页面的图标
-icon: fa-solid fa-face-smile
+icon: fa-brands fa-apple
 # 这是侧边栏的顺序
 order: 1
 # 设置作者
@@ -30,7 +30,11 @@ copyright: 无版权
 
 <!-- more -->
 
-<meta name="referrer"  content="strict-origin-when-cross-origin">
+:::: center
+:::tip Apple服务状态监控官网
+**https://www.apple.com.cn/cn/support/systemstatus/**
+:::
+::::
 
-<iframe src="https://www.apple.com.cn/cn/support/systemstatus/" name="iframe_a" scrolling="yes" frameborder="0" width="130%" height="1100" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://www.apple.com.cn/cn/support/systemstatus/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1100" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
 
