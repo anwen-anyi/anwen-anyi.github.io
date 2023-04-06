@@ -1,0 +1,1 @@
+import{_ as o,W as t,X as n,$ as a,Z as c,D as s}from"./framework-377e8ee2.js";const _={},l=c("p",null,"本页面內站点的监控是一些站点监控检测",-1);function r(d,i){const e=s("AutoCatalog");return t(),n("div",null,[l,a(e)])}const u=o(_,[["render",r],["__file","index.html.vue"]]);export{u as default};
