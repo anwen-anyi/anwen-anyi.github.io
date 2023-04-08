@@ -12,8 +12,8 @@ export const zhSidebar = sidebar({
       children: "structure",
     },
     {
-      text: "其他",
       icon: "fa-solid fa-solar-system",
+      text: "其他",
       prefix: "other/",
       // like: "other/"
       collapsible: true,

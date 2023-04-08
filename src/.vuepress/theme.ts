@@ -1,8 +1,9 @@
-import { hopeTheme } from "vuepress-theme-hope";
+import { hopeTheme, getComponentsPlugin } from "vuepress-theme-hope";
 // import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { zhNavbar } from "./navbar/index.js";
 // import { enSidebar, zhSidebar } from "./sidebar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
+
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
@@ -21,10 +22,9 @@ export default hopeTheme({
 
   logo: "/home.png",
 
-  repo: "anwen-anyi/doc",
-  
+  repo: "anwen-anyi/anwen-anyi.github.io",
 
-  docsDir: "demo/theme-docs/src",
+  docsDir: "/src",
 
   locales: {
     // "/": {
@@ -61,10 +61,13 @@ export default hopeTheme({
       metaLocales: {
         editLink: "在 GitHub 上编辑此页",
       },
-      
+
     },
   },
-// 密码
+
+
+
+  // 密码
   encrypt: {
     config: {
       "/demo/encrypt.html": ["1234"],
@@ -78,13 +81,12 @@ export default hopeTheme({
       repoId: "R_kgDOJS60kw",
       category: "Announcements",
       categoryId: "DIC_kwDOJS60k84CVi7q",
-        // 播放器      
-    },
-    components: {
-      components: ["ArtPlayer","BiliBili","Badge"],
+      // 播放器      
     },
     copyCode: {},
-    
+
+    // {rootComponents: { backToTop: true }},
+
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
       attrs: true,
@@ -129,65 +131,44 @@ export default hopeTheme({
       ],
       vPre: true,
       vuePlayground: true,
-      
-    },
-    
 
-    // uncomment these if you want a pwa
-    // pwa: {
-    //   favicon: "/favicon.ico",
-    //   cacheHTML: true,
-    //   cachePic: true,
-    //   appendBase: true,
-    //   apple: {
-    //     icon: "/assets/icon/apple-icon-152.png",
-    //     statusBarColor: "black",
-    //   },
-    //   msTile: {
-    //     image: "/assets/icon/ms-icon-144.png",
-    //     color: "#ffffff",
-    //   },
-    //   manifest: {
-    //     icons: [
-    //       {
-    //         src: "/assets/icon/chrome-mask-512.png",
-    //         sizes: "512x512",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-mask-192.png",
-    //         sizes: "192x192",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-512.png",
-    //         sizes: "512x512",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-192.png",
-    //         sizes: "192x192",
-    //         type: "image/png",
-    //       },
-    //     ],
-    //     shortcuts: [
-    //       {
-    //         name: "Demo",
-    //         short_name: "Demo",
-    //         url: "/demo/",
-    //         icons: [
-    //           {
-    //             src: "/assets/icon/guide-maskable.png",
-    //             sizes: "192x192",
-    //             purpose: "maskable",
-    //             type: "image/png",
-    //           },
-    //         ],
-    //       },
-    //     ],
-    //   },
-    // },
+    },
+    components: {
+      components: [
+        "ArtPlayer",
+        "AudioPlayer",
+        "Badge",
+        "BiliBili",
+        "CodePen",
+        "PDF",
+        "Replit",
+        "Share",
+        "SiteInfo",
+        "StackBlitz",
+        "VideoPlayer",
+        "XiGua",
+        "YouTube",
+      ],
+      rootComponents: {
+        notice: [
+          {
+            path: "/",
+            title: "温馨提示",
+            content: "<span>1.因API更改内容会有视频自动播放</br>2.建议提前将此标签设置为静音 </br>3.方法右键此浏览器标签</br>4.选择将这个网站静音</span>",
+            actions: [
+              {
+                text: "进入首页",
+                link: "/",
+                type: "primary",
+              },
+              // { text: "Default Action" },
+            ],
+            fullscreen: true,
+            showOnce: true,
+            key: "/",
+          },
+        ],
+      },
+    },
   },
 });

@@ -34,5 +34,5 @@ footer: <p id="hitokoto">  <a href="#" id="hitokoto_text">:D 获取中...</a> </
 
  ==添加网盘存储建议前往AList文档查看==：**https://alist.nn.ci/zh/guide/drivers/** 
 
-<iframe src="https://alist.nn.ci/zh/guide/drivers/" name="iframe_a" scrolling="yes" frameborder="0" width="130%" height="1000" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://alist.nn.ci/zh/guide/drivers/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1000" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
 

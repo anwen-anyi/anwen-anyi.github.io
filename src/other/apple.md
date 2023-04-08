@@ -36,5 +36,5 @@ footer: <p id="hitokoto">  <a href="#" id="hitokoto_text">:D 获取中...</a> </
 :::
 ::::
 
-<iframe src="https://www.apple.com.cn/cn/support/systemstatus/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1100" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://apple.izyt.cc/cn/support/systemstatus/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1100" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
 

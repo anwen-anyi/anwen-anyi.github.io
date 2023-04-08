@@ -39,6 +39,6 @@ footer: <p id="hitokoto">  <a href="#" id="hitokoto_text">:D 获取中...</a> </
 :::
 ::::
 
-<iframe src="https://monitor.safe-education.repl.co/status/my" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1150" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://repl.izyt.cc/status/my" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1150" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
 
-<iframe src="https://stats.uptimerobot.com/7w9kmszqLQ" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1150" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://uptime.izyt.cc/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1800" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>

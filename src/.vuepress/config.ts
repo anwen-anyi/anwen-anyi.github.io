@@ -2,16 +2,15 @@ import { defineUserConfig } from "vuepress";
 import { autoCatalogPlugin } from "vuepress-plugin-auto-catalog";
 import theme from "./theme.js";
 
-
 export default defineUserConfig({
-  // plugins: [
+  plugins: [
   //   autoCatalogPlugin({
   //     //插件选项
   //     // level:2,
   //     // index:true,
   //     // exclude:["/encrypt.md/"]
   //   }),
-  // ],
+  ],
   base: "/",
   head:[
     [
