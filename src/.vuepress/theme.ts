@@ -158,14 +158,14 @@ export default hopeTheme({
             actions: [
               {
                 text: "进入首页",
-                link: "/",
+                link: "#",
                 type: "primary",
               },
               // { text: "Default Action" },
             ],
             fullscreen: true,
             showOnce: true,
-            key: "/",
+            // key: "#",
           },
         ],
       },
