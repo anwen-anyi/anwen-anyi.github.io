@@ -7,7 +7,7 @@ import { zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
-
+  
   author: {
     name: "安稳",
     url: "/",
@@ -157,7 +157,7 @@ export default hopeTheme({
             content: "<span>1.因API更改内容会有视频自动播放</br>2.建议提前将此标签设置为静音 </br>3.方法右键此浏览器标签</br>4.选择将这个网站静音</span>",
             actions: [
               {
-                text: "进入首页",
+                text: "查看内容",
                 link: "#",
                 type: "primary",
               },

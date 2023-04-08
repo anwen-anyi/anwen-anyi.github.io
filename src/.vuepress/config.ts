@@ -4,17 +4,18 @@ import theme from "./theme.js";
 
 export default defineUserConfig({
   plugins: [
-  //   autoCatalogPlugin({
-  //     //插件选项
-  //     // level:2,
-  //     // index:true,
-  //     // exclude:["/encrypt.md/"]
-  //   }),
+    //   autoCatalogPlugin({
+    //     //插件选项
+    //     // level:2,
+    //     // index:true,
+    //     // exclude:["/encrypt.md/"]
+    //   }),
+
   ],
   base: "/",
-  head:[
+  head: [
     [
-    //  一言API
+      //  一言API
       "script",
       {
         type: "text/javascript",
@@ -36,6 +37,12 @@ export default defineUserConfig({
     // },
   },
   theme,
+  // 解析 h4 标头
+  markdown: {
+    headers: {
+      level:[2,3,4,5,6]
+    }
+  },
 
   // Enable it with pwa
   // shouldPrefetch: false,

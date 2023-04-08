@@ -24,6 +24,7 @@ star: true
 footer: <p id="hitokoto">  <a href="#" id="hitokoto_text">:D 获取中...</a> </p>
 # 你可以自定义版权信息
 # copyright: 无版权
+headerDepth: 6
 ---
 
 <!-- 你可以通过设置页面的 Frontmatter，在页面禁用功能与布局。 -->
@@ -377,7 +378,7 @@ textarea#comment-textarea:focus {
 
 
 
-### 效果预览
+#### 效果预览
 
 ::: center
 左侧为不带毛玻璃效果，右侧为带毛玻璃效果.推荐右侧带毛玻璃效果的

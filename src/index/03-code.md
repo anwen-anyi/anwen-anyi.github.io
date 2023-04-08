@@ -24,6 +24,7 @@ star: true
 footer: <p id="hitokoto">  <a href="#" id="hitokoto_text">:D 获取中...</a> </p>
 # 你可以自定义版权信息
 # copyright: 无版权
+headerDepth: 6
 ---
 
 <!-- 你可以通过设置页面的 Frontmatter，在页面禁用功能与布局。 -->
@@ -114,7 +115,7 @@ footer: <p id="hitokoto">  <a href="#" id="hitokoto_text">:D 获取中...</a> </
           <Text>{t("不公开去要密码或离开")}</Text>
 ```
 
-**修改后的对比预览图：**
+#### **修改后的对比预览图：**
 
 ![](/img/code/2.png)
 
@@ -170,7 +171,7 @@ footer: <p id="hitokoto">  <a href="#" id="hitokoto_text">:D 获取中...</a> </
 
 :::
 
-**修改后的对比预览图：**
+#### **修改后的对比预览图：**
 
 ![](/img/code/3.png)
 
@@ -206,7 +207,7 @@ footer: <p id="hitokoto">  <a href="#" id="hitokoto_text">:D 获取中...</a> </
 
 ```
 
-**修改后的对比预览图：**
+#### **修改后的对比预览图：**
 
 ![](/img/code/4.png)
 
@@ -216,12 +217,12 @@ footer: <p id="hitokoto">  <a href="#" id="hitokoto_text">:D 获取中...</a> </
 
 文件位置：**alist-web\src\pages\login\index.tsx**
 
-```tsx
+```tsx{2}
               {/* 第65行隐藏即可 */}
               {/* <SwitchLanguageWhite /> */}
 ```
 
-**修改后的对比预览图：**
+#### **修改后的对比预览图：**
 
 ![](/img/code/5.png)
 
@@ -320,7 +321,7 @@ import { FiMoon as Moon } from "solid-icons/fi";
 
 ::: details 点击查看完整代码示例
 
-```tsx
+```tsx{35-47,71-95,126-134}
 import {
   Box,
   createDisclosure,
@@ -513,7 +514,7 @@ export const Right = () => {
 
 :::
 
-**修改后的对比预览图：**
+#### **修改后的对比预览图：**
 
 ![](/img/code/6.png)
 
@@ -521,7 +522,7 @@ export const Right = () => {
 
 文件位置：**alist-web\src\pages\login\index.tsx**
 
-```tsx
+```tsx{2-6}
   const title = createMemo(() => {
     // 33行左右取消后台显示的 登录到 字样
     // ${t("login.login_to")} 汉化包里面的登录到字样 "login_to": "登录到",
@@ -532,7 +533,7 @@ export const Right = () => {
   })
 ```
 
-**修改后的对比预览图：**
+#### **修改后的对比预览图：**
 
 ![](/img/code/7.png)
 
@@ -546,7 +547,7 @@ export const Right = () => {
 
 ::: details 点击查看示例代码
 
-```tsx
+```tsx{20,38-51,64-70}
 // import { Button } from "@hope-ui/solid"
 import { Button, HStack } from "@hope-ui/solid"
 import { createSignal } from "solid-js"
@@ -633,7 +634,7 @@ export default Ipa
 
 需要将 tipa文件也添加进去
 
-```tsx
+```tsx{3}
 	{
     name: "Ipa",
     exts: ["ipa","tipa"],
@@ -647,11 +648,11 @@ export default Ipa
 
 添加一下后缀文件名在里面即可
 
-```tsx
+```tsx{1}
   "dmg,ipa,plist,tipa": BsApple,
 ```
 
-**修改后的对比预览图：**
+#### **修改后的对比预览图：**
 
 ![](/img/code/8.png)
 
@@ -691,7 +692,7 @@ export default Ipa
  
 ```
 
-**修改后的对比预览图：**
+#### **修改后的对比预览图：**
 
 ![](/img/code/9.png)
 
@@ -703,7 +704,7 @@ infuse官网：[Firecore - Video Player for iOS, Apple TV, and Mac](https://fire
 
 文件位置：**alist-web\src\pages\home\previews\video.tsx** 
 
-```tsx
+```tsx{4-8}
 const players: { icon: string; name: string; scheme: string }[] = [
   { icon: "iina", name: "IINA", scheme: "iina://weblink?url=$durl" },
   { icon: "potplayer", name: "PotPlayer", scheme: "potplayer://$durl" },
@@ -737,7 +738,7 @@ const players: { icon: string; name: string; scheme: string }[] = [
 
 **如何自己做一个webp格式的图片，我用的PS做的，然后加一个插件:** https://blog.csdn.net/kangweijian/article/details/125197799
 
-**修改后的对比预览图：**
+#### **修改后的对比预览图：**
 
 ![](/img/code/10.png)
 
@@ -757,7 +758,7 @@ const players: { icon: string; name: string; scheme: string }[] = [
 
 **代码中使用了其他的图标库，觉得不好看的可以自行修改并且记得导入不然会报错**
 
-```tsx
+```tsx{47-102}
 import {
   HStack,
   useColorModeValue,
@@ -944,7 +945,7 @@ export const Header = () => {
 
 :::
 
-**修改后的对比预览图：**
+#### **修改后的对比预览图：**
 
 ![](/img/code/11.png)
 
@@ -1040,7 +1041,7 @@ const iconMap = {
 
 :::
 
-**修改后的对比预览图：**
+#### **修改后的对比预览图：**
 
 ![](/img/code/12.png)
 
@@ -1050,7 +1051,7 @@ const iconMap = {
 
 文件位置：**alist-web\src\store\obj.ts**
 
-```ts
+```ts{2}
 export type LayoutType = "list" | "grid" | "image"
 const [layout, setLayout] = createStorageSignal<LayoutType>("layout", "list")
 ```
@@ -1059,7 +1060,7 @@ const [layout, setLayout] = createStorageSignal<LayoutType>("layout", "list")
 
 默认这里是 **"list"** ，如果你要默认为  "网格视图" 自己改成  **"grid"** 即可，"image" 是图片视图估计没人默认用
 
-**修改后的对比预览图：**
+#### **修改后的对比预览图：**
 
 就像这样的上面是网格视图 下面的是列表视图，默认是列表视图的哦~如果你要改图标可以看[**图标如何修改**](#_12-修改文件图标)
 
@@ -1071,6 +1072,10 @@ const [layout, setLayout] = createStorageSignal<LayoutType>("layout", "list")
 
 ==**@login**== 是登录地址，==**@manage**== 是后台地址
 
-**修改后的对比预览图：**
+#### **修改后的对比预览图：**
 
-![](/img/code/x.png)
+
+<div class="image-preview">
+  <img src="/img/code/x.png" />
+  <img src="/img/code/xx.png" />
+</div>
