@@ -1,10 +1,11 @@
 ---
 # 这是文章的标题
-title: 我的站点监控
+title: jsDeliver服务监测
 # 这是页面的图标
-icon: fa-solid fa-house-laptop
+# icon: fa-brands fa-github-alt
+icon: iconfont blog-jsd
 # 这是侧边栏的顺序
-order: 3
+order: 5
 # 设置作者
 author: 安稳
 # 设置写作时间
@@ -31,25 +32,11 @@ headerDepth: 6
 
 <!-- more -->
 
-
 :::: center
-:::tip 我的站点服务状态监控
-**https://monitor.safe-education.repl.co/status/my**
+:::tip jsDeliver 服务状态监控官网
 
-**https://stats.uptimerobot.com/7w9kmszqLQ**
+## jsDeliver：**https://status.jsdelivr.com/**
 :::
 ::::
 
-::::center
-:::tabs#alitoken
-
-@tab repl
-
-<iframe src="https://repl.izyt.cc/status/my" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1200" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
-
-@tab uptimerobot
-
-<iframe src="https://uptime.izyt.cc/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1800" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
-
-:::
-::::
+<iframe src="https://status.jsdelivr.com/" name="iframe_a" scrolling="no" frameborder="0" width="100%" height="1150" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>

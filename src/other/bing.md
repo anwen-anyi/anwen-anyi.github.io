@@ -33,6 +33,8 @@ headerDepth: 6
 
 :::: center
 :::tip ___
+API：**https://bing.icodeq.com/**
+
 Bing 好图每日更新 : **https://icodeq.com/bing/**
 
 GitHub仓库：**https://github.com/zkeq/Bing-Wallpaper-Action**

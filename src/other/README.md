@@ -1,7 +1,7 @@
 ---
-title: 其他
+title: 监控
 index: false
-icon: fa-solid fa-wreath
+icon: fa-solid fa-solar-system
 category:
   - 使用指南
 footer: <p id="hitokoto">  <a href="#" id="hitokoto_text">:D 获取中...</a> </p>

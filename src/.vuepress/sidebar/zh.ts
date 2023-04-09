@@ -13,7 +13,7 @@ export const zhSidebar = sidebar({
     },
     {
       icon: "fa-solid fa-solar-system",
-      text: "其他",
+      text: "服务状态监控",
       prefix: "other/",
       // like: "other/"
       collapsible: true,
