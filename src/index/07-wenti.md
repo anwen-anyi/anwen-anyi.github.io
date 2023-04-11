@@ -14,14 +14,15 @@ category:
   - 使用指南
 # 一个页面可以有多个标签
 tag:
-  - 页面配置
-  - 使用指南
+  - AList入门使用教程
+  - 使用AList的常见问题
 # 此页面会在文章列表置顶
 sticky: true
 # 此页面会出现在文章收藏中
 star: true
 # 你可以自定义页脚
-footer: <p id="hitokoto">  <a href="#" id="hitokoto_text">:D 获取中...</a> </p>
+# footer: true
+
 # 你可以自定义版权信息
 # copyright: 无版权
 headerDepth: 6

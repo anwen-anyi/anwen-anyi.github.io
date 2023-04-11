@@ -44,3 +44,27 @@ $content-width: 1150px;
     }
   }
 // image 结束
+
+// 弹窗提示
+span#tips2 {
+  color: red;
+  font-weight: bolder;
+}
+span#tips3 {
+  color: rgb(17, 110, 250);
+  font-weight: bolder;
+}
+
+// 卜算子CSS
+span#busuanzi_value_page_pv{
+  font-weight: bold;
+  color: rgb(13, 109, 252);
+}
+span#busuanzi_value_site_pv{
+  font-weight: bold;
+  color: rgb(13, 109, 252);
+}
+span#busuanzi_value_site_uv {
+  font-weight: bold;
+  color: rgb(13, 109, 252);
+}

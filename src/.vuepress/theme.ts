@@ -54,8 +54,9 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
-
+      // footer: "默认页脚",
+      footer:'<p id="hitokoto">  <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </p><p>本页面<span id="busuanzi_value_page_pv"></span>次,本站<span id="busuanzi_value_site_pv"></span>次,总访客<span id="busuanzi_value_site_uv"></span>人</p>',
+      
       displayFooter: true,
 
       // page meta
@@ -154,8 +155,8 @@ export default hopeTheme({
         notice: [
           {
             path: "/",
-            title: "温馨提示",
-            content: "<span>1.因API更改内容会有视频自动播放</br>2.建议提前将此标签设置为静音 </br>3.方法右键此浏览器标签</br>4.选择将这个网站静音</span>",
+            title: '温馨提示',
+            content: '<span id="tips2">请仔细查看弹窗提示内容</span></br>1.因API更改内容会有视频自动播放</br>2.建议提前将此标签设置为静音 </br>3.方法为右键此浏览器标签</br>4.选择将这个<span id="tips3">"网站/标签页"</span>静音</br><span id="tips2">随意点击任意可关闭弹窗不再显示</span>',
             actions: [
               {
                 text: "查看内容",

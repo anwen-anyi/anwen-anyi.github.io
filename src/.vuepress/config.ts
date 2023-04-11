@@ -1,5 +1,4 @@
 import { defineUserConfig } from "vuepress";
-import { autoCatalogPlugin } from "vuepress-plugin-auto-catalog";
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -23,6 +22,15 @@ export default defineUserConfig({
         src: "https://v1.hitokoto.cn/?encode=js&select=%23hitokoto",
       }
     ],
+    [
+      //  不蒜子
+      "script",
+      {
+        type: "text/javascript",
+        charset: "UTF-8",
+        src: "https://busuanzi.icodeq.com/busuanzi.pure.mini.js",
+      }
+    ]
   ],
   locales: {
     "/": {

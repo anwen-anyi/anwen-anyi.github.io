@@ -102,12 +102,12 @@ actions:
 # copyright: <p id="hitokoto"> <rainbow-text> <a href="#" id="hitokoto_text">:D 获取中...</a> </rainbow-text></p>
 copyright: © 安稳
 
-footer: <p id="hitokoto">  <a href="#" id="hitokoto_text">:D 获取中...</a> </p>
+footer: <p id="hitokoto">  <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </p> <span> 本目录访问量 <span id="busuanzi_value_page_pv"></span> 次 本站总访问量 <span id="busuanzi_value_site_pv"></span> 次 本站总访客数 <span id="busuanzi_value_site_uv"></span> 人 </span>
 # footer: 使用 <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议, 版权所有 © 2019-present Mr.Hope
 ---
 
 
-<p id="hitokoto">  <a href="#" id="hitokoto_text">:D 获取中...</a> </p>
+<p id="hitokoto">  <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </p>
 
 
 :wave:  本美化教程适用于Alist V3版本
