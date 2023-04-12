@@ -4,7 +4,7 @@ title: 我的站点监控
 # 这是页面的图标
 icon: fa-solid fa-house-laptop
 # 这是侧边栏的顺序
-order: 3
+order: 2
 # 设置作者
 author: 安稳
 # 设置写作时间
@@ -16,6 +16,7 @@ category:
 tag:
   - 服务状态
   - 监控
+  - My Home
 # 此页面会在文章列表置顶
 sticky: true
 # 此页面会出现在文章收藏中

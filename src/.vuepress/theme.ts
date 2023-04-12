@@ -15,7 +15,7 @@ export default hopeTheme({
 
   iconAssets: [
     // "iconfont", //icon: iconfont icon-图标名称
-    "//at.alicdn.com/t/c/font_2407338_bfhnifm90t.css",
+    "//at.alicdn.com/t/c/font_2407338_nkbq3cug9mi.css",
     "https://npm.elemecdn.com/font6pro@6.2.0/css/all.min.css",
     "https://npm.elemecdn.com/font6pro@6.2.0/css/fontawesome.min.css",
   ],
@@ -112,6 +112,7 @@ export default hopeTheme({
       sub: true,        //上标
       sup: true,        //下标
       align: true,      //自定义对齐格式支持
+      card: true,       //Markdown 中添加卡片
       playground: {
         presets: ["ts", "vue"],
       },
