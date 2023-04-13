@@ -33,6 +33,7 @@ headerDepth: 6
 
 <!-- more -->
 
+
 :::: center
 :::tip Apple 服务状态监控官网
 因iCloud和AppStore商店使用的不同帐号,固需要不同区的状态 :rofl: :rofl: :rofl:
@@ -61,8 +62,6 @@ headerDepth: 6
 <Badge text="土区" /> ：**https://www.apple.com/tr/support/systemstatus/**
 :::
 <iframe src="https://apple.izyt.cc/tr/support/systemstatus/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1200" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
-
-
 
 ::::
 :::::

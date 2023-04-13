@@ -11,9 +11,9 @@ export default defineUserConfig({
     //     // exclude:["/encrypt.md/"]
     //   }),
     docsearchPlugin({
-      appId:"553361",
-      apiKey:"",
-      indexName:"",
+      appId:"G9WNTTQL4R",
+      apiKey:"b4c123a561b0166b7015df8147771950",
+      indexName:"anwen-anyiio",
     }),
   ],
   base: "/",
