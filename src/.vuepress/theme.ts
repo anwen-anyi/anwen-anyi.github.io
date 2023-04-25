@@ -157,7 +157,7 @@ export default hopeTheme({
           {
             path: "/",
             title: '温馨提示',
-            content: '<span id="tips2">请仔细查看弹窗提示内容</span></br>1.因API更改内容会有视频自动播放</br>2.建议提前将此标签设置为静音 </br>3.方法为右键此浏览器标签</br>4.选择将这个<span id="tips3">"网站/标签页"</span>静音</br><span id="tips2">随意点击任意可关闭弹窗不再显示</span>',
+            content: '<span id="tips2">请仔细查看弹窗提示内容</span></br></br>如是查看美化教程,建议用两个窗口</br>分别是自定义<span id="tips3">"内容和头部"</span>两个窗口</br>因为内容在不同位置,需要同步使用</br></br><span id="tips2">随意点击任意可关闭弹窗不再显示</span>',
             actions: [
               {
                 text: "查看内容",

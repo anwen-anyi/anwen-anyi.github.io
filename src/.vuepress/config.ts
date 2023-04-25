@@ -35,6 +35,15 @@ export default defineUserConfig({
         charset: "UTF-8",
         src: "https://busuanzi.icodeq.com/busuanzi.pure.mini.js",
       }
+    ],
+    [
+      // 站点
+      "script",
+      {
+        defer: true,
+        "data-domain": "anwen-anyi.github.io",
+        src: "https://vercel.site.icodeq.com/js/script.js"
+      }
     ]
   ],
   locales: {

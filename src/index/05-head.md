@@ -220,6 +220,7 @@ textarea#comment-textarea:focus {
 
 
 /*音乐播放器进一步进行隐藏*/
+/* 需要就加不需要就不用加 */
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
     left: -66px!important;
 }
