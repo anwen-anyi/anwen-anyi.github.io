@@ -4,7 +4,7 @@ title: SSO单点登录
 # 这是页面的图标
 icon: fa-solid fa-rocket-launch
 # 这是侧边栏的顺序
-order: 6
+order: 7
 # 设置作者
 author: 安稳
 # 设置写作时间
@@ -36,15 +36,13 @@ headerDepth: 6
 
 ## 前言
 
-我们这里接入的单点登录程序使用的是 **"[Casdoor](https://github.com/casdoor/casdoor)"**
-
-别的不说了可以接入几十种帐号登录,你见过的没见过的好多
+我们这里接入的单点登录程序使用的是 **"[Casdoor](https://github.com/casdoor/casdoor)"**别的不说了可以接入几十种帐号登录,你见过的没见过的好多
 
 详细的可以看下面有一份支持接入的方式表单,不啰嗦了直接开始
 
-::: details 支持接入的方式
+::: details 支持接入的方式表单
 
-图表来自 **"[Casdoor Docs](https://casdoor.org/zh/docs/provider/oauth/overview)"** 
+图表来自 **"[Casdoor Docs](https://casdoor.org/zh/docs/provider/oauth/overview)"** ，当然并非所有的都是OAuth
 
 | Provider        | Logo                                                         | Provider    | Logo                                                         | Provider  | Logo                                                         | Provider     | Logo                                                         |
 | :-------------- | :----------------------------------------------------------- | :---------- | :----------------------------------------------------------- | :-------- | :----------------------------------------------------------- | :----------- | :----------------------------------------------------------- |
@@ -77,7 +75,6 @@ headerDepth: 6
 - http://22.333.222.111:8000/callback
 - https://22.111.222.333:8000/callback
 - http://sso.baidu.com/callback
-
 - https://sso.baidu.com/callback
 
 总之就是不论你怎么写 结尾加一个 `/callback` 即可,
@@ -98,9 +95,29 @@ headerDepth: 6
 
 ## 接入
 
-[钉钉](@飞书)
-
 ::::center
+
+:::tabs#ssologin
+
+@tab 钉钉#钉钉
+
+@tab 飞书#飞书
+
+@tab 百度#百度
+
+@tab GitHub#GitHub
+
+@tab 谷歌#谷歌
+
+@tab 微软#微软
+
+@tab Gitlab#Gitlab
+
+@tab 企业微信(内部)#企业微信(内部)
+
+@tab 其他#其他
+
+:::
 
 ::::
 
@@ -204,8 +221,6 @@ headerDepth: 6
 
 
 
-
-
 @tab 谷歌
 
 打开[**Google API 凭据**](https://console.cloud.google.com/apis/credentials)，顶部的`创建凭据` --> `OAuth 客户端ID` 注册一个应用
@@ -230,11 +245,9 @@ headerDepth: 6
 
 
 
-
-
 @tab 微软
 
-打开[**Microsoft AzureAD应用注册**](ttps://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps)，注册一个我们自己的应用
+打开[**Microsoft AzureAD应用注册**](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps)，注册一个我们自己的应用
 
 如果你有其他的需求，一个默认的回调参数URL不够用，可以在新建好后再来添加
 
@@ -264,11 +277,89 @@ headerDepth: 6
 
 
 
+@tab Gitlab
+
+打开[**GitLab 应用注册**](https://gitlab.com/oauth/applications)，注册一个我们自己的应用，注册应用时候记得填写回调参数URL和选择权限^(3个)^
+
+![添加回调参数](/img/sso/gitlab/add-callback.png)
+
+应用注册好后就会看到到我们的 **客户端ID(Client Id)** 和 **客户端秘钥(Client Secret)**，然后我们直接填写到填写到`Casdoor`接入
+
+![填写到`Casdoor`接入](/img/sso/gitlab/add.png)
+
+`Casdoor`接入后我们在AList后台绑定时，登录帐号后记得授权哦~
+
+![绑定单点登录授权](/img/sso/gitlab/shouquan.png)
+
+
+
+@tab 企业微信(内部)
+
+呃呃呃，基本添加方式摸清了，但是最后还是需要企业认证绑定才行，我们先看看怎么用吧
+
+打开[**企业微信后台**](https://work.weixin.qq.com/wework_admin/frame#apps)，在`自建`添加一个我们自己的应用，然后填写回调参数
+
+但是企业微信的回调参数和以往的写法不同,[**参考链接**](https://developer.work.weixin.qq.com/document/path/98151#%E5%BC%80%E5%90%AF%E7%BD%91%E9%A1%B5%E6%8E%88%E6%9D%83%E7%99%BB%E5%BD%95)
+
+![添加回调参数](/img/sso/weixin/add-callback.png)
+
+回调参数写好了，我们去寻找 **客户端ID(Client Id)** 和 **客户端秘钥(Client Secret)** 以及 **企业应用ID(Agent ID)**
+
+![填写到`Casdoor`接入](/img/sso/weixin/add.png)
+
+到这里填写好了 倒是没什么问题了，然后问题不出意外的出现了意外 :warning::warning::warning:
+
+-----
+
+But! 重点来了，填写好后竟然发现好像还是需要企业认证的...链接也附带到下面了有兴趣的可以看看
+
+![绑定单点登录时遇到的问题](/img/sso/weixin/error.png)
+
+上述问题的链接如下：
+
+- 右1图：https://open.work.weixin.qq.com/devtool/query?e=60020
+- 右2图：https://developer.work.weixin.qq.com/document/path/90313#%E9%94%99%E8%AF%AF%E7%A0%81%EF%BC%9A60020
+- 右3图：https://open.work.weixin.qq.com/wwopen/common/readDocument/40754
+
 
 
 @tab 其他
 
-其他的厂商接入还在路上,敬请期待~
+更多的厂商接入还在路上,敬请期待~
+
+- 微博：没实名过，需要实名认证，如需要自行接入很简单
+  - 开发者注册地址：https://open.weibo.com/developers/basicinfo
+- gitee：也没实名过，也需要实名认证，如需要自行接入很简单
+  - 开发者注册地址：https://open.weibo.com/developers/basicinfo
+- Infoflow(百度如流)：需要企业资质
+  - http://qy.baidu.com/index.html#appdetail
+- 企业微信：两个不同
+  - 企业内部：https://work.weixin.qq.com/wework_admin/frame#apps
+    - 如果需要添加可以在前面标签中看看已经添加了一个大概企业微信
+  - 第三方商业：https://open.work.weixin.qq.com/wwopen/developer#/sass/power/inter
+- 支付宝，哔哩哔哩，抖音，微信/企业微信(企业内部和第三方商业)
+  - 这些需要企业认证才可以，个人无法申请
+- Apple开发者：没折腾明白
+  - 开发者注册地址：https://developer.apple.com/account/resources/identifiers/list
+- steam：没账号就没测试
+  - https://steamcommunity.com/dev/apikey
+- 微信开放平台需付费，中国地区￥300，非中国地区 $99
+  - 微信开放平台帐号的开发者资质认证提供更安全、更严格的真实性认证、也能够更好的保护企业及用户的合法权益
+  - 开发者资质认证通过后，微信开放平台帐号下的应用，将获得微信登录、智能接口、第三方平台开发等高级能力
+  - **审核费用：中国大陆地区：300元，非中国大陆地区：99美元**
+
+![认证费用](/img/sso/renzheng.png)
+
+----
+
+以下这些暂时还未尝试
+
+- Okta：没见过暂时还没尝试
+  - https://dev-78625966-admin.okta.com/admin/app
+- Slack：暂时还没尝试
+  - https://api.slack.com/apps
+- Facebook：暂时还没尝试
+  - https://developers.facebook.com/apps
 
 :::
 

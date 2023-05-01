@@ -4,7 +4,7 @@ title: 编译教程
 # 这是页面的图标
 icon: fa-solid fa-rocket-launch
 # 这是侧边栏的顺序
-order: 9
+order: 29
 # 设置作者
 author: 安稳
 # 设置写作时间
