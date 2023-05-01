@@ -44,6 +44,14 @@ export default defineUserConfig({
         "data-domain": "anwen-anyi.github.io",
         src: "https://vercel.site.icodeq.com/js/script.js"
       }
+    ],
+    [
+      // icodeq
+      "script",
+      {
+        async: true,
+        src: "https://vercel.site.icodeq.com/js/embed.host.js"
+      }
     ]
   ],
   locales: {

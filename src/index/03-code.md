@@ -182,7 +182,7 @@ headerDepth: 6
 
 #### 如何改成默认为简体中文：
 
-- 首先先拉取中文语言包，丢进去初始化一下，[**具体怎么初始化点击这里查看教程。**](https://www.yuque.com/anwenya/alist/glqlhu#WLiri)
+- 首先先拉取中文语言包，丢进去初始化一下，[**具体怎么初始化点击这里查看教程。**](./08-build.md#15-直接下载语言包直链)
 
 - 然后英语(en)的直接删除了即可，语言文件夹里面只剩下了 lang/zh_cn 这个中文的 这样就会默认使用中文的
 
@@ -705,13 +705,15 @@ export default Ipa
 
 infuse官网：[Firecore - Video Player for iOS, Apple TV, and Mac](https://firecore.com/)
 
-文件位置：**alist-web\src\pages\home\previews\video.tsx** 
+ ==(新)文件位置：**alist-web/src/pages/home/previews/[video_box.tsx](https://github.com/alist-org/alist-web/blob/main/src/pages/home/previews/video_box.tsx#L17-L21)**==
+
+(旧)文件位置：**alist-web\src\pages\home\previews\video.tsx**
 
 ```tsx{4-8}
 const players: { icon: string; name: string; scheme: string }[] = [
   { icon: "iina", name: "IINA", scheme: "iina://weblink?url=$durl" },
   { icon: "potplayer", name: "PotPlayer", scheme: "potplayer://$durl" },
-  {
+    {
     icon: "infuse",
     name: "Infuse",
     scheme: "infuse://x-callback-url/play?url=$durl",

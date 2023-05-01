@@ -4,7 +4,7 @@ title: 编译教程
 # 这是页面的图标
 icon: fa-solid fa-rocket-launch
 # 这是侧边栏的顺序
-order: 8
+order: 9
 # 设置作者
 author: 安稳
 # 设置写作时间
@@ -227,7 +227,7 @@ git clone --recurse-submodules https://hub.cooluc.com/alist-org/alist-web.git
 
 将编译好的前端移文件动到后端里面去，准备编译
 
-**"dist"**目录移动到 **`"public"`** 去之后，我们就可以编译了（如果有改代码的需求自己改完再编译）
+**"dist"** 目录移动到 **`"public"`** 去之后，我们就可以编译了（如果有改代码的需求自己改完再编译）
 
 ```bash
 appName="alist"
@@ -253,7 +253,7 @@ go build -ldflags="$ldflags" .
 
 ‪如果怕自己创建的 **.sh** 后缀 文件不能用我们可以复制粘贴一个已经有的然后把里面的内容替换了即可
 
-### 3.1 演示创建.sh
+### 3.1 [演示创建.sh](#_3-1-演示创建-sh)
 
 ![](/img/build/build11.gif)
 
