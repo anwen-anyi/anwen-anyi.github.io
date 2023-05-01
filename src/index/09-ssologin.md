@@ -36,7 +36,7 @@ headerDepth: 6
 
 ## 前言
 
-我们这里接入的单点登录程序使用的是 **"[Casdoor](https://github.com/casdoor/casdoor)"**别的不说了可以接入几十种帐号登录,你见过的没见过的好多
+我们这里接入的单点登录程序使用的是 **"[Casdoor](https://github.com/casdoor/casdoor)"** 别的不说了可以接入几十种,你见过的没见过的都有
 
 详细的可以看下面有一份支持接入的方式表单,不啰嗦了直接开始
 
