@@ -42,7 +42,7 @@ headerDepth: 6
 
 ::: details 支持接入的方式表单
 
-图表来自 **"[Casdoor Docs](https://casdoor.org/zh/docs/provider/oauth/overview)"** ，当然并非所有的都是OAuth
+图表来自 **"[Casdoor Docs](https://casdoor.org/zh/docs/provider/oauth/overview)"** 
 
 | Provider        | Logo                                                         | Provider    | Logo                                                         | Provider  | Logo                                                         | Provider     | Logo                                                         |
 | :-------------- | :----------------------------------------------------------- | :---------- | :----------------------------------------------------------- | :-------- | :----------------------------------------------------------- | :----------- | :----------------------------------------------------------- |
@@ -95,35 +95,7 @@ headerDepth: 6
 
 ## 接入
 
-::::center
-
 :::tabs#ssologin
-
-@tab 钉钉#钉钉
-
-@tab 飞书#飞书
-
-@tab 百度#百度
-
-@tab GitHub#GitHub
-
-@tab 谷歌#谷歌
-
-@tab 微软#微软
-
-@tab Gitlab#Gitlab
-
-@tab 企业微信(内部)#企业微信(内部)
-
-@tab 其他#其他
-
-:::
-
-::::
-
-:::tabs#ssologin
-
-
 
 @tab 钉钉
 
@@ -201,7 +173,7 @@ headerDepth: 6
 
 @tab GitHub
 
-打开[**GitHub OAuth Apps**](https://github.com/settings/developers),左上角[New OAuth Apps](https://github.com/settings/applications/new)注册一个应用,
+打开[**GitHub OAuth Apps**](https://github.com/settings/developers),左上角[New OAuth Apps](https://github.com/settings/applications/new)注册一个应用
 
 然后就会看到 **客户端ID(Client Id)** 和我们需要手动创建一个 **客户端秘钥(Client Secret)**
 
@@ -227,7 +199,7 @@ headerDepth: 6
 
 直接照着下图写，也记得填写回调参数URL喔~
 
- ==如果你是第一次配置，请直接看下面的第三章图再回来新建应用==
+ ==如果你是第一次配置，请直接看下面的第三张图再回来新建应用==
 
 ![添加回调参数](/img/sso/google/new.png)
 
@@ -293,6 +265,55 @@ headerDepth: 6
 
 
 
+
+
+@tab Yandex
+
+打开[**Yandex开发者中心**](https://oauth.yandex.com/client/new/id)注册一个我们自己的应用
+
+- 注册很简单，
+  - 第一步：填一个注册`应用名称`以及勾选一下应用的`类型`
+  - 第二步：略
+  - 第三步：填写我们的回调参数，我们就填写[通用配置-回调参数url](#通用配置-回调参数url)即可
+  - 第四步：写个邮箱即可
+  - 第四步完成后会出现一个预览的，我们选择下面长条橙黄色按钮： ==**Everything is correct. Create the app**== 
+
+![新建应用以及添加回调参数](/img/sso/yandex/new.png)
+
+新建好应用后我们就能看到 **客户端ID(Client Id)** 和 **客户端秘钥(Client Secret)**，填写到`Casdoor`提供商
+
+如果新建好应用后刷新了页面，可以找到我们新建的应用点进去获取参数
+
+![填写到`Casdoor`接入](/img/sso/yandex/add.png)
+
+使用`Yandex`登录预览
+
+![Yandex登录预览](/img/sso/yandex/login-demo.png)
+
+
+
+
+
+@tab Discord
+
+打开[**Discord开发者中心**](https://discord.com/developers/applications)注册一个我们自己的应用，照着下图操作即可
+
+![注册应用](/img/sso/discord/new.png)
+
+注册好应用后，我们 **客户端ID(Client Id)** 和 **客户端秘钥(Client Secret)** 就能看到 
+
+顺便填写一下 回调参数URL，然后将参数填写到`Casdoor`接入
+
+![填写到`Casdoor`接入](/img/sso/discord/add.png)
+
+使用`Discord登录预览`登录预览
+
+![Discord登录预览](/img/sso/discord/login-demo.png)
+
+
+
+
+
 @tab 企业微信(内部)
 
 呃呃呃，基本添加方式摸清了，但是最后还是需要企业认证绑定才行，我们先看看怎么用吧
@@ -320,6 +341,8 @@ But! 重点来了，填写好后竟然发现好像还是需要企业认证的...
 - 右1图：https://open.work.weixin.qq.com/devtool/query?e=60020
 - 右2图：https://developer.work.weixin.qq.com/document/path/90313#%E9%94%99%E8%AF%AF%E7%A0%81%EF%BC%9A60020
 - 右3图：https://open.work.weixin.qq.com/wwopen/common/readDocument/40754
+
+
 
 
 
@@ -358,10 +381,11 @@ But! 重点来了，填写好后竟然发现好像还是需要企业认证的...
   - https://dev-78625966-admin.okta.com/admin/app
 - Slack：暂时还没尝试
   - https://api.slack.com/apps
-- Facebook：暂时还没尝试
+- Twitter：申请困难，官方限制严格
+  - https://developer.twitter.com/en/portal/dashboard
+
+- Facebook：需要能连接到外网的机器,因没有暂无法添加（很简单）
   - https://developers.facebook.com/apps
+- instagram：和Facebook 好像一样 是一家的
 
 :::
-
-
-
