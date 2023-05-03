@@ -314,6 +314,32 @@ headerDepth: 6
 
 
 
+@tab Twitch
+
+首先打开[**Twitch开发者控制台**](https://dev.twitch.tv/console/apps)注册一个我们的应用
+
+登录控制台时我们先授权一下给`Twitch`权限^(下图左侧图)^，也要在[**个人设置**](https://www.twitch.tv/settings/security)绑定邮箱和二次验证^(下图右侧图)^
+
+- 二次验证^(2FA)^使用[Google验证器](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2) 或 [Microsoft验证器](https://support.microsoft.com/zh-cn/account-billing/%E4%B8%8B%E8%BD%BD%E5%B9%B6%E5%AE%89%E8%A3%85microsoft-authenticator%E5%BA%94%E7%94%A8-351498fc-850a-45da-b7b6-27e523b8702a),这两个都可以
+
+![登录开发者控制台授权](/img/sso/twitch/shouquan.png)
+
+然后注册我们的开发者应用，记得填写**回调参数URL**，类别看着选吧实在不知道和我的一样也可以
+
+![填写到`Casdoor`接入](/img/sso/twitch/new.png)
+
+新建好后，我们找到我们新建的应用,手动获取一下秘钥，就得到了**客户端ID(Client Id)** 和 **客户端秘钥(Client Secret)**，然后填写到`Casdoor`接入吧
+
+![填写到`Casdoor`接入](/img/sso/twitch/add.png)
+
+填写到`Casdoor`接入好后，我们也回到AList绑定单点登录试试看~
+
+![Twitch绑定登录预览](/img/sso/twitch/login-demo.png)
+
+Twitch登录没有问题
+
+
+
 @tab 企业微信(内部)
 
 呃呃呃，基本添加方式摸清了，但是最后还是需要企业认证绑定才行，我们先看看怎么用吧
@@ -350,6 +376,9 @@ But! 重点来了，填写好后竟然发现好像还是需要企业认证的...
 
 更多的厂商接入还在路上,敬请期待~
 
+- 支付宝，哔哩哔哩，抖音，微信/企业微信(企业内部和第三方商业)
+  - 这些需要企业认证才可以，个人无法申请
+
 - 微博：没实名过，需要实名认证，如需要自行接入很简单
   - 开发者注册地址：https://open.weibo.com/developers/basicinfo
 - gitee：也没实名过，也需要实名认证，如需要自行接入很简单
@@ -360,8 +389,6 @@ But! 重点来了，填写好后竟然发现好像还是需要企业认证的...
   - 企业内部：https://work.weixin.qq.com/wework_admin/frame#apps
     - 如果需要添加可以在前面标签中看看已经添加了一个大概企业微信
   - 第三方商业：https://open.work.weixin.qq.com/wwopen/developer#/sass/power/inter
-- 支付宝，哔哩哔哩，抖音，微信/企业微信(企业内部和第三方商业)
-  - 这些需要企业认证才可以，个人无法申请
 - Apple开发者：没折腾明白
   - 开发者注册地址：https://developer.apple.com/account/resources/identifiers/list
 - steam：没账号就没测试
@@ -377,6 +404,9 @@ But! 重点来了，填写好后竟然发现好像还是需要企业认证的...
 
 以下这些暂时还未尝试
 
+- Tiktok：需要填写然后审核
+  - https://developers.tiktok.com/apps/
+
 - Okta：没见过暂时还没尝试
   - https://dev-78625966-admin.okta.com/admin/app
 - Slack：暂时还没尝试
@@ -386,6 +416,56 @@ But! 重点来了，填写好后竟然发现好像还是需要企业认证的...
 
 - Facebook：需要能连接到外网的机器,因没有暂无法添加（很简单）
   - https://developers.facebook.com/apps
-- instagram：和Facebook 好像一样 是一家的
+- Instagram：和Facebook 好像一样 是一家的
+  - 网游登录不了instagram 没法找到开发者后台
+
 
 :::
+
+也就整理这些吧，国内国外的都有了
+
+-----
+
+
+
+
+
+## Casdoor 编译教程
+
+因为 `Casdoor` 如果使用他们官网托管的是需要付费的也理解，但是 `Casdoor`是开源免费的 可以自己编译然后再部署
+
+**[Casdoor官网](https://casdoor.org/zh/)，[GitHub](https://github.com/casdoor/casdoor)，[Casdoor使用文档](https://casdoor.org/zh/docs/overview)，[AList接入如何使用Casdoor教程](https://alist.nn.ci/zh/guide/advanced/sso.html#%E6%8E%A5%E5%85%A5%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95)**
+
+### 编译教程 - 自己部署
+
+```bash
+#1.clone GitHub代码
+git clone https://github.com/casdoor/casdoor.git
+
+#2.进入前端文件
+cd web
+
+#3.安装 package.json 所需要的依赖（有点久半个小时好像）
+yarn install
+
+#4.安装好依赖后 编译前端
+yarn build
+
+#5.前端编译好，路径回到上一级，然后编译后端
+cd ../
+go build
+
+#6.把编译好的`casdoo`执行文件带带走，以及还要需要的 /conf 配置文件夹，以及 /web/build 这两个文件夹
+casdoor.exe
+/conf/*
+/web/build/*
+
+#7.然后移动到所需要的地方即可，否则package,json 13W个文件1G大小..太大了不方便移动
+```
+
+上述移动文件夹时候目录结构也要保持哈~（应该需要相对的目录结构才行）
+
+我这里使用的是Windows的编译出来的是`casdoor.exe`可执行文件，如果是Linux 就是二进制`casdoor` 文件 
+
+- 使用方法和 AList 手动启动一样 不过不过带`server`参数直接启动即可
+
