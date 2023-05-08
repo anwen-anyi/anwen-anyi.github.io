@@ -621,9 +621,21 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 ![](/img/wenti/40.png)
 
+<br>
 
+## 41. AList如何 使用/吃到 代理/proxy
 
-## 41. 123云盘挂载时出现 json: cannot unmarshal string into Go struct field TokenResp.data of type struct { Token string "json:"token"" }
+- 暂时只会使用 `Git` 和 `Windows` 配置（下图就是方法）
+  - 参数在上一条，[第40条](#_40-为什么-terabox-挂载成功了-但是不显示内容)
+- Linux Docker 或者 服务器，以及其他(树莓派,Openwrt,Termux,NAS等)自行解决（我不会）
+
+### 示例
+
+![如何让AList吃到proxy(代理)](/img/wenti/proxy.png)
+
+<br>
+
+## 42. 123云盘挂载时出现 json: cannot unmarshal string into Go struct field TokenResp.data of type struct { Token string "json:"token"" }
 
 ![](/img/wenti/41.png)
 
@@ -633,7 +645,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 <br>
 
-## 42. 现在文件后面多了个 sign 的参数是干嘛的？
+## 43. 现在文件后面多了个 sign 的参数是干嘛的？
 
 加密了为了账号安全一些，查看详情可以[AList 全局设置](https://alist.nn.ci/zh/config/global.html#签名所有)
 
@@ -641,13 +653,13 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 <br>
 
-## 43. lib64/libc.so.6: version `GLIBC_2.28' not found (required by ./alist)或者 accept: function not implemented
+## 44. lib64/libc.so.6: version `GLIBC_2.28' not found (required by ./alist)或者 accept: function not implemented
 
 考虑使用 **musl** 版本作为替代，因为在您的平台上的 **glibc** 版本太低
 
 <br>
 
-## 44. 登陆时要求输入OTP代码，请问是什么原因?
+## 45. 登陆时要求输入OTP代码，请问是什么原因?
 
 你是不是在登录别人的账号？如果是自己的请输入2FA(两步验证)验证码
 
@@ -655,7 +667,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 <br>
 
-## 45. 使用 **sqlite3** 发现 data 文件夹里面出现 data.db-shm、data.db-wal 两个多的文件
+## 46. 使用 **sqlite3** 发现 data 文件夹里面出现 data.db-shm、data.db-wal 两个多的文件
 
 具体的你可以查看这里：https://stackoverflow.com/questions/7778723/what-are-the-db-shm-and-db-wal-extensions-in-sqlite-databases
 
@@ -663,7 +675,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 <br>
 
-## 46. 添加文件上传时，有一个“添加为任务“的选项，是做什么的?
+## 47. 添加文件上传时，有一个“添加为任务“的选项，是做什么的?
 
 - 勾选后上传到服务器(搭建AList的机器)，再由服务器上传时到网盘时后台似乎能看到（好像是这样的）
 - 未勾选不会看到，具体的大家可以看下图应该能看出什么问题.
@@ -672,7 +684,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 <br>
 
-## 47. Too many unsuccessful sign-in attempts have been made using an incorrect username or password, Try again later.
+## 48. Too many unsuccessful sign-in attempts have been made using an incorrect username or password, Try again later.
 
 连续登录输入6次密码错误就会锁定，重启Alist即可重置。
 
@@ -680,7 +692,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 <br>
 
-## 48. 添加阿里云盘(分享)时提示 提示Post "[https://auth.aliyundrive.com/v2/account/tokenopen in new window](https://auth.aliyundrive.com/v2/account/token)": net/http: TLS handshake timeout
+## 49. 添加阿里云盘(分享)时提示 提示Post "[https://auth.aliyundrive.com/v2/account/tokenopen in new window](https://auth.aliyundrive.com/v2/account/token)": net/http: TLS handshake timeout
 
 原因：VPS在中国大陆境外，且启用了IPv6 解决方法： 
 

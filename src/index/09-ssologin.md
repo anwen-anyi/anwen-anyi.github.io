@@ -416,7 +416,7 @@ But! 重点来了，填写好后竟然发现好像还是需要企业认证的...
 
 - 微博：没实名过，需要实名认证，如需要自行接入很简单
   - 开发者注册地址：https://open.weibo.com/developers/basicinfo
-- gitee：也没实名过，也需要实名认证，如需要自行接入很简单
+- Gitee：也没实名过，也需要实名认证，如需要自行接入很简单
   - 开发者注册地址：https://open.weibo.com/developers/basicinfo
 - Infoflow(百度如流)：需要企业资质
   - http://qy.baidu.com/index.html#appdetail
@@ -426,7 +426,7 @@ But! 重点来了，填写好后竟然发现好像还是需要企业认证的...
   - 第三方商业：https://open.work.weixin.qq.com/wwopen/developer#/sass/power/inter
 - Apple开发者：没折腾明白
   - 开发者注册地址：https://developer.apple.com/account/resources/identifiers/list
-- steam：没账号就没测试
+- Steam：没账号就没测试
   - https://steamcommunity.com/dev/apikey
 - 微信开放平台需付费，中国地区￥300，非中国地区 $99
   - 微信开放平台帐号的开发者资质认证提供更安全、更严格的真实性认证、也能够更好的保护企业及用户的合法权益
@@ -510,7 +510,7 @@ But! 重点来了，填写好后竟然发现好像还是需要企业认证的...
 
 **[Casdoor官网](https://casdoor.org/zh/)，[GitHub](https://github.com/casdoor/casdoor)，[Casdoor使用文档](https://casdoor.org/zh/docs/overview)，[AList接入如何使用Casdoor教程](https://alist.nn.ci/zh/guide/advanced/sso.html#%E6%8E%A5%E5%85%A5%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95)**
 
-### 编译教程 - 自己部署
+### 编译完毕 - 自己部署
 
 ```bash
 #1.clone GitHub代码
@@ -541,5 +541,5 @@ casdoor.exe
 
 我这里使用的是Windows的编译出来的是`casdoor.exe`可执行文件，如果是Linux 就是二进制`casdoor` 文件 
 
-- 使用方法和 AList 手动启动一样 不过不过带`server`参数直接启动即可
+- 使用方法和 AList 手动启动一样 不过不用携带`server`参数可以直接启动即可
 
