@@ -625,15 +625,19 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 ## 41. AList如何 使用/吃到 代理/proxy
 
-::::tabs#proxy
+以下配置方式均为 Windows方式，其他的自行解决
+
+- Linux Docker 或者 服务器，以及其他(树莓派,Openwrt,Termux,NAS等)自行解决（我不会）
+
+:::::tabs#proxy
 
 @tab CMD
 
-::: details 点击查看全部代码配置
+:::: details 点击查看全部代码配置
 
 根据：**https://github.com/alist-org/alist/discussions/4363**
 
-1. 先新建一个不用CMD黑窗口就能运行的脚步，**`ALL.vbs`**，代码如下
+1. 先新建一个不用CMD黑窗口就能运行的脚本，**`ALL.vbs`**，代码如下
 
 ```vbscript
 Dim ws
@@ -642,7 +646,7 @@ ws.run "AList-proxy.bat",vbhide
 Wscript.quit
 ```
 
-2. 然后新建配置proxy的脚步，并且在脚步里面写一个可以启动AList的脚本 **`AList-proxy.bat`** , 代码如下
+2. 然后新建配置proxy的脚本，并且在脚本里面写一个可以启动AList的脚本 **`AList-proxy.bat`** , 代码如下
 
 ```bat
 set http_proxy=http://127.0.0.1:10809
@@ -651,7 +655,7 @@ set no_proxy=localhost,127.0.0.1,example.com
 start Alist-Start.vbs
 ```
 
-3. 然后配置正常启动AList程序的脚步 **`Alist-Start.vbs`** , 代码如下
+3. 然后配置正常启动AList程序的脚本 **`Alist-Start.vbs`** , 代码如下
 
 ```vbscript
 Dim ws
@@ -660,7 +664,7 @@ ws.run "alist.exe server",vbhide
 Wscript.quit
 ```
 
-4. 最后一个是停止运行AList的脚步 **`AList-Stop.vbs`** , 代码如下
+4. 最后一个是停止运行AList的脚本 **`AList-Stop.vbs`** , 代码如下
 
 ```vbscript
 Dim ws
@@ -669,9 +673,59 @@ ws.run "taskkill /f /im alist.exe",0
 Wscript.quit
 ```
 
+-----
+
+::: tip
+
+如果你不需要让`AList`用到代理可以直接启动 **`Alist-Start.vbs`** 脚本即可正常启动，停止方法依然是使用 **`AList-Stop.vbs`**
+
 :::
 
+::::
 
+### 成品脚本打包下载
+
+:::: center
+
+```card
+title: jsdelivr-1
+desc: 成品脚本打包下载
+logo: /home.png
+link: https://cdn.jsdelivr.net/gh/anwen-anyi/anwen-anyi.github.io/src/.vuepress/public/code.7z
+color: rgba(153, 255, 255, 0.10)
+```
+
+```card
+title: jsdelivr-2
+desc: 成品脚本打包下载
+logo: /home.png
+link: https://jsd.onmicrosoft.cn/gh/anwen-anyi/anwen-anyi.github.io/src/.vuepress/public/code.7z
+color: rgba(153, 255, 255, 0.20)
+```
+
+```card
+title: 阿里云盘
+desc: 成品脚本打包下载
+logo: /home.png
+link: https://www.aliyundrive.com/s/9pYxPj7mxtH
+color: rgba(153, 255, 255, 0.30)
+```
+
+```card
+title: 蓝奏云盘
+desc: 成品脚本打包下载
+logo: /home.png
+link: https://www.lanzoui.com/iIYrh0vnukje
+color: rgba(153, 255, 255, 0.40)
+```
+
+```card
+title: 123云盘
+desc: 成品脚本打包下载
+logo: /home.png
+link: https://www.123pan.com/s/HEl8Vv-gRtHh
+color: rgba(153, 255, 255, 0.50)
+```
 
 ![如何让AList吃到proxy(代理)](/img/wenti/41-add-proxy.png)
 
@@ -679,8 +733,7 @@ Wscript.quit
 
 @tab Git Bash
 
-- 暂时只会使用 `Git` 和 `Windows` 配置（下图就是方法）
-- Linux Docker 或者 服务器，以及其他(树莓派,Openwrt,Termux,NAS等)自行解决（我不会）
+- 使用 `Git Bash` 和 `Windows` 配置（下图就是方法）
 
 比如我用的是**v2rayN**，启动AList的客户端是 [**Git Bash**](https://git-scm.com/)
 
@@ -696,7 +749,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 ![如何让AList吃到proxy(代理)](/img/wenti/41-proxy.png)
 
-::::
+:::::
 
 <br>
 
