@@ -673,6 +673,8 @@ ws.run "taskkill /f /im alist.exe",0
 Wscript.quit
 ```
 
+四个脚本都创建^(下载)^好后，我们如果需要让AList使用代理，那么我们就双击 **`ALL.vbs`** 直接启用就行
+
 -----
 
 ::: tip
