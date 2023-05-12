@@ -605,7 +605,7 @@ AListv2可以成功是因为v2会忽略空文件上传
 
 （可以用海外的机器，如果非得用本机(或者国内的机器)搭建，哪你自己想办法让Alist吃到**proxy**就可以）
 
-比如我用的是**v2rayN**，启动Alist的客户端是 [**Git Bash**](https://git-scm.com/)
+比如我用的是**v2rayN**，启动AList的客户端是 [**Git Bash**](https://git-scm.com/)
 
 ```bash
 export https_proxy=http://127.0.0.1:10809 http_proxy=http://127.0.0.1:10809 all_proxy=socks5://127.0.0.1:10808
@@ -625,13 +625,78 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 ## 41. AList如何 使用/吃到 代理/proxy
 
+::::tabs#proxy
+
+@tab CMD
+
+::: details 点击查看全部代码配置
+
+根据：**https://github.com/alist-org/alist/discussions/4363**
+
+1. 先新建一个不用CMD黑窗口就能运行的脚步，**`ALL.vbs`**，代码如下
+
+```vbscript
+Dim ws
+Set ws = Wscript.CreateObject("Wscript.Shell")
+ws.run "AList-proxy.bat",vbhide
+Wscript.quit
+```
+
+2. 然后新建配置proxy的脚步，并且在脚步里面写一个可以启动AList的脚本 **`AList-proxy.bat`** , 代码如下
+
+```bat
+set http_proxy=http://127.0.0.1:10809
+set https_proxy=http://127.0.0.1:10809
+set no_proxy=localhost,127.0.0.1,example.com
+start Alist-Start.vbs
+```
+
+3. 然后配置正常启动AList程序的脚步 **`Alist-Start.vbs`** , 代码如下
+
+```vbscript
+Dim ws
+Set ws = Wscript.CreateObject("Wscript.Shell")
+ws.run "alist.exe server",vbhide
+Wscript.quit
+```
+
+4. 最后一个是停止运行AList的脚步 **`AList-Stop.vbs`** , 代码如下
+
+```vbscript
+Dim ws
+Set ws = Wscript.CreateObject("Wscript.Shell")
+ws.run "taskkill /f /im alist.exe",0
+Wscript.quit
+```
+
+:::
+
+
+
+![如何让AList吃到proxy(代理)](/img/wenti/41-add-proxy.png)
+
+
+
+@tab Git Bash
+
 - 暂时只会使用 `Git` 和 `Windows` 配置（下图就是方法）
-  - 参数在上一条，[第40条](#_40-为什么-terabox-挂载成功了-但是不显示内容)
 - Linux Docker 或者 服务器，以及其他(树莓派,Openwrt,Termux,NAS等)自行解决（我不会）
 
-### 示例
+比如我用的是**v2rayN**，启动AList的客户端是 [**Git Bash**](https://git-scm.com/)
 
-![如何让AList吃到proxy(代理)](/img/wenti/proxy.png)
+```bash
+export https_proxy=http://127.0.0.1:10809 http_proxy=http://127.0.0.1:10809 all_proxy=socks5://127.0.0.1:10808
+```
+
+如果是 **Clash**
+
+```bash
+export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+```
+
+![如何让AList吃到proxy(代理)](/img/wenti/41-proxy.png)
+
+::::
 
 <br>
 
