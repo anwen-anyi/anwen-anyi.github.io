@@ -1,7 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
-
 export default defineUserConfig({
   plugins: [
     //   autoCatalogPlugin({
@@ -10,12 +9,16 @@ export default defineUserConfig({
     //     // index:true,
     //     // exclude:["/encrypt.md/"]
     //   }),
+
+    // search
     docsearchPlugin({
-      appId:"G9WNTTQL4R",
-      apiKey:"b4c123a561b0166b7015df8147771950",
-      indexName:"anwen-anyiio",
+      appId: "G9WNTTQL4R",
+      apiKey: "b4c123a561b0166b7015df8147771950",
+      indexName: "anwen-anyiio",
     }),
+    
   ],
+  shouldPrefetch: false,
   base: "/",
   head: [
     [
@@ -70,9 +73,10 @@ export default defineUserConfig({
   // 解析 h4 标头
   markdown: {
     headers: {
-      level:[2,3,4,5,6]
+      level: [2, 3, 4, 5, 6]
     }
   },
+  
 
   // Enable it with pwa
   // shouldPrefetch: false,

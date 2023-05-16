@@ -6,12 +6,13 @@ import { zhSidebar } from "./sidebar/index.js";
 
 
 export default hopeTheme({
+  fullscreen: true,
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
-  
   author: {
     name: "安稳",
     url: "/",
   },
+
 
   iconAssets: [
     // "iconfont", //icon: iconfont icon-图标名称
@@ -55,8 +56,8 @@ export default hopeTheme({
       sidebar: zhSidebar,
 
       // footer: "默认页脚",
-      footer:'<p id="hitokoto">  <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </p><p>本页面<span id="busuanzi_value_page_pv"></span>次,本站<span id="busuanzi_value_site_pv"></span>次,总访客<span id="busuanzi_value_site_uv"></span>人</p>',
-      
+      footer: '<p id="hitokoto">  <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </p><p>本页面<span id="busuanzi_value_page_pv"></span>次,本站<span id="busuanzi_value_site_pv"></span>次,总访客<span id="busuanzi_value_site_uv"></span>人</p>',
+
       displayFooter: true,
 
       // page meta
@@ -67,8 +68,6 @@ export default hopeTheme({
     },
   },
 
-
-
   // 密码
   encrypt: {
     config: {
@@ -77,13 +76,24 @@ export default hopeTheme({
     },
   },
   plugins: {
+    // PWA
+    pwa: {
+      favicon: "/favicon.ico",
+      cacheHTML: true,
+      cachePic: true,
+      appendBase: true,
+      apple: {
+        icon: "/home.png",
+        statusBarColor: "black",
+        maskIcon: "/home.png",
+      }
+    },
     comment: {
       provider: "Giscus",
       repo: "anwen-anyi/doc",
       repoId: "R_kgDOJS60kw",
       category: "Announcements",
       categoryId: "DIC_kwDOJS60k84CVi7q",
-      // 播放器      
     },
     copyCode: {},
 
@@ -102,7 +112,7 @@ export default hopeTheme({
       include: true,
       katex: true,
       container: true,  //启用自定义容器支持,提示 警告那些
-      linkCheck: "dev", //是否启用链接检查
+      linkCheck: "dev",  //是否启用链接检查
       tabs: true,       //否启用选项卡
       tasklist: true,   //启用任务列表格式支持
       gfm: true,        //支持完整的 GFM 语法
