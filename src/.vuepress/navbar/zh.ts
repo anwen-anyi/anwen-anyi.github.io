@@ -1,3 +1,4 @@
+import { DarkmodeOptions } from "vuepress-theme-hope";
 import { navbar } from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
@@ -8,3 +9,4 @@ export const zhNavbar = navbar([
     icon: "fa-solid fa-solar-system",
   },
 ]);
+

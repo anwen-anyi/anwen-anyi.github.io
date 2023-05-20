@@ -34,7 +34,7 @@ headerDepth: 6
 
 <!-- more -->
 
-## 前言
+## **前言**
 
 虽然默认的也挺好的，但是吧就是想折腾折腾，就魔改了一下前端嘿嘿
 
@@ -48,9 +48,9 @@ headerDepth: 6
 
 
 
-## 1. 先修改 Loading 试试水
+## **1. 先修改 Loading 试试水**
 
-文件位置：**alist-web\src\components\FullLoading.tsx**
+源码文件位置：**alist-web\src\components\FullLoading.tsx**
 
 查看**hope**文档链接：https://hope-ui.com/docs/feedback/spinner
 
@@ -97,11 +97,13 @@ headerDepth: 6
 
 ![](/img/code/1.png)
 
-## 2. 修改并且取消在加密码情况下的出现的登录按钮
+<br/>
+
+## **2. 修改并且取消在加密码情况下的出现的登录按钮**
 
 修改取消原因:修改了登录界面和后台入口的地址防止泄露，[**如何修改登录地址和后台地址**](#修改后台地址和登录地址)
 
-文件位置：**alist-web\src\pages\home\Password.tsx**
+源码文件位置：**alist-web\src\pages\home\Password.tsx**
 
 ```tsx
 {/* 上面是原来的 下面是我自己改的，大概位置在48行，找不到可以用浏览器搜索 */}
@@ -122,9 +124,11 @@ headerDepth: 6
 
 ![](/img/code/2.png)
 
-## 3.修改了不登录的后台显示
+<br/>
 
-文件位置：**alist-web\src\pages\manage\users\Profile.tsx**
+## **3.修改了不登录的后台显示**
+
+源码文件位置：**alist-web\src\pages\manage\users\Profile.tsx**
 
 ::: details 点击查看示例代码
 
@@ -178,7 +182,9 @@ headerDepth: 6
 
 ![](/img/code/3.png)
 
-## 4. 取消游客访问和语言选择的按钮默认为简体中文
+<br/>
+
+## **4. 取消游客访问和语言选择的按钮默认为简体中文**
 
 #### 如何改成默认为简体中文：
 
@@ -186,9 +192,9 @@ headerDepth: 6
 
 - 然后英语(en)的直接删除了即可，语言文件夹里面只剩下了 lang/zh_cn 这个中文的 这样就会默认使用中文的
 
-文件位置：**alist-web\src\pages\login\index.tsx**
+源码文件位置：**alist-web\src\pages\login\index.tsx**
 
-```tsx
+```tsx{2-14,18}
         {/* 177行，取消游客访问 */}
         {/* <Button
           w="$full"
@@ -214,11 +220,13 @@ headerDepth: 6
 
 ![](/img/code/4.png)
 
-## 5.删除"本地设置"里面的语言切换按钮，已经默认为中文
+<br/>
+
+## **5.删除"本地设置"里面的语言切换按钮，已经默认为中文**
 
 如何默认中文，看上面我的[查看操作](#_4-取消游客访问和语言选择的按钮默认为简体中文)
 
-文件位置：**alist-web\src\pages\login\index.tsx**
+源码文件位置：**alist-web\src\pages\home\toolbar\LocalSettings.tsx**
 
 ```tsx{2}
               {/* 第65行隐藏即可 */}
@@ -229,7 +237,9 @@ headerDepth: 6
 
 ![](/img/code/5.png)
 
-## 6. 将本地设置里面的夜间/白天 切换模式和刷新按钮(刷新需要登录)移动到主页
+<br/>
+
+## **6. 将本地设置里面的夜间/白天 切换模式和刷新按钮(刷新需要登录)移动到主页**
 
 文件位置：**alist-web\src\pages\home\toolbar\Right.tsx**
 
@@ -521,9 +531,11 @@ export const Right = () => {
 
 ![](/img/code/6.png)
 
-## 7.将登录页面的 "登录到" 隐藏，后期适配自己的使用
+<br/>
 
-文件位置：**alist-web\src\pages\login\index.tsx**
+## **7.将登录页面的 "登录到" 隐藏，后期适配自己的使用**
+
+源码文件位置：**alist-web\src\pages\login\index.tsx**
 
 ```tsx{2-6}
   const title = createMemo(() => {
@@ -540,9 +552,11 @@ export const Right = () => {
 
 ![](/img/code/7.png)
 
-## 8.ipa界面添加下载和复制链接按钮,同时添加巨魔安装按钮
+<br/>
 
-文件位置：**alist-web\src\pages\home\previews\ipa.tsx**
+## **8.ipa界面添加下载和复制链接按钮,同时添加巨魔安装按钮**
+
+源码文件位置：**alist-web\src\pages\home\previews\ipa.tsx**
 
 两个按钮来自 **alist-web\src\pages\home\previews\download.tsx**
 
@@ -659,7 +673,9 @@ export default Ipa
 
 ![](/img/code/8.png)
 
-## 9. 去掉底部内容（有原因的）
+<br/>
+
+## **9. 去掉底部内容（有原因的）**
 
 这里去掉还是有原因的，因为我们修改了后台地址和登录地址
 
@@ -673,7 +689,7 @@ export default Ipa
 
 
 
-文件位置：**alist-web\src\pages\home\Footer.tsx**
+源码文件位置：**alist-web\src\pages\home\Footer.tsx**
 
 ```tsx
 	{/*
@@ -699,15 +715,17 @@ export default Ipa
 
 ![](/img/code/9.png)
 
-## 10. 添加一个infuse播放器(3.9.2版本移植到官方内了)
+<br/>
+
+## **10. 添加一个infuse播放器(3.9.2版本移植到官方内了)**
 
 在底部添加一个新的播放器，“infuse”IOS上面用的人挺多的 支持的格式好像也挺多.
 
 infuse官网：[Firecore - Video Player for iOS, Apple TV, and Mac](https://firecore.com/)
 
- ==(新)文件位置：**alist-web/src/pages/home/previews/[video_box.tsx](https://github.com/alist-org/alist-web/blob/main/src/pages/home/previews/video_box.tsx#L17-L21)**==
+ ==(新)源码文件位置：**alist-web/src/pages/home/previews/[video_box.tsx](https://github.com/alist-org/alist-web/blob/main/src/pages/home/previews/video_box.tsx#L17-L21)**==
 
-(旧)文件位置：**alist-web\src\pages\home\previews\video.tsx**
+(旧)源码文件位置：**alist-web\src\pages\home\previews\video.tsx**
 
 ```tsx{4-8}
 const players: { icon: string; name: string; scheme: string }[] = [
@@ -747,7 +765,9 @@ const players: { icon: string; name: string; scheme: string }[] = [
 
 ![](/img/code/10.png)
 
-## 11. 修改一下搜索，变的更加匹配 ✅
+<br/>
+
+## **11. 修改一下搜索，变的更加匹配** ✅
 
 搜索有两个版本一个是最新的一个是v3.6.0及之前的
 
@@ -755,7 +775,7 @@ const players: { icon: string; name: string; scheme: string }[] = [
 
 ::: details 此版本用于最新版搜索源码修改
 
-文件位置：**alist-web\src\pages\home\header\Header.tsx**
+源码文件位置：**alist-web\src\pages\home\header\Header.tsx**
 
 **很简单，主要是将46行-72行隐藏这是原来的**
 
@@ -881,7 +901,7 @@ export const Header = () => {
 
 ::: details 仅限于V3.6.0版本搜索
 
-文件位置：**alist-web/src/pages/home/Header.tsx**
+源码文件位置：**alist-web/src/pages/home/Header.tsx**
 
 主要是将原本自带的隐藏了，重新做一个，看起来比较适配。
 
@@ -956,9 +976,11 @@ export const Header = () => {
 
 ![](/img/code/11-2.gif)
 
-## 12.修改文件图标
+<br/>
 
-源码位置：**alist-web\src\utils\icon.ts**
+## **12.修改文件图标**
+
+源码文件位置：**alist-web\src\utils\icon.ts**
 
 图标库：https://solid-icons.vercel.app/
 
@@ -1050,11 +1072,160 @@ const iconMap = {
 
 ![](/img/code/12.png)
 
-## 13.修改默认为某"视图"方式
+<br/>
+
+## **13.给后台登录的按钮添加颜色（可使用主颜色）**
+
+**源码文件位置^1-左侧语言选项按钮^**：**alist-web\src\components\SwitchLanguage.tsx**
+
+**源码文件位置^2-中间切换夜间/白色按钮^**：**alist-web\src\components\SwitchColorMode.tsx**
+
+**源码文件位置^3-右侧单点登录按钮^**：**alist-web\src\pages\login\SSOLogin.tsx**
+
+<br/>
+
+- 使用主颜色：指的是在AList后台设置的颜色，路径 -->`AList后台` --> 设置 --> 样式 --> **`主颜色`**
+- 用固定颜色：指的是直接在源码中写死
+
+| 方法\优缺点 |       优点       |                      缺点                      |
+| :---------: | :--------------: | :--------------------------------------------: |
+|    固定     | 可以设置不同颜色 |                更换只能重新编译                |
+|   主颜色    |  可以随时换颜色  | 和前端显示的图标颜色统一可能不适合登录页面背景 |
+
+-----
+
+**使用主颜色**
+
+::: tabs#login-color
+
+@tab 语言选项
+
+**语言**按钮位置分布：前端本地设置，登录页面，AList后台左侧边栏
+
+```tsx{1,7}
+import { getMainColor } from "~/store"
+
+......
+......
+
+export const SwitchLanguageWhite = () => (
+  <SwitchLanguage as={IoLanguageOutline} color={"$accent10"} boxSize="$8" />
+)
+```
+
+@tab 模式切换
+
+**切换**按钮位置分布：前端本地设置，登录页面，AList后台左侧边栏
+
+```tsx{1,13}
+import { getMainColor } from "~/store"
+
+......
+......
+
+  return (
+    <Icon
+      cursor="pointer"
+      boxSize={icon().size}
+      as={icon().component}
+      onClick={toggleColorMode}
+      // 给图标加个颜色 color={getMainColor()}
+      color={getMainColor()}
+      p={icon().p}
+    />
+  )
+```
+
+@tab 单点登录
+
+**登录**按钮位置分布：登录页面
+
+```tsx{1,8}
+import { getMainColor } from "~/store"
+
+......
+......
+
+    return (
+      // 给图标加个颜色 color={'red'}
+      <Icon cursor="pointer" color={getMainColor()} boxSize="$8" as={icon} p="$0_5" onclick={login} />
+    )
+
+```
+
+:::
+
+**用固定颜色**
+
+::: tabs#login-color
+
+@tab 语言选项
+
+**语言**按钮位置分布：前端本地设置，登录页面，AList后台左侧边栏
+
+```tsx{2}
+export const SwitchLanguageWhite = () => (
+  <SwitchLanguage as={IoLanguageOutline} color={"$accent10"} boxSize="$8" />
+)
+```
+
+@tab 模式切换
+
+**切换**按钮位置分布：前端本地设置，登录页面，AList后台左侧边栏
+
+```tsx{8}
+  return (
+    <Icon
+      cursor="pointer"
+      boxSize={icon().size}
+      as={icon().component}
+      onClick={toggleColorMode}
+      // 给图标加个颜色 color={'red'},双引号 单引号都可以
+      color={'red'}
+      p={icon().p}
+    />
+  )
+```
+
+@tab 单点登录
+
+**登录**按钮位置分布：登录页面
+
+```tsx{3}
+    return (
+      // 给图标加个颜色 color={'red'},双引号 单引号都可以
+      <Icon cursor="pointer" color={'red'} boxSize="$8" as={icon} p="$0_5" onclick={login} />
+    )
+```
+
+:::
+
+### **修改后的对比预览图：**
+
+语言选项截图了，我这里预览图不显示翻译是因为我之前已经删掉了，
+
+::: tabs#login-color
+
+@tab 使用主颜色
+
+![](/img/code/13-huodong.png)
+
+@tab 用固定颜色
+
+![](/img/code/13-guding.png)
+
+:::
+
+虽然只改了这几个，不过像后台左侧边栏和前端设置里面的应该是同理方法
+
+
+<br/>
+
+## **14.修改默认为某"视图"方式**
 
 首页默认视图为 "列表 list" 格式，有的小伙伴想着默认为 "网格格式" 怎么办呢? 改源码呗....
 
-文件位置：**alist-web\src\store\obj.ts**
+源码文件位置：**alist-web\src\store\obj.ts**
 
 ```ts{2}
 export type LayoutType = "list" | "grid" | "image"
@@ -1069,9 +1240,9 @@ const [layout, setLayout] = createStorageSignal<LayoutType>("layout", "list")
 
 就像这样的上面是网格视图 下面的是列表视图，默认是列表视图的哦~如果你要改图标可以看[**图标如何修改**](#_12-修改文件图标)
 
-![](/img/code/13.png)
+![](/img/code/14.png)
 
-## $ 修改后台地址和登录地址
+## **$ 修改后台地址和登录地址**
 
 就没代码了，自己批量替换即可~
 

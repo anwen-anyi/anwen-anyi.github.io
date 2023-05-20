@@ -6,7 +6,6 @@ import { zhSidebar } from "./sidebar/index.js";
 
 
 export default hopeTheme({
-  fullscreen: true,
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
   author: {
     name: "安稳",

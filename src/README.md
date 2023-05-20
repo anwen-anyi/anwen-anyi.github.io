@@ -79,7 +79,7 @@ color: rgba(153, 255, 255, 0.40)
 
 前端：**https://github.com/alist-org/alist-web**
 
-### AList文档链接：
+### AList文档链接:
 
 **V3：**[**https://alist.nn.ci/**](https://alist.nn.ci/)
 
