@@ -1076,14 +1076,6 @@ const iconMap = {
 
 ## **13.给后台登录的按钮添加颜色（可使用主颜色）**
 
-**源码文件位置^1-左侧语言选项按钮^**：**alist-web\src\components\SwitchLanguage.tsx**
-
-**源码文件位置^2-中间切换夜间/白色按钮^**：**alist-web\src\components\SwitchColorMode.tsx**
-
-**源码文件位置^3-右侧单点登录按钮^**：**alist-web\src\pages\login\SSOLogin.tsx**
-
-<br/>
-
 - 使用主颜色：指的是在AList后台设置的颜色，路径 -->`AList后台` --> 设置 --> 样式 --> **`主颜色`**
 - 用固定颜色：指的是直接在源码中写死
 
@@ -1094,7 +1086,28 @@ const iconMap = {
 
 -----
 
-**使用主颜色**
+
+:::: details  点击下拉栏查看如何修改
+
+**1. 源码位置**
+
+::: tabs#login-color
+
+@tab 语言选项
+
+**语言源码文件位置**：**alist-web\src\components\SwitchLanguage.tsx**
+
+@tab 模式切换
+
+**模式源码文件位置**：**alist-web\src\components\SwitchColorMode.tsx**
+
+@tab 单点登录
+
+**登录源码文件位置**：**alist-web\src\pages\login\SSOLogin.tsx**
+
+:::
+
+**2. 使用主颜色**
 
 ::: tabs#login-color
 
@@ -1155,7 +1168,7 @@ import { getMainColor } from "~/store"
 
 :::
 
-**用固定颜色**
+**3. 用固定颜色**
 
 ::: tabs#login-color
 
@@ -1200,9 +1213,11 @@ export const SwitchLanguageWhite = () => (
 
 :::
 
+::::
+
 ### **修改后的对比预览图：**
 
-语言选项截图了，我这里预览图不显示翻译是因为我之前已经删掉了，
+我这里对比预览图不显示语言选项是因为我之前已经删掉了，显示和这个一样
 
 ::: tabs#login-color
 
