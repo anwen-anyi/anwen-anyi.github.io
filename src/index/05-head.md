@@ -53,8 +53,8 @@ headerDepth: 6
 <script async src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"></script>
 
 <!-- Font6，自定义底部使用和看板娘使用的图标和字体文件-->
-<link type='text/css' rel="stylesheet" href="https://npm.elemecdn.com/font6pro@6.0.1/css/fontawesome.min.css" media='all'>
-<link href="https://npm.elemecdn.com/font6pro@6.0.1/css/all.min.css" rel="stylesheet">
+<link type='text/css' rel="stylesheet" href="https://npm.elemecdn.com/font6pro@6.3.0/css/fontawesome.min.css" media='all'>
+<link href="https://npm.elemecdn.com/font6pro@6.3.0/css/all.min.css" rel="stylesheet">
 
 <!--音乐播放器所用的文件-->
 <!-- require APlayer -->
@@ -68,7 +68,7 @@ headerDepth: 6
 .notify-render .hope-close-button {
     display: none;
 }
-/* 图片API用法点进去都会有食用说明的
+/* 图片API用法点进去都会有食用说明的,API来自网络不保证实效性稳定性自己测试
   樱花：https://www.dmoe.cc
   夏沫：https://cdn.seovx.com
   搏天：https://api.btstu.cn/doc/sjbz.php
@@ -262,6 +262,16 @@ textarea#comment-textarea:focus {
 
 ## 看板娘代码
 
+::: tip
+
+看板娘上游提供的大佬暂时不提供了，如果那天恢复了这里会修改说明
+
+（挺费流量的QAQ :joy: :joy:）
+
+![](/img/head/kanbanniang.png)
+
+:::
+
 ```html
 <!--看板娘 -自定义大小，隐藏对话框和对话框高度-->
 <style type="text/css">
@@ -291,7 +301,7 @@ textarea#comment-textarea:focus {
 <script src="https://luluossfile.lulufind.com/work/teacher_u20221017bb6d7454_1666420849979_19584065_file.js"></script>
 ```
 
-
+<br/>
 
 ## 搜索栏美化代码
 
@@ -391,13 +401,19 @@ textarea#comment-textarea:focus {
 
 ![](/img/head/heiye.png)
 
-
+<br/>
 
 ## 自行替换鼠标样式说明
 
-**因为CDN的 HTTPS证书失效了，无法使用暂时**
+~~**因为CDN的 HTTPS证书失效了，无法使用暂时**~~
 
-**但是着急的话可以一个一个点击然后把哪个文件下载下来，然后自己上传一个换成自己的链接也可以..**
+~~**但是着急的话可以一个一个点击然后把哪个文件下载下来，然后自己上传一个换成自己的链接也可以..**~~
+
+::: danger
+
+提供的链接已经失效，有需要的可以自己找一些相关的鼠标手动去替换，按照下面的格式即可
+
+:::
 
 ```html
 <!--较为个性化的鼠标指针样式，可结合个人需要自行修改-->
@@ -425,7 +441,5 @@ textarea#comment-textarea:focus {
   }
 </style>
 ```
-
-
 
 ![](/img/head/shubiao.png)

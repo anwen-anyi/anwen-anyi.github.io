@@ -45,7 +45,7 @@ GitHub仓库：**https://github.com/zkeq/Bing-Wallpaper-Action**
 ::::
 
 <!-- 渲染全部的 -->
-<!-- <iframe src="https://api.cyfan.top/mark?url=https://raw.onmicrosoft.cn/Bing-Wallpaper-Action/main/README.md" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1100" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe> -->
+<!-- <iframe src="https://api.cyfan.top/mark?url=https://raw.onmicrosoft.cn/Bing-Wallpaper-Action/main/README.md" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1100" style="border-radius: 16px;"></iframe> -->
 
 <img src="https://bing.icodeq.com/?9" />
 

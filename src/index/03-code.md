@@ -40,20 +40,15 @@ headerDepth: 6
 
 以下代码是我自己魔改了前端的一些地方，虽然可能位置和行数不太对，大概浮动的地方不会差很大的.
 
-
-
-如果需要修改的话自己clone前端代码哦，可以在线调试，具体怎么调试也很简单
+如果需要修改的话自己clone前端代码哦，可以[**在线调试**](build/kaifa.md)，具体怎么调试也很简单
 
 下面我们先随便修改个加载缓冲试试水呗~
-
-
 
 ## **1. 先修改 Loading 试试水**
 
 源码文件位置：**alist-web\src\components\FullLoading.tsx**
 
 查看**hope**文档链接：https://hope-ui.com/docs/feedback/spinner
-
 
 ::: details 点击查看示例代码
 
@@ -683,11 +678,7 @@ export default Ipa
 
 特此直接从根将这个能暴露我们后台登录地址的信息除掉
 
-
-
 **但是要自己在底部自定义一个底部信息哦 保留一下版权信息**
-
-
 
 源码文件位置：**alist-web\src\pages\home\Footer.tsx**
 
@@ -1076,6 +1067,20 @@ const iconMap = {
 
 ## **13.给后台登录的按钮添加颜色（可使用主颜色）**
 
+**源码文件位置^1-左侧语言选项按钮^**：**alist-web\src\components\SwitchLanguage.tsx**
+
+- 按钮位置分布：前端本地设置，登录页面，AList后台左侧边栏
+
+**源码文件位置^2-中间切换夜间/白色按钮^**：**alist-web\src\components\SwitchColorMode.tsx**
+
+- 按钮位置分布：前端本地设置，登录页面，AList后台左侧边栏
+
+**源码文件位置^3-右侧单点登录按钮^**：**alist-web\src\pages\login\SSOLogin.tsx**
+
+- 按钮位置分布：登录页面
+
+<br/>
+
 - 使用主颜色：指的是在AList后台设置的颜色，路径 -->`AList后台` --> 设置 --> 样式 --> **`主颜色`**
 - 用固定颜色：指的是直接在源码中写死
 
@@ -1084,36 +1089,15 @@ const iconMap = {
 |    固定     | 可以设置不同颜色 |                更换只能重新编译                |
 |   主颜色    |  可以随时换颜色  | 和前端显示的图标颜色统一可能不适合登录页面背景 |
 
+
+
 -----
 
-
-:::: details  点击下拉栏查看如何修改
-
-**1. 源码位置**
+#### 使用主颜色
 
 ::: tabs#login-color
 
 @tab 语言选项
-
-**语言源码文件位置**：**alist-web\src\components\SwitchLanguage.tsx**
-
-@tab 模式切换
-
-**模式源码文件位置**：**alist-web\src\components\SwitchColorMode.tsx**
-
-@tab 单点登录
-
-**登录源码文件位置**：**alist-web\src\pages\login\SSOLogin.tsx**
-
-:::
-
-**2. 使用主颜色**
-
-::: tabs#login-color
-
-@tab 语言选项
-
-**语言**按钮位置分布：前端本地设置，登录页面，AList后台左侧边栏
 
 ```tsx{1,7}
 import { getMainColor } from "~/store"
@@ -1127,8 +1111,6 @@ export const SwitchLanguageWhite = () => (
 ```
 
 @tab 模式切换
-
-**切换**按钮位置分布：前端本地设置，登录页面，AList后台左侧边栏
 
 ```tsx{1,13}
 import { getMainColor } from "~/store"
@@ -1151,8 +1133,6 @@ import { getMainColor } from "~/store"
 
 @tab 单点登录
 
-**登录**按钮位置分布：登录页面
-
 ```tsx{1,8}
 import { getMainColor } from "~/store"
 
@@ -1168,13 +1148,11 @@ import { getMainColor } from "~/store"
 
 :::
 
-**3. 用固定颜色**
+#### 用固定颜色
 
 ::: tabs#login-color
 
 @tab 语言选项
-
-**语言**按钮位置分布：前端本地设置，登录页面，AList后台左侧边栏
 
 ```tsx{2}
 export const SwitchLanguageWhite = () => (
@@ -1184,7 +1162,7 @@ export const SwitchLanguageWhite = () => (
 
 @tab 模式切换
 
-**切换**按钮位置分布：前端本地设置，登录页面，AList后台左侧边栏
+使用主颜色指的是在AList后台设置的颜色，路径 -->`AList后台` --> 设置 --> 样式 --> **`主颜色`**
 
 ```tsx{8}
   return (
@@ -1202,8 +1180,6 @@ export const SwitchLanguageWhite = () => (
 
 @tab 单点登录
 
-**登录**按钮位置分布：登录页面
-
 ```tsx{3}
     return (
       // 给图标加个颜色 color={'red'},双引号 单引号都可以
@@ -1213,11 +1189,9 @@ export const SwitchLanguageWhite = () => (
 
 :::
 
-::::
+**修改后的对比预览图：**
 
-### **修改后的对比预览图：**
-
-我这里对比预览图不显示语言选项是因为我之前已经删掉了，显示和这个一样
+翻译忘记截图了，我这里预览图不显示翻译是因为我之前已经删掉了，
 
 ::: tabs#login-color
 

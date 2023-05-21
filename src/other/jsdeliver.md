@@ -5,7 +5,7 @@ title: jsDeliver服务监测
 # icon: fa-brands fa-github-alt
 icon: iconfont blog-jsd
 # 这是侧边栏的顺序
-order: 8
+order: 7
 # 设置作者
 author: 安稳
 # 设置写作时间
@@ -42,4 +42,4 @@ headerDepth: 6
 :::
 ::::
 
-<iframe src="https://status.jsdelivr.com/" name="iframe_a" scrolling="no" frameborder="0" width="100%" height="1150" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://status.jsdelivr.com/" name="iframe_a" scrolling="no" frameborder="0" width="100%" height="1150" style="border-radius: 16px;"></iframe>

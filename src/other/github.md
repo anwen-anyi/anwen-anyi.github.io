@@ -50,13 +50,13 @@ headerDepth: 6
 
 ## 状态监测
 
-<iframe src="https://www.githubstatus.com/" name="iframe_a" scrolling="no" frameborder="0" width="100%" height="1000" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://www.githubstatus.com/" name="iframe_a" scrolling="no" frameborder="0" width="100%" height="1000" style="border-radius: 16px;"></iframe>
 
 @tab 历史
 
 ## 历史事件
 
-<iframe src="https://www.githubstatus.com/history" name="iframe_a" scrolling="no" frameborder="0" width="100%" height="1850" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://www.githubstatus.com/history" name="iframe_a" scrolling="no" frameborder="0" width="100%" height="1850" style="border-radius: 16px;"></iframe>
 
 :::
 ::::

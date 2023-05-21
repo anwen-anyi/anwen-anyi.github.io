@@ -5,7 +5,7 @@ title: 浏览器兼容性查询
 # icon: fa-brands fa-github-alt
 icon: fa-brands fa-chrome
 # 这是侧边栏的顺序
-order: 7
+order: 8
 # 设置作者
 author: 安稳
 # 设置写作时间
@@ -45,4 +45,4 @@ headerDepth: 6
 :::
 ::::
 
-<iframe src="https://caniuse.com/" name="iframe_a" scrolling="ok" frameborder="0" width="100%" height="1300" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://caniuse.com/" name="iframe_a" scrolling="ok" frameborder="0" width="100%" height="1300" style="border-radius: 16px;"></iframe>

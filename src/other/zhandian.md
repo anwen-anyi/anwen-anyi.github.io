@@ -47,11 +47,11 @@ headerDepth: 6
 
 @tab repl
 
-<iframe src="https://repl.izyt.cc/status/my" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1200" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://repl.izyt.cc/status/my" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1200" style="border-radius: 16px;"></iframe>
 
 @tab uptimerobot
 
-<iframe src="https://uptime.izyt.cc/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1800" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://uptime.izyt.cc/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1800" style="border-radius: 16px;"></iframe>
 
 :::
 ::::

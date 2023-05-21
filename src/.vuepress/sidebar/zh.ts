@@ -11,6 +11,14 @@ export const zhSidebar = sidebar({
       collapsible: true,
       children: "structure",
     },
+    // {
+    //   icon: "fa-solid fa-scroll",
+    //   text: "编译教程",
+    //   prefix: "index/build",
+    //   // link: "index/",
+    //   collapsible: false,
+    //   children: "structure",
+    // },
     {
       icon: "fa-solid fa-solar-system",
       text: "服务状态监控",

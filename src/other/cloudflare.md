@@ -1,22 +1,23 @@
 ---
 # 这是文章的标题
-title: AList添加存储教程
+title: cloudflare服务监测
 # 这是页面的图标
-icon: fa-solid fa-rocket-launch
+# icon: fa-brands fa-github-alt
+icon: iconfont blog-cloudflare
 # 这是侧边栏的顺序
-order: 2
+order: 9
 # 设置作者
 author: 安稳
 # 设置写作时间
 date: 2023-01-01
 # 一个页面可以有多个分类
 category:
-  - 使用指南
+  - 监控
 # 一个页面可以有多个标签
 tag:
-  - AList入门使用教程
-  - 使用指南
-  - Add Cloud
+  - 服务状态
+  - 监控
+  - cloudflare
 # 此页面会在文章列表置顶
 sticky: true
 # 此页面会出现在文章收藏中
@@ -33,9 +34,12 @@ headerDepth: 6
 
 <!-- more -->
 
+:::: center
+:::tip cloudflare 服务状态监控官网
 
+## cloudflare : **https://www.cloudflarestatus.com/**
 
- ==添加网盘存储建议前往AList文档查看==：**https://alist.nn.ci/zh/guide/drivers/** 
+:::
+::::
 
-<iframe src="https://alist.nn.ci/zh/guide/drivers/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1000" style="border-radius: 16px;"></iframe>
-
+<iframe src="https://www.cloudflarestatus.com/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1000px" style="border-radius: 16px;"></iframe>

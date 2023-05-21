@@ -49,13 +49,13 @@ headerDepth: 6
 
 ## 当前状态监测
 
-<iframe src="https://status.cloud.tencent.com/" name="iframe_a" scrolling="ok" frameborder="0" width="100%" height="1000" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://status.cloud.tencent.com/" name="iframe_a" scrolling="ok" frameborder="0" width="100%" height="1000" style="border-radius: 16px;"></iframe>
 
 @tab 历史
 
 ## 历史事件摘要
 
-<iframe src="https://cloud.tencent.com/announce" name="iframe_a" scrolling="no" frameborder="0" width="100%" height="1000" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://cloud.tencent.com/announce" name="iframe_a" scrolling="no" frameborder="0" width="100%" height="1000" style="border-radius: 16px;"></iframe>
 
 :::
 ::::

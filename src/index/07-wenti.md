@@ -222,7 +222,15 @@ headerDepth: 6
 
 ![](/img/wenti/16-2.png)
 
-百度如何挂载看这里：**https://www.yuque.com/anwenya/alist/phht17#YklA9**
+百度如何挂载看这里：（视频里的AList虽然是V2版本，但是不影响）
+
+1. [**https://www.bilibili.com/video/BV1UA4y1X7J8**](https://www.bilibili.com/video/BV1UA4y1X7J8)
+2. 另一款插件方法涵盖360，Chrome，Edge：[**https://youtu.be/PP6b0WSzYMc**](https://youtu.be/PP6b0WSzYMc)
+   - 当然了第一个视频里面的插件也可以使用第二个视频里面的方法安装使用，**推荐**使用第一个视频的插件来修改
+
+不会安装插件？看这个[**BV1K34y1v7Uw**](https://www.bilibili.com/video/BV1K34y1v7Uw)
+
+
 
 <br>
 

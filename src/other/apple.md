@@ -47,14 +47,14 @@ headerDepth: 6
 :::left
 <Badge text="国区" /> ：**https://www.apple.com.cn/cn/support/systemstatus/**
 :::
-<iframe src="https://apple2.izyt.cc/cn/support/systemstatus/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1100" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://apple2.izyt.cc/cn/support/systemstatus/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1100" style="border-radius: 16px;"></iframe>
 
 @tab 香港
 :::left
 <Badge text="香港" /> ：**https://www.apple.com/hk/support/systemstatus/**
 :::
 
-<iframe src="https://apple.izyt.cc/hk/support/systemstatus/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1200" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://apple.izyt.cc/hk/support/systemstatus/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1200" style="border-radius: 16px;"></iframe>
 
 @tab 美区
 
@@ -62,14 +62,14 @@ headerDepth: 6
 <Badge text="美区" /> ：**https://www.apple.com/support/systemstatus/**
 :::
 
-<iframe src="https://apple.izyt.cc/support/systemstatus/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1300" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://apple.izyt.cc/support/systemstatus/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1300" style="border-radius: 16px;"></iframe>
 
 @tab 土区
 :::left
 <Badge text="土区" /> ：**https://www.apple.com/tr/support/systemstatus/**
 :::
 
-<iframe src="https://apple.izyt.cc/tr/support/systemstatus/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1200" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+<iframe src="https://apple.izyt.cc/tr/support/systemstatus/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1200" style="border-radius: 16px;"></iframe>
 
 @tab 其他
 ::: center
