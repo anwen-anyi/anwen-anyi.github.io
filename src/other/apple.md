@@ -35,7 +35,7 @@ headerDepth: 6
 
 :::: center
 :::tip Apple 服务状态监控官网
-因iCloud和AppStore商店使用的不同帐号,固需要不同区的状态 :rofl: :rofl: :rofl:
+因iCloud和AppStore商店使用的不同帐号,故需要不同区的状态 :rofl: :rofl: :rofl:
 :::
 ::::
 
