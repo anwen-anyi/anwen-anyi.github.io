@@ -16,8 +16,8 @@ export default hopeTheme({
   iconAssets: [
     // "iconfont", //icon: iconfont icon-图标名称
     "//at.alicdn.com/t/c/font_2407338_9gwb60oe2m9.css",
-    "https://npm.elemecdn.com/font6pro@6.3.0/css/all.min.css",
-    "https://npm.elemecdn.com/font6pro@6.3.0/css/fontawesome.min.css",
+    "https://npm.elemecdn.com/font6pro@6.4.0/css/all.min.css",
+    "https://npm.elemecdn.com/font6pro@6.4.0/css/fontawesome.min.css",
   ],
   // iconAssets: "iconfont",
 
@@ -111,7 +111,9 @@ export default hopeTheme({
       include: true,
       katex: true,
       container: true,  //启用自定义容器支持,提示 警告那些
-      linkCheck: "dev",  //是否启用链接检查
+      checkLinks: {
+        status: "dev"   //是否启用链接检查
+      },  
       tabs: true,       //否启用选项卡
       tasklist: true,   //启用任务列表格式支持
       gfm: true,        //支持完整的 GFM 语法

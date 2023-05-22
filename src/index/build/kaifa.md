@@ -2,7 +2,7 @@
 # 这是文章的标题
 title: 在线调试开发AList前端
 # 这是页面的图标
-icon: fa-brands fa-centos
+icon: fa-solid fa-spider-web
 # 这是侧边栏的顺序
 order: 31
 # 设置作者
@@ -84,7 +84,7 @@ pnpm install
 
 @tab 文件1
 
-文件1：`package.json`
+文件1：alist-web/`package.json`
 
 我们这里在线调试用 `dev` 启动我们就修改`dev`即可
 
@@ -138,7 +138,7 @@ pnpm install
 
 @tab 文件2
 
-文件2：`.env.development`
+文件2：alist-web/`.env.development`
 
 #### **修改前**
 
@@ -190,7 +190,7 @@ color: rgba(153, 255, 255, 0.30)
 ```
 
 ```card
-title: 没什么用的魔改教程³
+title: 自用的AList魔改教程³
 desc: ------------------------------
 logo: /home.png
 link: ../03-code.md

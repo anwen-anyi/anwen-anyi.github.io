@@ -545,3 +545,8 @@ casdoor.exe
 
 - 使用方法和 AList 手动启动一样 不过不用携带`server`参数可以直接启动即可
 
+## **手把手教你编译**Casdoor
+
+- [生产模式^荐^](build/sso/build.md)
+
+- [开发模式^X^](build/sso/dev.md)

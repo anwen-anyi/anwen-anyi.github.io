@@ -2,7 +2,7 @@
 # 这是文章的标题
 title: Linux编译教程
 # 这是页面的图标
-icon: fa-brands fa-centos
+icon: fa-brands fa-centos fa-lg
 # 这是侧边栏的顺序
 order: 29
 # 设置作者
