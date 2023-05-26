@@ -1,6 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+// import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 export default defineUserConfig({
   plugins: [
     //   autoCatalogPlugin({
@@ -11,10 +12,16 @@ export default defineUserConfig({
     //   }),
 
     // search
-    docsearchPlugin({
-      appId: "G9WNTTQL4R",
-      apiKey: "b4c123a561b0166b7015df8147771950",
-      indexName: "anwen-anyiio",
+    // docsearchPlugin({
+      // appId: "G9WNTTQL4R",
+      // apiKey: "b4c123a561b0166b7015df8147771950",
+      // indexName: "anwen-anyiio",
+    // }),
+    searchProPlugin({
+      // appId: "G9WNTTQL4R",
+      // apiKey: "b4c123a561b0166b7015df8147771950",
+      // indexName: "anwen-anyiio",
+      indexContent: true
     }),
     
   ],
