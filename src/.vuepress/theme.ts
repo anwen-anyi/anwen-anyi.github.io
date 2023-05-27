@@ -78,7 +78,6 @@ export default hopeTheme({
     },
   },
   plugins: {
-    sitemap: false,
     // PWA
     pwa: {
       favicon: "/favicon.ico",
