@@ -2,6 +2,8 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 // import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
+
+
 export default defineUserConfig({
   plugins: [
     //   autoCatalogPlugin({
@@ -23,7 +25,6 @@ export default defineUserConfig({
       // indexName: "anwen-anyiio",
       indexContent: true
     }),
-    
   ],
   shouldPrefetch: false,
   base: "/",
@@ -84,7 +85,6 @@ export default defineUserConfig({
     }
   },
   
-
   // Enable it with pwa
   // shouldPrefetch: false,
 });

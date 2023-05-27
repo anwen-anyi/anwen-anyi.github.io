@@ -5,14 +5,17 @@ import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
 
 
+
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  // 爬虫xml
+  hostname: "https://anwen-anyi/anwen-anyi.github.io",
+  
   author: {
     name: "安稳",
     url: "/",
   },
-
-
+  
+  // icon图标
   iconAssets: [
     // "iconfont", //icon: iconfont icon-图标名称
     "//at.alicdn.com/t/c/font_2407338_9gwb60oe2m9.css",
@@ -24,7 +27,7 @@ export default hopeTheme({
   logo: "/home.png",
 
   repo: "anwen-anyi/anwen-anyi.github.io",
-
+  
   docsDir: "/src",
 
   locales: {
@@ -55,7 +58,7 @@ export default hopeTheme({
       sidebar: zhSidebar,
 
       // footer: "默认页脚",
-      footer: '<p id="hitokoto">  <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </p><p>本页面<span id="busuanzi_value_page_pv"></span>次,本站<span id="busuanzi_value_site_pv"></span>次,总访客<span id="busuanzi_value_site_uv"></span>人</p>',
+      footer: '<p id="hitokoto">  <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </p> <p>本页面<span id="busuanzi_value_page_pv"></span>次,本站<span id="busuanzi_value_site_pv"></span>次,总访客<span id="busuanzi_value_site_uv"></span>人</p>',
 
       displayFooter: true,
 
@@ -75,6 +78,7 @@ export default hopeTheme({
     },
   },
   plugins: {
+    sitemap: false,
     // PWA
     pwa: {
       favicon: "/favicon.ico",
@@ -87,6 +91,7 @@ export default hopeTheme({
         maskIcon: "/home.png",
       }
     },
+    // 评论
     comment: {
       provider: "Giscus",
       repo: "anwen-anyi/doc",
@@ -147,6 +152,7 @@ export default hopeTheme({
       vuePlayground: true,
 
     },
+    // 插件选项
     components: {
       components: [
         "ArtPlayer",
@@ -163,6 +169,7 @@ export default hopeTheme({
         "XiGua",
         "YouTube",
       ],
+      // 弹窗提醒
       rootComponents: {
         notice: [
           {

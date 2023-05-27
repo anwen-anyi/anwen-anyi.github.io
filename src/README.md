@@ -23,7 +23,7 @@ copyright: © 安稳
 # footer: 支持HTMLString
 ---
 
-<span>『 <span id="hitokoto"> <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </span>』</span>
+<span>『 <a id="hitokoto"> <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </a>』</span>
 
 :wave:  本美化教程适用于[**AList V3**](https://github.com/alist-org/alist)版本
 
@@ -99,8 +99,3 @@ logo: Cloudflare_Logo.svg
 link: https://www.cloudflare.com
 color: rgba(153, 255, 255, 0.20)
 ```
-
-
-
-
-
