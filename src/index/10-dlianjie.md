@@ -38,6 +38,10 @@ headerDepth: 6
 
 像下面这样,有中文转码了还更长啦~~复制发给小伙伴也很长
 
+虽然AList无法内置短连接，咱也没技术实现，只好另辟蹊径来实现短连接了也不麻烦很方便
+
+有兴趣的往下看吧~如果你要使用的话，最后的[使用短连接的说明一定要看](#_3-3-使用这个短连接的一些说明)
+
 ```html
 https://alist.org/d/国产/电影/速度与激情全集/速度与激情10-4k.mp4
 https://alist.org/d/%E5%9B%BD%E4%BA%A7/%E7%94%B5%E5%BD%B1/%E9%80%9F%E5%BA%A6%E4%B8%8E%E6%BF%80%E6%83%85%E5%85%A8%E9%9B%86/%E9%80%9F%E5%BA%A6%E4%B8%8E%E6%BF%80%E6%83%8510-4k.mp4
@@ -328,15 +332,29 @@ RewriteRule ^.*$ /somedir/yourls-loader.php [L]
 
 1. 不推荐将所有人都可以生成短链接选项打开，防止别人使用你的短连接分发一些"奇奇怪怪"的东西去喝茶
 2. 建议打开 **`是否自动将结果复制到剪贴板? | Auto-copy result to clipboard?`** 这样我们点击插件后就不要手动去点copy了它会自动帮你复制你只需要去粘贴分享即可
-3. 记得在配置文件里面设置的帐号密码困难一些，防止别人登录
 4. 其实在链接右键会弹出的选项中也可以选择 **YOURLS^短连接程序^** 插件,然后点击顶部的插件扩展栏就会进行缩短链接
 
 <div class="image-preview">
   <img src="/img/durl/d_cn.png" />
   <img src="/img/durl/d_en.png" />
 </div>
+4. 记得在配置文件里面设置的帐号密码困难一些，防止别人登录
 
-5. 其他的暂时没有了
+
+5. 防止被爆破，修改 `/admin`文件夹为你想改的名字，然后在`/user`目录新建`cache.php`内容如下：
+
+```php
+<?php
+// introduce a new filter early, before plugins are actually loaded
+yourls_add_filter( 'admin_url', 'ozh_custom_admin_url' );
+function ozh_custom_admin_url($url) {
+    return str_replace('/admin/', '/想要得目录名/', $url);
+}
+```
+
+可能会被爆破的围观链接：https://github.com/YOURLS/YOURLS/pull/2747#issuecomment-689047797
+
+6. 其他的暂时没有了，==第五条挺重要的改一下吧也不麻烦==
 
 
 
