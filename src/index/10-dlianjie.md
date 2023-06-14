@@ -330,6 +330,12 @@ RewriteRule ^.*$ /somedir/yourls-loader.php [L]
 2. 建议打开 **`是否自动将结果复制到剪贴板? | Auto-copy result to clipboard?`** 这样我们点击插件后就不要手动去点copy了它会自动帮你复制你只需要去粘贴分享即可
 3. 记得在配置文件里面设置的帐号密码困难一些，防止别人登录
 4. 其实在链接右键会弹出的选项中也可以选择 **YOURLS^短连接程序^** 插件,然后点击顶部的插件扩展栏就会进行缩短链接
+
+<div class="image-preview">
+  <img src="/img/durl/d_cn.png" />
+  <img src="/img/durl/d_en.png" />
+</div>
+
 5. 其他的暂时没有了
 
 
