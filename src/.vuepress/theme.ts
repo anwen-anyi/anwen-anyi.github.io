@@ -73,7 +73,6 @@ export default hopeTheme({
   // 密码
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
       "/zh/demo/encrypt.html": ["1234"],
     },
   },
@@ -149,6 +148,7 @@ export default hopeTheme({
       ],
       vPre: true,
       vuePlayground: true,
+      
 
     },
     // 插件选项

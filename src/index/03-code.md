@@ -187,6 +187,35 @@ headerDepth: 6
 
 - 然后英语(en)的直接删除了即可，语言文件夹里面只剩下了 lang/zh_cn 这个中文的 这样就会默认使用中文的
 
+::: details 删除英文语言文件后的错误
+
+```javascript{1}
+index.c125b016.js:formatted:25798 Uncaught (in promise) TypeError: Is[or] is not a function
+    at index.c125b016.js:formatted:25798:28
+    at index.c125b016.js:formatted:25801:6
+    at index.c125b016.js:formatted:20388:25
+    at D_ (index.c125b016.js:formatted:25805:12)
+    at index.c125b016.js:formatted:796:19
+    at Tt (index.c125b016.js:formatted:262:9)
+    at y (index.c125b016.js:formatted:796:12)
+    at get children [as children] (index.c125b016.js:formatted:25903:48)
+    at Object.fn (index.c125b016.js:formatted:1059:36)
+    at Fs (index.c125b016.js:formatted:440:15)
+
+```
+
+这个错误是因为AList默认是英文文件的 你删除了它就找不到了
+
+复现方式：十分简单将浏览器的语言切换成英文，然后打开`AList`就会看到
+
+- 暂时解决办法
+  1. 就先这样，无所谓让非中文语言的用户不能访问
+  2. 将en语言包加回来，把里面的改成中文
+  3. 将en也加回来，也把中文加一起
+
+:::
+
+
 源码文件位置：**alist-web\src\pages\login\index.tsx**
 
 ```tsx{2-14,18}

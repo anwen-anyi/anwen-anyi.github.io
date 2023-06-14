@@ -6,15 +6,17 @@ $theme-color: #70c6be;
 $content-width: 1200px;
 
 // 左侧侧边栏颜色图标颜色
-.sidebar .icon{
+.vp-sidebar .icon{
     color: #409EFF;
 }
-.auto-catalog-wrapper .font-icon{
+// 文章页面内
+// .auto-catalog-wrapper .font-icon{
+  .theme-hope-content .font-icon{
     color: #409EFF;
 }
 
 // 顶部导航栏
-.navbar .nav-link .icon{
+.vp-navbar .nav-link .icon{
     color: #70c6be;
 }
 

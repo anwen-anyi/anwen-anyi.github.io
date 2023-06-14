@@ -3,7 +3,6 @@ import theme from "./theme.js";
 // import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 
-
 export default defineUserConfig({
   plugins: [
     //   autoCatalogPlugin({
