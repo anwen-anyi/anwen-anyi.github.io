@@ -4,7 +4,7 @@ title: AList魔改示例教程
 # 这是页面的图标
 icon: fa-solid fa-rocket-launch
 # 这是侧边栏的顺序
-order: 4
+order: 5
 # 设置作者
 author: 安稳
 # 设置写作时间
@@ -788,6 +788,8 @@ const players: { icon: string; name: string; scheme: string }[] = [
 <br/>
 
 ## **11. 修改一下搜索，变的更加匹配** ✅
+
+- **开启搜索框需要先在`AList`将索引打开启用才可以显示搜索框,否则看不到，[点击查看如何使用](https://alist.nn.ci/zh/guide/advanced/search.html#如何使用)**
 
 搜索有两个版本一个是最新的一个是v3.6.0及之前的
 
