@@ -46,7 +46,7 @@ Workers 代码可以在 https://github.com/alist-org/alist-proxy/blob/main/alist
 - ADDRESS: 你的 AList 地址，必须加上协议头，后面不能跟 `/`。如 `https://pan.nn.ci`；
 - TOKEN: 在 AList 管理页面中进入“其他设置”得到。
 
-:warning: Cloudflare Workers 免费CDN支持兼容国内的只有 **http80端口** 和 **https443端口**，来自群友测试
+:warning: Cloudflare Workers 中转AList，AList的端口只能跑在80或者443 否则cf不给入站(否则无法进行中转代理)
 
 - 在AList后台挂载配置时 填写 **下载代理URL** 时候的 链接结尾 不可以带 `/`
 
@@ -274,9 +274,9 @@ Q^2^：**不要看网络上的教程执行`netsh interface tcp set global autotu
 
 A^2^：会造成pot等播放器缓冲缓慢 如果你pot播放CF中转直链速度不正常 cmd 管理员模式输入 `netsh interface tcp set global autotuninglevel=normal` 后重启
 
-Q^3^：**国内使用有什么问题吗？**
+Q^3^：**Cloudflare Workers使用有什么问题吗？**
 
-A^3^：有的，Cloudflare Workers 免费CDN支持兼容国内的只有 **http80端口** 和 **https443端口**，来自群友测试(已验证)
+A^3^：有的，Cloudflare Workers 中转AList，AList的端口只能跑在80或者443 否则cf不给入站(否则无法进行中转代理)
 
 -----
 
