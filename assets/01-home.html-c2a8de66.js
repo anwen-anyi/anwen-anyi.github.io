@@ -1,1 +1,0 @@
-import{_ as o}from"./plugin-vue_export-helper-c27b6911.js";import{o as t,c as r,a as e}from"./app-2dffe6b7.js";const c={};function m(n,_){return t(),r("div",null,[e(" 你可以通过设置页面的 Frontmatter，在页面禁用功能与布局。 "),e(" more ")])}const l=o(c,[["render",m],["__file","01-home.html.vue"]]);export{l as default};
