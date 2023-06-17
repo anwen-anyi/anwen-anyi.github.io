@@ -72,6 +72,7 @@ highlights:
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
     highlights:
       - title: AList怎么使用短连接：👉<a href="/index/10-dlianjie.html">查看详情</a>
+      - title: AList怎么用代理下载：👉<a href="/index/11-dulr.html">查看详情</a>
       - title: Cadoor单点登录绑定：👉<a href="/index/09-ssologin.html">查看详情</a>
       - title: Cadoor自己调试开发：👉<a href="/index/build/sso">查看详情</a>
 

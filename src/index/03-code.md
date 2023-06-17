@@ -187,7 +187,7 @@ headerDepth: 6
 
 - 然后英语(en)的直接删除了即可，语言文件夹里面只剩下了 lang/zh_cn 这个中文的 这样就会默认使用中文的
 
-::: details 删除英文语言文件后的错误
+::: details <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> 删除英文语言文件后的错误
 
 ```javascript{1}
 index.c125b016.js:formatted:25798 Uncaught (in promise) TypeError: Is[or] is not a function
@@ -201,7 +201,6 @@ index.c125b016.js:formatted:25798 Uncaught (in promise) TypeError: Is[or] is not
     at get children [as children] (index.c125b016.js:formatted:25903:48)
     at Object.fn (index.c125b016.js:formatted:1059:36)
     at Fs (index.c125b016.js:formatted:440:15)
-
 ```
 
 这个错误是因为AList默认是英文文件的 你删除了它就找不到了
@@ -209,9 +208,26 @@ index.c125b016.js:formatted:25798 Uncaught (in promise) TypeError: Is[or] is not
 复现方式：十分简单将浏览器的语言切换成英文，然后打开`AList`就会看到
 
 - 暂时解决办法
-  1. 就先这样，无所谓让非中文语言的用户不能访问
-  2. 将en语言包加回来，把里面的改成中文
-  3. 将en也加回来，也把中文加一起
+  1. 将en语言包加回来，把里面的改成中文
+  2. 将en也加回来，也把中文加一起
+  3. 修改如下源码，将原本他默认返回成英文(**en**)的让他默认返回成中文(**zh**)即可
+     - 源码位置：**alist-web/src/app/i18n.ts**
+
+```tsx{10,11}
+const defaultLang =
+  languages.find(
+    (lang) => lang.code.toLowerCase() === navigator.language.toLowerCase()
+  )?.code ||
+  languages.find(
+    (lang) =>
+      lang.code.toLowerCase().split("_")[0] ===
+      navigator.language.toLowerCase().split("_")[0]
+  )?.code ||
+-  "en"
++  "zh"
+```
+
+
 
 :::
 
@@ -248,7 +264,7 @@ index.c125b016.js:formatted:25798 Uncaught (in promise) TypeError: Is[or] is not
 
 ## **5.删除"本地设置"里面的语言切换按钮，已经默认为中文**
 
-如何默认中文，看上面我的[查看操作](#_4-取消游客访问和语言选择的按钮默认为简体中文)
+如何默认中文，看上面我的[查看操作](#_4-取消游客访问和语言选择的按钮默认为简体中文)，只留下中文的话如果你浏览器语言是英文的浏览器会报错 :point_right: [解决办法](#_4-取消游客访问和语言选择的按钮默认为简体中文)
 
 源码文件位置：**alist-web\src\pages\home\toolbar\LocalSettings.tsx**
 
