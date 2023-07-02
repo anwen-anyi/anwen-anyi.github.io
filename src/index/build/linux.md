@@ -39,6 +39,8 @@ collapsible: false
 有的小伙伴想着自己编译一下 Alist
 不管是出于自己想折腾还是自己想改改源码哩.大家都可以编译~ (๑•́₃ •)
 
+<BiliBili bvid="BV1GW4y1s742" />
+
 -----
 
 ## Linux版本编译教程

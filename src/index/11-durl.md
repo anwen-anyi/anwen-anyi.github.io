@@ -4,7 +4,7 @@ title: AList如何使用代理下载链接
 # 这是页面的图标
 icon: fa-solid fa-rocket-launch
 # 这是侧边栏的顺序
-order: 2
+order: 3
 # 设置作者
 author: 安稳
 # 设置写作时间

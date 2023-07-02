@@ -4,7 +4,7 @@ title: 美化自定义内容
 # 这是页面的图标
 icon: fa-solid fa-rocket-launch
 # 这是侧边栏的顺序
-order: 8
+order: 9
 # 设置作者
 author: 安稳
 # 设置写作时间
@@ -32,6 +32,21 @@ headerDepth: 6
 <!-- 你可以通过设置页面的 Frontmatter，在页面禁用功能与布局。 -->
 
 <!-- more -->
+
+:::: center
+**代码中每一行的代码都有注释说明，请仔细查看并使用**
+::: details 视频教程
+
+<BiliBili bvid="BV1Wg41187Bf" />
+
+<BiliBili bvid="BV1HG4y1h7Gz" />
+
+<BiliBili bvid="BV1FP411P7d3" />
+
+<BiliBili bvid="BV1me411A7Ha" />
+
+:::
+::::
 
 ## 自定义内容内代码
 
