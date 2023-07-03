@@ -51,6 +51,10 @@ Windows的运行多个AList没什么好说的，直接改端口号启动就行
 
 最方便的办法安装多个AList同时运行
 
+:::: tabs#video
+
+@tab 哔哩哔哩
+
 <BiliBili bvid="BV1rF41197Qv" />
 
 ::: right
@@ -58,6 +62,18 @@ Windows的运行多个AList没什么好说的，直接改端口号启动就行
 [**BV1rF41197Qv**](https://www.bilibili.com/video/BV1rF41197Qv)
 
 :::
+
+@tab YouTube
+
+<YouTube id="3Kb8Vr7uNws" />
+
+::: right
+
+[**3Kb8Vr7uNws**](https://www.youtube.com/watch?v=3Kb8Vr7uNws)
+
+:::
+
+::::
 
 #### **另手动安装AList**
 

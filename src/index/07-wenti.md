@@ -820,14 +820,14 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 <br>
 
-## 49. 添加阿里云盘(分享)时提示 提示Post "[https://auth.aliyundrive.com/v2/account/tokenopen in new window](https://auth.aliyundrive.com/v2/account/token)": net/http: TLS handshake timeout
+## 49. 添加阿里云盘(分享)时提示 提示Post "[https://auth.aliyundrive.com/v2/account/token](https://auth.aliyundrive.com/v2/account/token)": net/http: TLS handshake timeout
 
 原因：VPS在中国大陆境外，且启用了IPv6 解决方法： 
 
 方法一：在vps的hosts中添加以下三条并重启网络或者重启vps
 
-- 47.94.245.197 [api.aliyundrive.comopen in new window](http://api.aliyundrive.com/)
-- 47.94.245.197 [auth.aliyundrive.comopen in new window](http://auth.aliyundrive.com/)
-- 121.89.3.30 [cn-beijing-data.aliyundrive.netopen in new window](http://cn-beijing-data.aliyundrive.net/)
+- 47.94.245.197 [api.aliyundrive.com](http://api.aliyundrive.com/)
+- 47.94.245.197 [auth.aliyundrive.com](http://auth.aliyundrive.com/)
+- 121.89.3.30 [cn-beijing-data.aliyundrive.net](http://cn-beijing-data.aliyundrive.net/)
 
 方法二：关闭并且禁用vps的IPv6

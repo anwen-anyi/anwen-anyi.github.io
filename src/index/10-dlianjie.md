@@ -116,6 +116,10 @@ https://d.alist.org/sudu10
 - 自己修改前：`/user/config-sample.php`
 - 自己修改后：`/user/config.php`
 
+::: tabs
+
+@tab 初始化默认
+
 ```php{10-13,17,20,24,28,34,44,51,62,66,71-77}
 <?php
 /* This is a sample config file.
@@ -217,6 +221,110 @@ $yourls_reserved_URL = [
  */
 ```
 
+@tab 我自用填写的
+
+```php{17,20,24,28,44,51,66,71-76}
+<?php
+/* This is a sample config file.
+ * Edit this file with your own settings and save it as "config.php"
+ *
+ * IMPORTANT: edit and save this file as plain ASCII text, using a text editor, for instance TextEdit on Mac OS or
+ * Notepad on Windows. Make sure there is no character before the opening <?php at the beginning of this file.
+ */
+
+/*
+ ** 仔细阅读MySQL设置-您可以从web主机获取此信息
+ ** 用户配置是修改右侧内内容别改错咯~
+ ** 例如 define( 'YOURLS_DB_USER', 'your db user name' );
+ ** 我们要修改的是 your db user name ==> 改成我们的MySQL用户名
+ */
+
+/** 你的MySQL用户名 */
+define( 'YOURLS_DB_USER', 'root' );
+
+/** 你的MySQL密码 */
+define( 'YOURLS_DB_PASS', 't7xxxxxxxBD' );
+
+/** 你的数据库名
+ ** 仅使用小写字母[a-z]、数字[0-9]和下划线[_] */
+define( 'YOURLS_DB_NAME', 'd_izyt_cc' );
+
+/** MySQL数据库主机.
+ ** 如果使用非标准端口，请将其指定为'主机名:端口'例如'localhost:9999'或'127.0.0.1:666' */
+define( 'YOURLS_DB_HOST', 'localhost' );
+
+/** MySQL数据库表前缀
+ ** YOURLS将使用此表前缀创建表（例如`yourls_url`,`yourls_options`等)
+ ** 仅使用小写字母[a-z]、数字[0-9]和下划线[_] 
+ ** 默认就行 */
+define( 'YOURLS_DB_PREFIX', 'yourls_' );
+
+/*
+ ** Site options
+ */
+
+/** YOURLS安装网站
+ ** 全部小写，结尾没有斜杠。
+ ** 如果要把它定义为"http://sho.rt"，不使用 "http://www.sho.rt"请不要在浏览器中使用www的二级域名（反之亦然）
+ ** 要使用多语种域名（如http://你好.世界），请在此处写入其ascii格式 (如http://xn--6qq79v.xn--rhqv96g/) */
+define( 'YOURLS_SITE', 'https://d.izyt.cc' );
+
+/** YOURLS语言
+ ** 更改此设置以使用语言的翻译文件，而不是使用默认的英语
+ ** 翻译文件（.mo文件）必须导入在 user/language 目录中
+ ** 可以查看 http://yourls.org/translations 了解更多信息 
+ ** 汉化包推荐使用: https://github.com/taozhiyu/yourls-translation-zh_CN */
+define( 'YOURLS_LANG', 'zh_CN' );
+
+/** 允许同一个长URL包含多个短URL
+ ** 如果设置为true，则同一长链接，不能有多个短链接
+ ** 设置为false则允许多个短链接指向同一个长链接 */
+define( 'YOURLS_UNIQUE_URLS', true );
+
+/** 私有意味着访问短链接后台需要登录
+ ** 设置为false则用于公共用途
+ ** 说人话就是是否允许所有人都可以生成短连接，默认是禁止的，设置成false
+ ** 如果您不确定，请阅读http://yourls.org/privatepublic 了解更多 */
+define( 'YOURLS_PRIVATE', true );
+
+/** 用于加密cookies的随机密码，您不需要记住它，所以可以使它更复杂
+ ** 提示：在 http://yourls.org/cookie 生成随机的密码*/
+define( 'YOURLS_COOKIEKEY', '&093#7xxxxxxx43%Q$3' );
+
+/** 允许访问后台的用户名和密码，密码可以是纯字符的，也可以是加密的散列
+ ** YOURLS将自动加密此文件中的纯文本密码
+ ** 阅读 http://yourls.org/userpassword 了解更多信息 */
+$yourls_user_passwords = [
+	//'username' => 'password',
+	'axxx' => 'phpass:!2y!1xxxxxxxxxxxxT6' /* Password encrypted by YOURLS */ ,
+	// 'username2' => 'password2',
+	// You can have one or more 'login'=>'password' lines
+];
+
+/** URL缩短方法: 36 或 62
+ ** 36: 生成所有小写字母数字组合 (如：13jkm)
+ ** 62: 生成大小写混合的字母数字组合 (如：13jKm或13JKm) */
+define( 'YOURLS_URL_CONVERT', 36 );
+
+/** 调试模式输出一些内部信息
+ ** 默认值为false，编码时或提交新问题前启用 */
+define( 'YOURLS_DEBUG', false );
+
+/**
+* 保留关键字（设置后生成的随机URL将避开保留的关键字）
+* 在这里可以设置一些负面的、不需要的或潜在误导性的关键字
+*/
+$yourls_reserved_URL = [
+	'porn', 'faggot', 'sex', 'nigger', 'fuck', 'cunt', 'dick',
+];
+
+/*
+ ** Personal settings would go after here.
+ */
+
+```
+
+:::
 
 
 <br/>
@@ -309,9 +417,9 @@ RewriteRule ^.*$ /somedir/yourls-loader.php [L]
 
 涵盖 `360，Chrome，Edge`三款浏览器：https://youtu.be/PP6b0WSzYMc 只看怎么添加扩展插件即可
 
->- Web扩展插件：[https://www.crxsoso.com/webstore/detail/nddaaiojgkoldnhnmkoldmkeocbookenopen in new window](https://www.crxsoso.com/webstore/detail/nddaaiojgkoldnhnmkoldmkeocbooken)
+>- Web扩展插件：[https://www.crxsoso.com/webstore/detail/nddaaiojgkoldnhnmkoldmkeocbooken](https://www.crxsoso.com/webstore/detail/nddaaiojgkoldnhnmkoldmkeocbooken)
 >
->  	- 本地备用：[https://www.aliyundrive.com/s/wCNVf6YgCL8open in new window](https://www.aliyundrive.com/s/wCNVf6YgCL8)
+>  	- 本地备用：[https://www.aliyundrive.com/s/wCNVf6YgCL8](https://www.aliyundrive.com/s/wCNVf6YgCL8)
 > 
 >  	- **自用汉化**：上述的本地备用里面有一个是我自己将插件解压汉化了的，但是 `Chrome`浏览器用不了 360浏览器可以自己选择吧
 > 
@@ -366,4 +474,24 @@ function ozh_custom_admin_url($url) {
 
 ## **4. 结语-结束**
 
-到这里就结束了，有兴趣的话大家去试试看吧，可能文字描述的不是很详细，视频版嘛 在路上了敬请期待吧，视频发了这里会进行修改
+到这里就结束了，有兴趣的话大家去试试看吧，可能文字描述的不是很详细，视频版[已发布](#) ~~在路上了敬请期待吧，视频发了这里会进行修改~~
+
+<br/>
+
+## **5. 其他用法**
+
+### **5.1 随机短链接**
+
+Q：默认使用的是固定的一位数开始递增的，我想让他随机{4/5}位数的怎么设置？？
+
+A：进入短连接程序后台，点击管理插件找到 ==**Random ShortURLs**== 在右侧激活，激活后在管理插件下方能看到配置，点击进去可以设置自己需要的随机位数
+
+![](/img/durl/5_other1.png)
+
+### **5.2 自定义短链接**
+
+Q：我想给某个已经设置好的短链接设修改成我自己想设置的，怎么做？
+
+A：进入短连接程序后台进行修改即可（如下图）
+
+![](/img/durl/5_other2.png)
