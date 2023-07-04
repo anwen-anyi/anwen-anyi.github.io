@@ -32,6 +32,30 @@ headerDepth: 6
 
 <!-- more -->
 
+:::: tabs#video
+
+@tab 哔哩哔哩
+
+<BiliBili bvid="BV1Ph4y1u7SG" />
+
+::: right
+
+[**BV1Ph4y1u7SG**](https://www.bilibili.com/video/BV1Ph4y1u7SG)
+
+:::
+
+@tab YouTube
+
+<YouTube id="YCHMGiiG7q4" disable-fullscreen />
+
+::: right
+
+[**YCHMGiiG7q4**](https://www.youtube.com/watch?v=YCHMGiiG7q4)
+
+:::
+
+::::
+
 ## **1.前言 - 需求**
 
 咱们在使用AList时，复制的链接都是那么长，尤其是N层文件夹后，并且还是中文的情况下转码后，还有就是加密后更长啦

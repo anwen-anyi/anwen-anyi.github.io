@@ -65,7 +65,7 @@ Windows的运行多个AList没什么好说的，直接改端口号启动就行
 
 @tab YouTube
 
-<YouTube id="3Kb8Vr7uNws" />
+<YouTube id="3Kb8Vr7uNws" disable-fullscreen />
 
 ::: right
 
