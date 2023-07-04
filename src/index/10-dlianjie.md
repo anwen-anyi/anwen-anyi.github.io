@@ -1,6 +1,6 @@
 ---
 # 这是文章的标题
-title: AList如何使用短连接
+title: AList如何使用短链接
 # 这是页面的图标
 icon: fa-solid fa-rocket-launch
 # 这是侧边栏的顺序
