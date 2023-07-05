@@ -33,6 +33,30 @@ headerDepth: 6
 
 <!-- more -->
 
+:::: tabs#video
+
+@tab 哔哩哔哩
+
+<BiliBili bvid="BV17N411S7fg" />
+
+::: right
+
+[**BV17N411S7fg**](https://www.bilibili.com/video/BV17N411S7fg)
+
+:::
+
+@tab YouTube
+
+<YouTube id="jAGl3tIO6qc" />
+
+::: right
+
+[**jAGl3tIO6qc**](https://www.youtube.com/watch?v=jAGl3tIO6qc)
+
+:::
+
+::::
+
 ## **下载代理 URL**
 
 开启代理时不填写下载代理 URL字段，默认使用本机进行传输。下载代理 URL提供了两种代理方式安装：
