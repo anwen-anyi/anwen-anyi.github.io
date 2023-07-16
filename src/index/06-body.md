@@ -34,8 +34,8 @@ headerDepth: 6
 <!-- more -->
 
 :::: center
-**代码中每一行的代码都有注释说明，请仔细查看并使用**
-::: details 视频教程
+==**代码中每一行的代码都有注释说明，请仔细查看并使用**==
+::: details  <i class="fa-solid fa-circle-video" style="color: #409EFF;"></i> 视频教程
 
 <BiliBili bvid="BV1Wg41187Bf" />
 

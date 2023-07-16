@@ -34,8 +34,8 @@ headerDepth: 6
 <!-- more -->
 
 :::: center
-**代码中每一行的代码都有注释说明，请仔细查看并使用**
-::: details 视频教程
+==**代码中每一行的代码都有注释说明，请仔细查看并使用**==
+::: details  <i class="fa-solid fa-circle-video" style="color: #409EFF;"></i> 视频教程
 
 <BiliBili bvid="BV1Wg41187Bf" />
 
@@ -48,7 +48,7 @@ headerDepth: 6
 :::
 ::::
 
-## 自定义头部代码
+## **自定义头部代码**
 
 ```html
 <!--Alist V3建议添加的，已经默认添加了，如果你的没有建议加上-->
@@ -72,13 +72,26 @@ headerDepth: 6
 <link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css">
 <script src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
 <!-- require MetingJS -->
-<script src="https://npm.elemecdn.com/meting@2.0.1/dist/Meting.min.js"></script>
+<script src="https://npm.elemecdn.com/meting2@0.0.1/js/Meting.min.js"></script>
 
 <style>
 /* 去除通知栏 右上角 X */
 .notify-render .hope-close-button {
     display: none;
 }
+/* 文字超长自动换行 */
+.name-box .name {
+	white-space: unset !important;
+	overflow: unset !important;
+}
+/* 缩略图图片变大 代码中的160px 自己改 现在是注释状态若需要自行解除注释 */
+/*.obj-box > div {
+grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
+}
+.obj-box > div .item-thumbnail{
+  height: 100px;
+}*/
+    
 /* 图片API用法点进去都会有食用说明的,API来自网络不保证实效性稳定性自己测试
   樱花：https://www.dmoe.cc
   夏沫：https://cdn.seovx.com
@@ -241,9 +254,9 @@ textarea#comment-textarea:focus {
 </style>
 ```
 
-### 其他音乐播放器链接
+### **其他音乐播放器链接**
 
-上面那个自带的失效了，可以试试下面提供的
+上面那个自带的失效了，可以试试下面提供的，下面三个随机几个都可以
 
 ```html
 <!-- 新的，添加 require MetingJS 优先使用这个吧 -->
@@ -253,7 +266,7 @@ textarea#comment-textarea:focus {
 <!-- 备用，添加 require MetingJS -->
 <script src="https://cdn.jsdelivr.net/gh/lemonmous/Source-material@1.0/js/Meting.min.js"></script>
 
-<!-- 旧的，删除 require MetingJS -->
+<!-- 旧的，已失效的请删除 require MetingJS -->
 <!--<script src="https://npm.elemecdn.com/meting@2.0.1/dist/Meting.min.js"></script>-->
 ```
 
@@ -266,12 +279,92 @@ textarea#comment-textarea:focus {
 
 如果你要部署到华为云可以看我写的我改了一些比较详细
 
-#### 部署到国内和国外有什么区别吗
+
+
+### **只单独添加一个音乐播放器**
+
+#### **方案1**
+
+自定义头部
+
+```html
+<!--音乐播放器所用的文件-->
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://npm.elemecdn.com/meting2@0.0.1/js/Meting.min.js"></script>
+```
+
+自定义内容
+
+```html
+<!--延迟加载-->
+<!--如果要写自定义内容建议都加到这个延迟加载的范围内-->
+<div id="customize" style="display: none;">
+    <div>
+		<!--音乐播放器 自行配置 auto 内容-->
+        <meting-js fixed="true" autoplay="false" theme="#409EFF" list-folded="true" auto="QQ音乐或者网易云的链接"></meting-js>
+    </div>
+<!--延迟加载范围到这里结束-->
+</div>
+
+<!--延迟加载配套使用JS-->
+<script>
+    let interval = setInterval(() => {
+        if (document.querySelector(".footer")) {
+            document.querySelector("#customize").style.display = "";
+            clearInterval(interval);
+        }
+    }, 200);
+</script>
+```
+
+#### **方案2**
+
+直接都写到自定义头部
+
+```html
+<!--音乐播放器所用的文件-->
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://npm.elemecdn.com/meting2@0.0.1/js/Meting.min.js"></script>
+
+<!-- 自行配置音乐选项 auto 内容 -->
+<meting-js fixed="true" autoplay="false" theme="#409EFF" list-folded="true" auto="QQ音乐或者网易云的链接"></meting-js>
+```
+
+#### 一些对播放器适配的CSS
+
+```css
+<style>
+/*音乐播放器进一步进行隐藏*/
+/* 需要就加不需要就不用加 */
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    left: -66px!important;
+}
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+    left: 0!important;
+}
+</style>
+```
+
+
+
+==至于音乐选项`auto`内容请查看[**详细说明**](06-body.md#音乐播放器添加说明)==
+
+
+
+
+
+#### **部署到国内和国外有什么区别吗**
 
 - 如果部署在国外咱们解析QQ音乐的时候就无法播放了
 - 网易不论部署在国内还是国外都可以解析播放
 
-## 看板娘代码
+## **看板娘代码**
 
 ::: tip
 
@@ -314,9 +407,9 @@ textarea#comment-textarea:focus {
 
 <br/>
 
-## 搜索栏美化代码
+## **搜索栏美化代码**
 
-### 带毛玻璃效果
+### **带毛玻璃效果**
 
 ```css
 <style>
@@ -362,7 +455,7 @@ textarea#comment-textarea:focus {
 
 
 
-### 不带毛玻璃效果
+### **不带毛玻璃效果**
 
 ```css
 <style>
@@ -402,7 +495,7 @@ textarea#comment-textarea:focus {
 
 
 
-#### 效果预览
+#### **效果预览**
 
 ::: center
 左侧为不带毛玻璃效果，右侧为带毛玻璃效果.推荐右侧带毛玻璃效果的
@@ -414,7 +507,7 @@ textarea#comment-textarea:focus {
 
 <br/>
 
-## 自行替换鼠标样式说明
+## **自行替换鼠标样式说明**
 
 ~~**因为CDN的 HTTPS证书失效了，无法使用暂时**~~
 

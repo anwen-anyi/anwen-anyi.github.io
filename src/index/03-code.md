@@ -210,24 +210,7 @@ index.c125b016.js:formatted:25798 Uncaught (in promise) TypeError: Is[or] is not
 - 暂时解决办法
   1. 将en语言包加回来，把里面的改成中文
   2. 将en也加回来，也把中文加一起
-  3. 修改如下源码，将原本他默认返回成英文(**en**)的让他默认返回成中文(**zh**)即可
-     - 源码位置：**alist-web/src/app/i18n.ts**
-
-```tsx{10,11}
-const defaultLang =
-  languages.find(
-    (lang) => lang.code.toLowerCase() === navigator.language.toLowerCase()
-  )?.code ||
-  languages.find(
-    (lang) =>
-      lang.code.toLowerCase().split("_")[0] ===
-      navigator.language.toLowerCase().split("_")[0]
-  )?.code ||
--  "en"
-+  "zh"
-```
-
-
+- 推荐第一种办法，把`en`里面的都删掉替换成中文的文件，或者直接把中文文件夹改成`en`都可以
 
 :::
 
@@ -1277,6 +1260,65 @@ const [layout, setLayout] = createStorageSignal<LayoutType>("layout", "list")
 就像这样的上面是网格视图 下面的是列表视图，默认是列表视图的哦~如果你要改图标可以看[**图标如何修改**](#_12-修改文件图标)
 
 ![](/img/code/14.png)
+
+
+
+## **15.修改PWA内容**
+
+现在支持将网页通过`PWA`添加到桌面了,但是添加的图标不是很好看的样子,
+
+具体如预览中最后的那个图标,没处理好背景颜色黑乎乎的~我们自己修改一下
+
+源码<Badge text="1" type="info" vertical="middle" />修改的好像是IOS的，源码<Badge text="2" type="info" vertical="middle" />是修改的安卓的~
+
+源码文件位置1：**alist-web\index.html**
+
+把原本的第三行(高亮显示的)改成自己的链接，或者使用和我同款的
+
+```html{3}
+    <link
+      rel="apple-touch-icon"
+      href="https://jsd.nn.ci/gh/alist-org/logo@main/logo.png"
+    />
+```
+
+> 和我同款图标链接：**https://pic.rmb.bdstatic.com/bjh/aff9c9c8817d943d6857a73188958d45.jpeg**
+
+源码文件位置2：**alist-web\public\static\manifest.json**
+
+老规矩，一样是修改第八行(高亮位置)改成自己的链接，或者使用和我同款的
+
+```json{8}
+{
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "AList",
+  "icons": [
+    {
+      "src": "https://jsd.nn.ci/gh/alist-org/logo@main/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+```
+
+> 和我同款图标链接：**https://pic.rmb.bdstatic.com/bjh/aff9c9c8817d943d6857a73188958d45.jpeg**
+
+#### **修改后的对比预览图：**
+
+上面的是IOS，下面的是安卓
+
+下图第三个是修改 **`后`** 的图标，第四个是修改 **`前`** 的图标
+
+![](/img/code/15-1.png)
+
+下图第一个是修改 **`后`** 的图标，第二个是修改 **`前`** 的图标，安卓的倒是没黑乎乎
+
+![](/img/code/15-2.jpg)
+
+
 
 ## **$ 修改后台地址和登录地址**
 
