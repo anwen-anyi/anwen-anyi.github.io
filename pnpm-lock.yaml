@@ -5536,7 +5536,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       is-stream: 2.0.1
-      temp-dir: 2.0.0
+      temp- 2.0.0
       type-fest: 0.16.0
       unique-string: 2.0.0
     dev: true

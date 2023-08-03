@@ -4,7 +4,7 @@ title: Linux编译教程
 # 这是页面的图标
 icon: fa-brands fa-centos fa-lg
 # 这是侧边栏的顺序
-order: 29
+order: 112
 # 设置作者
 author: 安稳
 # 设置写作时间

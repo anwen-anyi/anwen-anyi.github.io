@@ -4,7 +4,7 @@ title: 在线调试开发AList前端
 # 这是页面的图标
 icon: fa-solid fa-spider-web
 # 这是侧边栏的顺序
-order: 31
+order: 112
 # 设置作者
 author: 安稳
 # 设置写作时间

@@ -4,7 +4,7 @@ title: 编译Cadoor使用
 # 这是页面的图标
 icon: fa-solid fa-chalkboard-user
 # 这是侧边栏的顺序
-order: 30
+order: 121
 # 设置作者
 author: 安稳
 # 设置写作时间
@@ -75,14 +75,14 @@ git clone https://github.com/casdoor/casdoor
 
 ```
 go build
-./casdoor
+casdoor.exe
 ```
 
 @tab Linux
 
 ```
 go build
-casdoor.exe
+./casdoor
 ```
 
 :::
@@ -139,8 +139,9 @@ staticBaseUrl = "https://cdn.casbin.org"
 isDemoMode = false
 batchSize = 100
 ldapServerPort = 389
-languages = en,zh,es,fr,de,id,ja,ko,ru,vi
 quota = {"organization": -1, "user": -1, "application": -1, "provider": -1}
+logConfig = {"filename": "logs/casdoor.log", "maxdays":99999, "perm":"0770"}
+initDataFile = "./init_data.json"
 ```
 
 配置文件所有参数的作用我这里细说了,下面我只说一下如何配置数据库和`8000端口`是做什么的吧[详情查看Casdoor官网](https://casdoor.org/zh/docs/basic/server-installation#%E9%80%9A%E8%BF%87-ini-%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE)
