@@ -541,7 +541,7 @@ But! 重点来了，填写好后竟然发现好像还是需要企业认证的...
 
 可以是根目录`/`，也可以是用户指定的路径`/path/test/Demo`
 
-![](/img/advanced/sso-dir.png)
+![](/img/sso-dir.png)
 
 
 
@@ -549,7 +549,7 @@ But! 重点来了，填写好后竟然发现好像还是需要企业认证的...
 
 相当于注册的用户默认开通哪些权限，就如下面所示的
 
-![](/img/advanced/sso-permission.png)
+![](/img/sso-permission.png)
 
 默认为0，不开通任何权限
 
