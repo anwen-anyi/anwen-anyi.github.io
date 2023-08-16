@@ -4,7 +4,7 @@ title: 常见问题
 # 这是页面的图标
 icon: fa-solid fa-rocket-launch
 # 这是侧边栏的顺序
-order: 28
+order: 50
 # 设置作者
 author: 安稳
 # 设置写作时间

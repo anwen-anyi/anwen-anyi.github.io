@@ -75,6 +75,7 @@ highlights:
       - title: AList怎么用代理下载：👉<a href="/index/11-dulr.html">查看详情</a>
       - title: Cadoor单点登录绑定：👉<a href="/index/09-ssologin.html">查看详情</a>
       - title: Cadoor自己调试开发：👉<a href="/index/build/sso">查看详情</a>
+      - title: AList衍生的应用生态：👉<a href="https://alist.nn.ci/guide/ecosystem">查看详情</a>
 
   - header: AList源码文档语言包
     image: /alist-logo.svg
@@ -84,7 +85,7 @@ highlights:
       - title: V3文档：<a href="https://alist.nn.ci/zh/">https://alist.nn.ci/zh/</a>
       - title: V3后端：<a href="https://github.com/alist-org/alist">https://github.com/alist-org/alist</a>
       - title: V3前端：<a href="https://github.com/alist-org/alist-web">https://github.com/alist-org/alist-web</a>
-      - title: V3语言：<a href="https://crowdin.com/project/alist">https://crowdin.com/project/alist/</a>   
+      - title: V3语言：<a href="https://crowdin.com/project/alist">https://crowdin.com/project/alist</a>   
 
   - header: 赞助以及投喂
     description: 本项目赞助以及投喂

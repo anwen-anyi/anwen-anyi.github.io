@@ -130,11 +130,9 @@ export default hopeTheme({
       sup: true,        //下标
       align: true,      //自定义对齐格式支持
       card: true,       //Markdown 中添加卡片
+      presentation: true, //开启幻灯片
       playground: {
         presets: ["ts", "vue"],
-      },
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
       },
       stylize: [
         {

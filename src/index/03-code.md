@@ -4,7 +4,7 @@ title: AList魔改示例教程
 # 这是页面的图标
 icon: fa-solid fa-rocket-launch
 # 这是侧边栏的顺序
-order: 6
+order: 30
 # 设置作者
 author: 安稳
 # 设置写作时间
@@ -1109,6 +1109,10 @@ const iconMap = {
 
 - 按钮位置分布：登录页面
 
+**源码文件位置^4-右侧WebAuthn登录按钮^**：**alist-web\src\pages\login\index.tsx**
+
+- 按钮位置分布：登录页面
+
 <br/>
 
 - 使用主颜色：指的是在AList后台设置的颜色，路径 -->`AList后台` --> 设置 --> 样式 --> **`主颜色`**
@@ -1136,7 +1140,7 @@ import { getMainColor } from "~/store"
 ......
 
 export const SwitchLanguageWhite = () => (
-  <SwitchLanguage as={IoLanguageOutline} color={"$accent10"} boxSize="$8" />
+  <SwitchLanguage as={IoLanguageOutline} color={getMainColor()} boxSize="$8" />
 )
 ```
 
@@ -1176,6 +1180,27 @@ import { getMainColor } from "~/store"
 
 ```
 
+@tab WebAuthn
+
+```tsx{9}
+import { getMainColor } from "~/store"
+
+......
+......
+
+          <SSOLogin />
+          <Show when={AuthnSignEnabled}>
+            <Icon
+              color={getMainColor()}
+              cursor="pointer"
+              boxSize="$8"
+              as={IoFingerPrint}
+              p="$0_5"
+              onclick={AuthnSwitch}
+            />
+          </Show>
+```
+
 :::
 
 #### 用固定颜色
@@ -1191,8 +1216,6 @@ export const SwitchLanguageWhite = () => (
 ```
 
 @tab 模式切换
-
-使用主颜色指的是在AList后台设置的颜色，路径 -->`AList后台` --> 设置 --> 样式 --> **`主颜色`**
 
 ```tsx{8}
   return (
@@ -1215,6 +1238,22 @@ export const SwitchLanguageWhite = () => (
       // 给图标加个颜色 color={'red'},双引号 单引号都可以
       <Icon cursor="pointer" color={'red'} boxSize="$8" as={icon} p="$0_5" onclick={login} />
     )
+```
+
+@tab WebAuthn
+
+```tsx{4}
+          <SSOLogin />
+          <Show when={AuthnSignEnabled}>
+            <Icon
+              color={getMainColor()}
+              cursor="pointer"
+              boxSize="$8"
+              as={IoFingerPrint}
+              p="$0_5"
+              onclick={AuthnSwitch}
+            />
+          </Show>
 ```
 
 :::
