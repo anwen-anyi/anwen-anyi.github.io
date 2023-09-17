@@ -377,6 +377,11 @@ textarea#comment-textarea:focus {
 :::
 
 ```html
+### 新的看板娘
+<!--看板娘 新的链接，来自Github[stevenjoezhang/live2d-widget]-->
+<script src="https://fastly.jsdelivr.net/gh/username/live2d-widget@latest/autoload.js"></script>
+只需要在头部引用这一段js即可
+
 <!--看板娘 -自定义大小，隐藏对话框和对话框高度-->
 <style type="text/css">
   #waifu #live2d {
