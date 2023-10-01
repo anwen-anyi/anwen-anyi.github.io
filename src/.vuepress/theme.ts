@@ -19,8 +19,8 @@ export default hopeTheme({
   iconAssets: [
     // "iconfont", //icon: iconfont icon-图标名称
     "//at.alicdn.com/t/c/font_2407338_9gwb60oe2m9.css",
-    "https://npm.onmicrosoft.cn/font6pro@6.4.1/css/fontawesome.min.css",
-    "https://npm.onmicrosoft.cn/font6pro@6.4.1/css/all.min.css",
+    "https://npm.onmicrosoft.cn/font6pro@6.4.2/css/fontawesome.min.css",
+    "https://npm.onmicrosoft.cn/font6pro@6.4.2/css/all.min.css",
     "https://npm.elemecdn.com/font6pro@6.4.0/css/all.min.css",
     "https://npm.elemecdn.com/font6pro@6.4.0/css/fontawesome.min.css",
     
