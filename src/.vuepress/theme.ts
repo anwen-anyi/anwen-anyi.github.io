@@ -115,7 +115,7 @@ export default hopeTheme({
       imgLazyload: true,
       imgSize: true,
       include: true,
-      katex: true,
+      katex: true,      //启动支持KaTeX语法
       container: true,  //启用自定义容器支持,提示 警告那些
       checkLinks: {
         status: "dev"   //是否启用链接检查
@@ -129,8 +129,8 @@ export default hopeTheme({
       sub: true,        //上标
       sup: true,        //下标
       align: true,      //自定义对齐格式支持
-      card: true,       //Markdown 中添加卡片
-      presentation: true, //开启幻灯片
+      // card: true,       //Markdown 中添加卡片
+      // presentation: true, //开启幻灯片
       playground: {
         presets: ["ts", "vue"],
       },
@@ -148,7 +148,7 @@ export default hopeTheme({
         },
       ],
       vPre: true,
-      vuePlayground: true,
+      // vuePlayground: true,  //Vue 交互演示
       
 
     },

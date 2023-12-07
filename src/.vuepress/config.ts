@@ -52,7 +52,7 @@ export default defineUserConfig({
       {
         defer: true,
         "data-domain": "anwen-anyi.github.io",
-        src: "https://vercel.site.icodeq.com/js/script.js"
+        src: "https://site.izyt.cc/js/script.js"
       }
     ],
     [
