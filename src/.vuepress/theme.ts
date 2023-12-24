@@ -156,7 +156,6 @@ export default hopeTheme({
     // 插件选项
     components: {
       components: [
-        "ArtPlayer",
         "Badge",
         "BiliBili",
         "CodePen",
