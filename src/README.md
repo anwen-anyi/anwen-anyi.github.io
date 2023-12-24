@@ -20,7 +20,7 @@ actions:
     link: https://www.aliyundrive.com/cpx/member?userCode=MjAwMDAy&disableNav=YES
     type: default
   - text: IOS IPA分享 🎁
-    link: https://www.aliyundrive.com/s/Z3mrsfdFY5h
+    link: https://www.alipan.com/s/Z3mrsfdFY5h
     type: default
 
 highlights:

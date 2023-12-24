@@ -99,14 +99,14 @@ https://d.alist.org/sudu10
 ### **2.1 准备**
 
 1. 短连接程序：[https://github.com/YOURLS/YOURLS](https://github.com/YOURLS/YOURLS)
-   - 本地备用：<span class="nav-item"><a class="nav-link" href="https://www.aliyundrive.com/s/wCNVf6YgCL8/folder/648980687c869f9d2db04c4083362abffc13e15d" target="_blank" style="font-weight: bold;"><i class="fa fa-cloud-download" style="color:#409EFF;" aria-hidden="true"></i> 在线云盘下载</a></span>
+   - 本地备用：<span class="nav-item"><a class="nav-link" href="https://www.alipan.com/s/wCNVf6YgCL8/folder/648980687c869f9d2db04c4083362abffc13e15d" target="_blank" style="font-weight: bold;"><i class="fa fa-cloud-download" style="color:#409EFF;" aria-hidden="true"></i> 在线云盘下载</a></span>
 
 2. 短连接汉化：[https://github.com/taozhiyu/yourls-translation-zh_CN](https://github.com/taozhiyu/yourls-translation-zh_CN)
    - 汉化是由 [**@52破解涛之雨**](https://www.52pojie.cn/home.php?mod=space&uid=879080&do=profile&from=space) 提供
-   - 本地备用：<span class="nav-item"><a class="nav-link" href="https://www.aliyundrive.com/s/wCNVf6YgCL8/folder/648980687c869f9d2db04c4083362abffc13e15d" target="_blank" style="font-weight: bold;"><i class="fa fa-cloud-download" style="color:#409EFF;" aria-hidden="true"></i> 在线云盘下载</a></span>
+   - 本地备用：<span class="nav-item"><a class="nav-link" href="https://www.alipan.com/s/wCNVf6YgCL8/folder/648980687c869f9d2db04c4083362abffc13e15d" target="_blank" style="font-weight: bold;"><i class="fa fa-cloud-download" style="color:#409EFF;" aria-hidden="true"></i> 在线云盘下载</a></span>
 
 3. Web扩展插件：[https://www.crxsoso.com/webstore/detail/nddaaiojgkoldnhnmkoldmkeocbooken](https://www.crxsoso.com/webstore/detail/nddaaiojgkoldnhnmkoldmkeocbooken)
-   - 本地备用：<span class="nav-item"><a class="nav-link" href="https://www.aliyundrive.com/s/wCNVf6YgCL8/folder/648980687c869f9d2db04c4083362abffc13e15d" target="_blank" style="font-weight: bold;"><i class="fa fa-cloud-download" style="color:#409EFF;" aria-hidden="true"></i> 在线云盘下载</a></span>
+   - 本地备用：<span class="nav-item"><a class="nav-link" href="https://www.alipan.com/s/wCNVf6YgCL8/folder/648980687c869f9d2db04c4083362abffc13e15d" target="_blank" style="font-weight: bold;"><i class="fa fa-cloud-download" style="color:#409EFF;" aria-hidden="true"></i> 在线云盘下载</a></span>
    - **自用汉化**：上述的本地备用里面有一个是我自己将插件解压汉化了的，但是 `Chrome`浏览器用不了 360浏览器可以自己选择吧
 
 这个短连接也支持查看点击次数喔~
@@ -443,7 +443,7 @@ RewriteRule ^.*$ /somedir/yourls-loader.php [L]
 
 >- Web扩展插件：[https://www.crxsoso.com/webstore/detail/nddaaiojgkoldnhnmkoldmkeocbooken](https://www.crxsoso.com/webstore/detail/nddaaiojgkoldnhnmkoldmkeocbooken)
 >
->  	- 本地备用：[https://www.aliyundrive.com/s/wCNVf6YgCL8](https://www.aliyundrive.com/s/wCNVf6YgCL8)
+>  	- 本地备用：[https://www.alipan.com/s/wCNVf6YgCL8](https://www.alipan.com/s/wCNVf6YgCL8)
 > 
 >  	- **自用汉化**：上述的本地备用里面有一个是我自己将插件解压汉化了的，但是 `Chrome`浏览器用不了 360浏览器可以自己选择吧
 > 

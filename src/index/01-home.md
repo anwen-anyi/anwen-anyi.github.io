@@ -866,7 +866,7 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 
 <BiliBili bvid="BV1ie411T7oD" />
 
-**我使用的「Aria2.zip」：**[**https://www.aliyundrive.com/s/CY61gzf7zV4**](https://www.aliyundrive.com/s/CY61gzf7zV4)
+**我使用的「Aria2.zip」：**[**https://www.alipan.com/s/CY61gzf7zV4**](https://www.alipan.com/s/CY61gzf7zV4)
 
 #### 纠正说明：
 

@@ -106,6 +106,7 @@ export default hopeTheme({
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
+      component: true,
       attrs: true,
       chart: true,
       codetabs: true,
@@ -116,13 +117,13 @@ export default hopeTheme({
       imgSize: true,
       include: true,
       katex: true,      //启动支持KaTeX语法
-      container: true,  //启用自定义容器支持,提示 警告那些
       checkLinks: {
         status: "dev"   //是否启用链接检查
       },  
       tabs: true,       //否启用选项卡
       tasklist: true,   //启用任务列表格式支持
       gfm: true,        //支持完整的 GFM 语法
+      hint: true,       //启用提示
       flowchart: true,  //启用流程图支持
       mark: true,       //启用标记格式支持
       mermaid: true,    //启用 Mermaid 流程图支持
@@ -147,7 +148,7 @@ export default hopeTheme({
           },
         },
       ],
-      vPre: true,
+      // vPre: true,
       // vuePlayground: true,  //Vue 交互演示
       
 
@@ -156,7 +157,6 @@ export default hopeTheme({
     components: {
       components: [
         "ArtPlayer",
-        "AudioPlayer",
         "Badge",
         "BiliBili",
         "CodePen",
@@ -165,9 +165,9 @@ export default hopeTheme({
         "Share",
         "SiteInfo",
         "StackBlitz",
-        "VideoPlayer",
         "XiGua",
-        "YouTube",
+        "VPCard",
+        "VPBanner",
       ],
       // 弹窗提醒
       rootComponents: {

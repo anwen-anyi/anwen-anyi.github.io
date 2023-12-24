@@ -206,7 +206,7 @@ headerDepth: 6
 
 尝试更新 **Potplayer** 更新成最新版的试试看.
 
-网盘下载地址：[**Potplayer | 云盘下载**](https://www.aliyundrive.com/s/zvfVX9x6M1M)
+网盘下载地址：[**Potplayer | 云盘下载**](https://www.alipan.com/s/zvfVX9x6M1M)
 
 或者自己去官网：[**Global Potplayer**](http://potplayer.tv/?lang=zh_CN)，[**官网64位直链下载**](https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe)，[**官网32位直链下载**](https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup.exe)
 
@@ -436,7 +436,7 @@ headerDepth: 6
 - **302 重定向：重定向到真实链接**	
 
   - 例如你下载的是  **`pan.xx.cn/d/阿里云/图片.mp4`** 这个文件
-  - 等你点击下载后就变成 **`https://cn-beijing-data.aliyundrive.net/oI2jtWhu`** 这个链接，参考下图
+  - 等你点击下载后就变成 **`https://cn-beijing-data.alipan.net/oI2jtWhu`** 这个链接，参考下图
   - ![](/img/wenti/31.png)
 
 - **使用代理 URL：重定向到代理 URL**
@@ -697,44 +697,44 @@ Wscript.quit
 
 :::: center
 
-```card
+```component VPCard
 title: jsdelivr-1
 desc: 成品脚本打包下载
 logo: /home.png
 link: https://cdn.jsdelivr.net/gh/anwen-anyi/anwen-anyi.github.io/src/.vuepress/public/code.7z
-color: rgba(153, 255, 255, 0.10)
+color: rgba(13, 109, 252, 0.10)
 ```
 
-```card
+```component VPCard
 title: jsdelivr-2
 desc: 成品脚本打包下载
 logo: /home.png
 link: https://jsd.onmicrosoft.cn/gh/anwen-anyi/anwen-anyi.github.io/src/.vuepress/public/code.7z
-color: rgba(153, 255, 255, 0.20)
+color: rgba(13, 109, 252, 0.80)
 ```
 
-```card
+```component VPCard
 title: 阿里云盘
 desc: 成品脚本打包下载
 logo: /home.png
-link: https://www.aliyundrive.com/s/9pYxPj7mxtH
-color: rgba(153, 255, 255, 0.30)
+link: https://www.alipan.com/s/9pYxPj7mxtH
+color: rgba(13, 109, 252, 0.80)
 ```
 
-```card
+```component VPCard
 title: 蓝奏云盘
 desc: 成品脚本打包下载
 logo: /home.png
 link: https://www.lanzoui.com/iIYrh0vnukje
-color: rgba(153, 255, 255, 0.40)
+color: rgba(13, 109, 252, 0.80)
 ```
 
-```card
+```component VPCard
 title: 123云盘
 desc: 成品脚本打包下载
 logo: /home.png
 link: https://www.123pan.com/s/HEl8Vv-gRtHh
-color: rgba(153, 255, 255, 0.50)
+color: rgba(13, 109, 252, 0.50)
 ```
 
 ![如何让AList吃到proxy(代理)](/img/wenti/41-add-proxy.png)
