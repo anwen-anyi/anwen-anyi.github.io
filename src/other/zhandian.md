@@ -36,25 +36,17 @@ headerDepth: 6
 
 :::: center
 :::tip 我的站点服务状态监控
-**https://monitor.safe-education.repl.co/status/my**
-
 **https://stats.uptimerobot.com/7w9kmszqLQ**
+
+**https://monitor.safe-education.repl.co/status/my**
 :::
 ::::
 
-::::center
-:::tabs#alitoken
+<br/>
 
-@tab repl
-
-<iframe src="https://repl.izyt.cc/status/my" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1200" style="border-radius: 16px;"></iframe>
-
-@tab uptimerobot
 
 <iframe src="https://uptime.izyt.cc/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1800" style="border-radius: 16px;"></iframe>
 
-:::
-::::
 
 <iframe plausible-embed src="https://site.izyt.cc/anwen-anyi.github.io?embed=true&theme=light" scrolling="no" frameborder="0" loading="lazy" style="width: 1px; min-width: 100%; height: 1600px;"></iframe>
 

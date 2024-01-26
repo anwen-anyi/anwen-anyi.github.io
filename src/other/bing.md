@@ -34,18 +34,23 @@ headerDepth: 6
 <!-- more -->
 
 :::: center
-:::tip ___
-API：**https://bing.icodeq.com/**
+:::tip ‪            
+<!-- API：**https://bing.icodeq.com/** -->
 
 Bing 好图每日更新 : **https://icodeq.com/bing/**
 
 GitHub仓库：**https://github.com/zkeq/Bing-Wallpaper-Action**
+
+‪            
+
 <!-- bing壁纸自动更新 每天10点更新如果未更新 11点会二次更新 -->
 :::
 ::::
 
 <!-- 渲染全部的 -->
 <!-- <iframe src="https://api.cyfan.top/mark?url=https://raw.onmicrosoft.cn/Bing-Wallpaper-Action/main/README.md" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1100" style="border-radius: 16px;"></iframe> -->
+
+<!--
 
 <img src="https://bing.icodeq.com/?9" />
 
@@ -58,4 +63,24 @@ GitHub仓库：**https://github.com/zkeq/Bing-Wallpaper-Action**
   <img src="https://bing.icodeq.com/?4" />
   <img src="https://bing.icodeq.com/?5" />
   <img src="https://bing.icodeq.com/?6" />
+</div>
+-->
+
+<!-- 使用仓库 https://github.com/flow2000/bing-wallpaper-api -->
+<img src="https://api.bimg.cc/today?w=1920&h=1080&mkt=zh-CN" />
+
+<div class="image-preview">
+  <img src="https://api.bimg.cc/random?w=1920&h=1080&mkt=de-DE" />
+  <img src="https://api.bimg.cc/random?w=1920&h=1080&mkt=en-CA" />
+  <img src="https://api.bimg.cc/random?w=1920&h=1080&mkt=en-GB" />
+</div>
+<div class="image-preview">
+  <img src="https://api.bimg.cc/random?w=1920&h=1080&mkt=en-IN" />
+  <img src="https://api.bimg.cc/random?w=1920&h=1080&mkt=en-US" />
+  <img src="https://api.bimg.cc/random?w=1920&h=1080&mkt=fr-FR" />
+</div>
+<div class="image-preview">
+  <img src="https://api.bimg.cc/random?w=1920&h=1080&mkt=it-IT" />
+  <img src="https://api.bimg.cc/random?w=1920&h=1080&mkt=ja-JP" />
+  <img src="https://api.bimg.cc/random?w=1920&h=1080&mkt=zh-CN" />
 </div>
