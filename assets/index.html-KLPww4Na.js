@@ -1,1 +1,0 @@
-import{_ as o}from"./plugin-vue_export-helper-x3n3nnut.js";import{r as t,o as n,c as a,e as c,b as r}from"./app-oUTxBtah.js";const s={},_=r("p",null,"本页面內站点的监控是一些站点监控检测",-1);function l(m,d){const e=t("AutoCatalog");return n(),a("div",null,[_,c(e)])}const p=o(s,[["render",l],["__file","index.html.vue"]]);export{p as default};
