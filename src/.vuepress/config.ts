@@ -1,9 +1,12 @@
+import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 // import { docsearchPlugin } from "@vuepress/plugin-docsearch";
-import { searchProPlugin } from "vuepress-plugin-search-pro";
+// import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default defineUserConfig({
+  bundler: viteBundler(),
+  theme,
   plugins: [
     //   autoCatalogPlugin({
     //     //插件选项
@@ -12,18 +15,12 @@ export default defineUserConfig({
     //     // exclude:["/encrypt.md/"]
     //   }),
 
-    // search
+    // Algolia DocSearch
     // docsearchPlugin({
       // appId: "G9WNTTQL4R",
       // apiKey: "b4c123a561b0166b7015df8147771950",
       // indexName: "anwen-anyiio",
     // }),
-    searchProPlugin({
-      // appId: "G9WNTTQL4R",
-      // apiKey: "b4c123a561b0166b7015df8147771950",
-      // indexName: "anwen-anyiio",
-      indexContent: true
-    }),
   ],
   shouldPrefetch: false,
   base: "/",
@@ -76,7 +73,6 @@ export default defineUserConfig({
     //   description: "vuepress-theme-hope 的文档演示",
     // },
   },
-  theme,
   // 解析 h4 标头
   markdown: {
     headers: {
@@ -86,4 +82,5 @@ export default defineUserConfig({
   
   // Enable it with pwa
   // shouldPrefetch: false,
+
 });

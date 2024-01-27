@@ -80,6 +80,7 @@ export default hopeTheme({
     },
   },
   plugins: {
+    searchPro: true,
     // PWA
     pwa: {
       favicon: "/favicon.ico",
@@ -156,6 +157,7 @@ export default hopeTheme({
     // 插件选项
     components: {
       components: [
+        "ArtPlayer",
         "Badge",
         "BiliBili",
         "CodePen",
