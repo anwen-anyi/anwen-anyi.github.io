@@ -84,9 +84,3 @@ GitHub仓库：**https://github.com/zkeq/Bing-Wallpaper-Action**
   <img src="https://api.bimg.cc/random?w=1920&h=1080&mkt=ja-JP" />
   <img src="https://api.bimg.cc/random?w=1920&h=1080&mkt=zh-CN" />
 </div>
-
-<ArtPlayer src="https://vp-demo.u2sb.com/video/caminandes_03_llamigos_720p.mp4" />
-
-<ArtPlayer src="https://r2.izyt.cc/ios/ios_ts.m3u8" />
-
-<ArtPlayer src="https://r2.izyt.cc/ios/ios_ts.mp4" />
