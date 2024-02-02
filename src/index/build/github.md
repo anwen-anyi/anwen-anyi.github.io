@@ -85,6 +85,7 @@ collapsible: false
 ### **2.3 获取两个 Token**
 
 1. 获取GitHub Token
+   - **https://github.com/settings/tokens**
 
 <div class="image-preview">
 <img src="/img/build/github/github_token_1.png" />
@@ -93,6 +94,8 @@ collapsible: false
 
 2. 获取`Crowdin`Token，AList语言包
 
+	- **https://crowdin.com/settings#api-key**
+	
 	![](/img/build/github/crowdin_token.png)
 	
 
@@ -141,7 +144,7 @@ collapsible: false
 
 ### **3.1 修改前端配置文件**
 
-- **.github/workflows/==build.yml==** 原文件第41行^1^和第75行^2^alist-org换成自己的，如果你前端仓库名称也换了也自己修改一下\
+- **.github/workflows/==build.yml==** 原文件第41行^1^和第75行^2^alist-org换成自己的，如果你前端仓库名称也换了也自己修改一下
 
 ```diff yaml{4-5}
       - name: Checkout dist repo
