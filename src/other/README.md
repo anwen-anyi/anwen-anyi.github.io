@@ -11,4 +11,4 @@ headerDepth: 6
 
 本页面內站点的监控是一些站点监控检测
 
-<AutoCatalog />
+<Catalog />

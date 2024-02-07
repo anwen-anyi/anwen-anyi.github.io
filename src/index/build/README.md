@@ -11,5 +11,5 @@ category:
 headerDepth: 6
 ---
 
-<AutoCatalog />
+<Catalog />
 
