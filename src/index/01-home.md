@@ -820,6 +820,8 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 
 <br>
 
+
+
 ### 2.12 - IOS16 IPA安装 & 永久安装
 
 <BiliBili bvid="BV1bT411N7tT" />
@@ -836,6 +838,8 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 
 <BiliBili bvid="BV1kX4y1X7vo" />
 
+
+
 #### 如何永久安装 IPA
 
 使用以下两款软件即可~但是有系统要求的喔~大概的看一下下面的表格里面的吧~再详情具体的可以点进去自己查看~
@@ -845,18 +849,37 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 
 手机用户看的话记得右侧还有哦~记得滑动一下
 
-| **轻松签**   | **轻松签+ A12+** | **轻松签+ iOS15+**                                           |                                                              |
-| ------------ | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| CPU          | All              | **A12 - A15**                                                | **All**                                                      |
-| 设备要求     | 任意设备         | **iPhone XS/XR - 13**                                        | **任意设备**                                                 |
-| 系统版本     | iOS12以上        | **iOS14.0 - iOS15.4.1  iOS15.5 beta1 - iOS15.5 beta4 iOS15.6 beta1 - iOS15.6 beta5** | **iOS15.0 - iOS15.4.1 iOS15.5 beta1 - iOS15.5 beta4 iOS15.6 beta1 - iOS15.6 beta5** |
-| 是否需要证书 | 是               | **否**                                                       | **否**                                                       |
+|     开始     |     截止     |                       arm64 (A8 - A11)                       |                 arm64e (A12 - A17 / M1 - M2)                 |
+| :----------: | :----------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|  13.7及更早  |  13.7及更早  |                            不支持                            |                            不支持                            |
+|     14.0     |    14.8.1    | [Installing TrollStore (TrollHelper)](https://ios.cfw.guide/installing-trollhelper) | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) |
+|     15.0     | 15.5 beta 4  | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) |
+|     15.5     |     15.5     | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) |
+| 15.6 beta 1  | 15.6 beta 5  | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) |
+|     15.6     |    15.6.1    | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) |
+|     15.7     |    15.7.1    | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) |
+|    15.7.2    |    15.8.1    | [Installing TrollStore (TrollMisaka)](https://ios.cfw.guide/installing-trollhelper-trollmisaka) | [Installing TrollStore (TrollMisaka)](https://ios.cfw.guide/installing-trollhelper-trollmisaka) |
+|     16.0     |    16.1.2    | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) |
+|     16.2     |    16.6.1    | [Installing TrollStore (TrollStar)](https://ios.cfw.guide/installing-trollhelper-trollstar) | [Installing TrollStore (TrollStar)](https://ios.cfw.guide/installing-trollhelper-trollstar) |
+|   16.7 RC    |   16.7 RC    | [Installing TrollStore (TrollHelper)](https://ios.cfw.guide/installing-trollhelper) |                 没有安装方法（等待后续完善）                 |
+|     16.7     |    16.7.5    |                            不支持                            |                            不支持                            |
+|     17.0     |     17.0     | [Installing TrollStore (TrollHelper)](https://ios.cfw.guide/installing-trollhelper) |                 没有安装方法（等待后续完善）                 |
+| 17.0.1及以后 | 17.0.1及以后 |                            不支持                            |                            不支持                            |
+
+|      |  轻松签  |                     轻松签+ A12+                     |                    轻松签+ iOS15+                    |
+| :--: | :------: | :--------------------------------------------------: | :--------------------------------------------------: |
+| CPU  |   All    |                      A12 - A15                       |                         All                          |
+| 设备 | 任意设备 |                   iPhone XS/XR-13                    |                       任意设备                       |
+| 系统 |  iOS12+  | iOS14.0 - 15.4.1 iOS15.5 beta1 - 4 iOS15.6 beta1 - 5 | iOS15.0 - 15.4.1 iOS15.5 beta1 - 4 iOS15.6 beta1 - 5 |
+| 证书 |   需要   |                        不需要                        |                        不需要                        |
 
 **具体如果使用，十分的简单，我就不说教程啦~自己看吧里面都有教程**
 
 如果你不是以上版本的没办法永久安装，但是又想自己安装，那只能买证书自己签名然后安装了，右侧哪个 轻松签，里面有卖证书的 自己看吧...
 
 <br>
+
+
 
 ### 2.13 - AList离线下载
 
@@ -890,6 +913,8 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 ::::
 
 <br>
+
+
 
 ### 2.14 - 修改Alist使用的数据库为MySQL
 

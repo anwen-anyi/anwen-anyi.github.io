@@ -33,19 +33,35 @@ headerDepth: 6
 
 <!-- more -->
 
-
 :::: center
 :::tip 我的站点服务状态监控
-**https://stats.uptimerobot.com/7w9kmszqLQ**
 
-**https://monitor.safe-education.repl.co/status/my**
+**https://jk.izyt.cc/status/my**
+
+**https://stats.uptimerobot.com/7w9kmszqLQ**
+:::
+::::
+
+:::: center
+
+::: tabs#jiankong
+
+@tab Uptime Kuma
+
+<iframe src="https://jk.izyt.cc/status/my" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1800" style="border-radius: 16px;"></iframe>
+
+@tab UptimeRobot
+
+<iframe src="https://uptime.izyt.cc/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1800" style="border-radius: 16px;"></iframe>
+
 :::
 ::::
 
 <br/>
 
+<br/>
 
-<iframe src="https://uptime.izyt.cc/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1800" style="border-radius: 16px;"></iframe>
+<br/>
 
 
 <iframe plausible-embed src="https://site.izyt.cc/anwen-anyi.github.io?embed=true&theme=light" scrolling="no" frameborder="0" loading="lazy" style="width: 1px; min-width: 100%; height: 1600px;"></iframe>
