@@ -15,7 +15,7 @@ export default defineUserConfig({
     //     // exclude:["/encrypt.md/"]
     //   }),
 
-    // Algolia DocSearch
+    // Algolia DocSearch Algolia搜索插件
     // docsearchPlugin({
       // appId: "G9WNTTQL4R",
       // apiKey: "b4c123a561b0166b7015df8147771950",
@@ -34,15 +34,15 @@ export default defineUserConfig({
         src: "https://v1.hitokoto.cn/?encode=js&select=%23hitokoto",
       }
     ],
-    [
-      //  不蒜子
-      "script",
-      {
-        type: "text/javascript",
-        charset: "UTF-8",
-        src: "https://busuanzi.icodeq.com/busuanzi.pure.mini.js",
-      }
-    ],
+    // [
+    //   //  不蒜子
+    //   "script",
+    //   {
+    //     type: "text/javascript",
+    //     charset: "UTF-8",
+    //     src: "https://busuanzi.icodeq.com/busuanzi.pure.mini.js",
+    //   }
+    // ],
     [
       // 站点
       "script",
@@ -53,11 +53,11 @@ export default defineUserConfig({
       }
     ],
     [
-      // icodeq
+      // site
       "script",
       {
         async: true,
-        src: "https://vercel.site.icodeq.com/js/embed.host.js"
+        src: "https://site.izyt.cc/js/embed.host.js"
       }
     ]
   ],
@@ -67,11 +67,6 @@ export default defineUserConfig({
       title: "安安稳稳",
       // description: "A docs demo for vuepress-theme-hope",
     },
-    // "/zh/": {
-    //   lang: "zh-CN",
-    //   title: "文档演示",
-    //   description: "vuepress-theme-hope 的文档演示",
-    // },
   },
   // 解析 h4 标头
   markdown: {

@@ -42,6 +42,14 @@ collapsible: false
 
 这次经过了[大佬](https://github.com/itsHenry35)手把手的教我配置部署到了GitHub Actions自动化编译和AList官方的一样编译很多不同版本，妈妈再也不用担心不能交叉编译啦
 
+::: tip 
+
+- 如果你只有修改前端的想法，==**强烈推荐**== 单独只进行编译前端即可，后端(二进制)应用程序继续使用AList官方原版的文件
+  - 因为现在支持引用第三方前端文件使用：参考 https://alist.nn.ci/zh/config/configuration.html#bleve-dir
+- 如果没有修改后端的需求，只编译前端文件就可以
+
+:::
+
 <br/>
 
 
@@ -399,3 +407,25 @@ FetchWebRelease() {
 
 
 现在编译出来也是需要很久，和 [AList](https://github.com/alist-org/alist) 官方编译一样也大概需要25-30分钟，如果只需要个别版本可以自己修改配置文件，修改配置文件后续补上(未知时间)
+
+- 如果没有修改后端的需求不建议自己编译了，只编译前端就好，看开始提醒
+
+-----
+
+<SiteInfo
+  name="Windows 编译教程"
+  desc=""
+  url="./win.md"
+  logo="/img/start/windows.svg"
+  repo=""
+  preview=""
+/>
+
+<SiteInfo
+  name="Linux 编译教程"
+  desc=""
+  url="./linux.md"
+  logo="/img/start/linux.svg"
+  repo=""
+  preview=""
+/>

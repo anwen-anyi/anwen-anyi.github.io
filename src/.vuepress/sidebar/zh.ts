@@ -27,5 +27,13 @@ export const zhSidebar = sidebar({
       collapsible: true,
       children: "structure",
     },
+    // {
+    //   icon: "fa-solid fa-stars",
+    //   text: "软件收藏",
+    //   prefix: "collect/",
+    //   // like: "other/"
+    //   collapsible: true,
+    //   children: "structure",
+    // },
   ],
 });

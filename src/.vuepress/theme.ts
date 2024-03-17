@@ -19,8 +19,8 @@ export default hopeTheme({
   iconAssets: [
     // "iconfont", //icon: iconfont icon-图标名称
     "//at.alicdn.com/t/c/font_2407338_9gwb60oe2m9.css",
-    "https://npm.onmicrosoft.cn/font6pro@6.4.2/css/fontawesome.min.css",
-    "https://npm.onmicrosoft.cn/font6pro@6.4.2/css/all.min.css",
+    "https://npm.onmicrosoft.cn/font6pro@6.5.1/css/fontawesome.min.css",
+    "https://npm.onmicrosoft.cn/font6pro@6.5.1/css/all.min.css",
     "https://npm.elemecdn.com/font6pro@6.4.0/css/all.min.css",
     "https://npm.elemecdn.com/font6pro@6.4.0/css/fontawesome.min.css",
     
@@ -61,7 +61,8 @@ export default hopeTheme({
       sidebar: zhSidebar,
 
       // footer: "默认页脚",
-      footer: '<p id="hitokoto">  <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </p> <p>本页面<span id="busuanzi_value_page_pv"></span>次,本站<span id="busuanzi_value_site_pv"></span>次,总访客<span id="busuanzi_value_site_uv"></span>人</p>',
+      footer: '<p id="hitokoto">  <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </p>',
+      // <p>本页面<span id="busuanzi_value_page_pv"></span>次,本站<span id="busuanzi_value_site_pv"></span>次,总访客<span id="busuanzi_value_site_uv"></span>人</p>',
 
       displayFooter: true,
 
@@ -131,7 +132,6 @@ export default hopeTheme({
       sub: true,        //上标
       sup: true,        //下标
       align: true,      //自定义对齐格式支持
-      // card: true,       //Markdown 中添加卡片
       // presentation: true, //开启幻灯片
       playground: {
         presets: ["ts", "vue"],

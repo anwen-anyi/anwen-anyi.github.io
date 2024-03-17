@@ -54,7 +54,15 @@ collapsible: false
 
 我没记错前几个月才升级了1.18+...升级真快(´◔‸◔')”
 
+::: tip
 
+这样的编译的似乎只有一个版本，如果你想要像AList官方那样编译很多可以使用 [GitHub Actions](./github.md) 来进行编译
+
+- 如果你只有修改前端的想法，==**强烈推荐**== 单独只进行编译前端即可，后端(二进制)应用程序继续使用AList官方原版的文件
+  - 因为现在支持引用第三方前端文件使用：参考 https://alist.nn.ci/zh/config/configuration.html#bleve-dir
+- 这样就不用担心设备不同不会交叉编译，以及编译过程中出现的问题无法解决
+
+:::
 
 **编译之前我们需要先准备安装好以下软件:**
 
@@ -210,11 +218,7 @@ node ./scripts/i18n.mjs
 - 下载前端带上 `--recurse-submodules` 参数去下载
 
 ```bash
-无代理
 git clone --recurse-submodules https://github.com/alist-org/alist-web.git
-
-代理 - （大白提供）
-git clone --recurse-submodules https://hub.cooluc.com/alist-org/alist-web.git
 ```
 
 
@@ -268,3 +272,23 @@ go build -ldflags="$ldflags" .
 ![](/img/build/build12.gif)
 
 ‪好了，以上教程就是本次编译的教程啦... 想折腾的自己折腾吧...有想试试的 可以试试看...**(‾◡◝)**
+
+-----
+
+<SiteInfo
+  name="Linux 编译教程"
+  desc=""
+  url="./linux.md"
+  logo="/img/start/linux.svg"
+  repo=""
+  preview=""
+/>
+
+<SiteInfo
+  name="GitHub Actions"
+  desc=""
+  url="./github.md"
+  logo="/img/start/github.svg"
+  repo=""
+  preview=""
+/>

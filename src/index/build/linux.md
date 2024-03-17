@@ -47,6 +47,16 @@ collapsible: false
 
 ## 1. 编译前准备
 
+::: tip 
+
+`GitHub code space`编译的似乎只有一个版本，如果你想要像AList官方那样编译很多可以使用 [GitHub Actions](./github.md) 来进行编译
+
+- 如果你只有修改前端的想法，==**强烈推荐**== 单独只进行编译前端即可，后端(二进制)应用程序继续使用AList官方原版的文件
+  - 因为现在支持引用第三方前端文件使用：参考 https://alist.nn.ci/zh/config/configuration.html#bleve-dir
+- 这样就不用担心设备不同不会交叉编译，以及编译过程中出现的问题无法解决
+
+:::
+
 ### 1.1 编译前说明
 
 编译Linux版本教程我们使用 `GitHub code space` 来演示
@@ -199,4 +209,24 @@ go build -ldflags="$ldflags" .
 
 Linux 二进制的编译就到这里结束啦~ 有兴趣的小伙伴可以去试试啦~
 
-关于如何交叉编译（Linux编译Windows和mac的）在研究中.......
+~~关于如何交叉编译（Linux编译Windows和mac的）在研究中.......~~ 别交叉编译啦看开头的提示吧
+
+-----
+
+<SiteInfo
+  name="Windows 编译教程"
+  desc=""
+  url="./win.md"
+  logo="/img/start/windows.svg"
+  repo=""
+  preview=""
+/>
+
+<SiteInfo
+  name="GitHub Actions"
+  desc=""
+  url="./github.md"
+  logo="/img/start/github.svg"
+  repo=""
+  preview=""
+/>

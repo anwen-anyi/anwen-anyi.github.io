@@ -64,7 +64,7 @@ V3.31.0 优化了部分功能，导致个别位置CSS未修改看起冲突一样
 
 ```html{30-42,115-183}
 <!--Alist V3建议添加的，已经默认添加了，如果你的没有建议加上-->
-<script src="https://polyfill.io/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
 
 <!--引入字体，全局字体使用-->
 <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css" />
@@ -339,7 +339,7 @@ textarea#comment-textarea:focus {
 
 ```html
 <!--Alist V3建议添加的，已经默认添加了，如果你的没有建议加上-->
-<script src="https://polyfill.io/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
 
 <!--引入字体，全局字体使用-->
 <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css" />

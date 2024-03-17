@@ -64,5 +64,4 @@ headerDepth: 6
 <br/>
 
 
-<iframe plausible-embed src="https://site.izyt.cc/anwen-anyi.github.io?embed=true&theme=light" scrolling="no" frameborder="0" loading="lazy" style="width: 1px; min-width: 100%; height: 1600px;"></iframe>
-
+<iframe plausible-embed src="https://site.izyt.cc/anwen-anyi.github.io?embed=true&theme=system" scrolling="no" frameborder="0" loading="lazy" style="width: 1px; min-width: 100%; height: 1600px;"></iframe>
