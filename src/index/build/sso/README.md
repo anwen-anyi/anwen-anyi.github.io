@@ -4,7 +4,7 @@ index: false
 icon: fa-solid fa-repeat-1
 collapsible: false
 dir:
-  order: 120
+  order: 330
 category:
   - 使用指南
 
@@ -12,4 +12,4 @@ headerDepth: 6
 
 ---
 
-<AutoCatalog />
+<Catalog />

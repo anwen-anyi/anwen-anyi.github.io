@@ -4,7 +4,7 @@ title: 常见问题
 # 这是页面的图标
 icon: fa-solid fa-rocket-launch
 # 这是侧边栏的顺序
-order: 28
+order: 50
 # 设置作者
 author: 安稳
 # 设置写作时间
@@ -38,7 +38,7 @@ headerDepth: 6
 
 
 
-## 1. 刚搭建好AList打开进去就这样是怎么回事？
+## **1. 刚搭建好AList打开进去就这样是怎么回事？**
 
 ![](/img/wenti/1.jpg)
 
@@ -46,7 +46,9 @@ headerDepth: 6
 
 <br>
 
-## 2. 怎么刷新应用？为什么我网盘上传后Alist没更新?
+
+
+## **2. 怎么刷新应用？为什么我网盘上传后Alist没更新?**
 
 登录管理员账号的前提下，右下角就能刷新了.
 
@@ -56,7 +58,9 @@ headerDepth: 6
 
 <br>
 
-## 3. 怎么打开 AList 提示 System error: TypeError:n.replaceAll is not a function？
+
+
+## **3. 怎么打开 AList 提示 System error: TypeError:n.replaceAll is not a function？**
 
 ![](/img/wenti/3.png)
 
@@ -71,7 +75,9 @@ headerDepth: 6
 
 <br>
 
-## 4. 怎么首次打开强制默认白天或者夜间模式 ❎
+
+
+## **4. 怎么首次打开强制默认白天或者夜间模式 ❎**
 
 ~~不是很好用现在，不推荐使用，可以尝尝怎么样不建议实装~~
 
@@ -85,7 +91,9 @@ headerDepth: 6
 
 <br>
 
-## 5. 密码忘记了怎么办？
+
+
+## **5. 密码忘记了怎么办？**
 
 安装后查看密码
 
@@ -104,7 +112,8 @@ headerDepth: 6
 
 <br>
 
-## 6.挂载的网盘提示(Client. Timeout exceeded while awating headers) 
+
+## **6. 挂载的网盘提示(Client. Timeout exceeded while awating headers)**
 
 比如下图情况?当然了不止阿里这样，前面的域名会变化，后面的 **(Client. Timeout exceeded while awating headers) ，**不会变化出现如下情况 **因为网络问题，连接超时导致的**
 
@@ -114,35 +123,37 @@ headerDepth: 6
 
 <br>
 
-## 7. 挂载不了谷歌网盘
+
+
+## **7. 挂载不了谷歌网盘**
 
 如果你是国内的服务器，或者更直白的说，**你能不借助任何代理连接谷歌吗？**
 
 国外服务器能挂，国内的不行。
 
-
-
 <br>
 
-## 8. 两个不同的上传有什么不同
+
+
+## **8. 两个不同的上传有什么不同**
 
 **1️⃣ stream**直接把文件二进制内容放进body中，这样后端可以使用很少的内存，但是浏览器可能会限制大小因为要一次性把文件读进内存。
 
 **2️⃣ form**是把文件包裹成formdata上传，后端使用的内存会多一些，但是不限制大小。  
 
-
-
 <br>
 
-## 9. 那些网盘是强制中转(代理)的?
+
+
+## **9. 那些网盘是强制中转(代理)的?**
 
 夸克，迅雷**普通版**，115，或者看文档添加存储时底部的流程图
 
-
-
 <br>
 
-## 10. 怎么没有了推送到Aria2下载按钮？
+
+
+## **10. 怎么没有了推送到Aria2下载按钮？**
 
 - 需要先打开复选框，
 - 然后选择好文件，
@@ -154,7 +165,9 @@ headerDepth: 6
 
 <br>
 
-## 11. 怎么批量复制链接?
+
+
+## **11. 怎么批量复制链接?**
 
 - 打开右下角的复选框，
 - 然后去左侧选择好文件，
@@ -166,7 +179,9 @@ headerDepth: 6
 
 <br>
 
-## 12. 添加挂载保存不了提示两个情况：
+
+
+## **12. 添加挂载保存不了提示两个情况：**
 
 ### 一：x_storages.mount_path
 
@@ -182,17 +197,19 @@ headerDepth: 6
 
 <br>
 
-## 13. 如何设置夜间和白天不同的logo
+
+
+## **13. 如何设置夜间和白天不同的logo**
 
 进入后台 ——> 样式 ——> 图标，自己设置一行一个，第一行是白天的，第二行是夜间的。
 
 ![](/img/wenti/13.png)
 
-
-
 <br>
 
-## 14. 登录有效期那么短就失效了
+
+
+## **14. 登录有效期那么短就失效了**
 
 现在登录状态默认登录有效期48小时，觉的短的可以自己改，具体最长多少没试过.
 
@@ -202,11 +219,13 @@ headerDepth: 6
 
 <br>
 
-## 15. 点视频下面的potplayer播放器报错
+
+
+## **15. 点视频下面的potplayer播放器报错**
 
 尝试更新 **Potplayer** 更新成最新版的试试看.
 
-网盘下载地址：[**Potplayer | 云盘下载**](https://www.aliyundrive.com/s/zvfVX9x6M1M)
+网盘下载地址：[**Potplayer | 云盘下载**](https://www.alipan.com/s/zvfVX9x6M1M)
 
 或者自己去官网：[**Global Potplayer**](http://potplayer.tv/?lang=zh_CN)，[**官网64位直链下载**](https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe)，[**官网32位直链下载**](https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup.exe)
 
@@ -214,7 +233,9 @@ headerDepth: 6
 
 <br>
 
-## 16. RaiDrive 复制粘贴百度的失败
+
+
+## **16. RaiDrive 复制粘贴百度的失败**
 
 因为百度大文件(大于20MB)是需要 **User-Agent** 这个请求头的的，RaiDrive没有添加这个请求头的位置，所以就别想从 RaiDrive 复制粘贴文件出来了.
 
@@ -230,11 +251,11 @@ headerDepth: 6
 
 不会安装插件？看这个[**BV1K34y1v7Uw**](https://www.bilibili.com/video/BV1K34y1v7Uw)
 
-
-
 <br>
 
-## 17. 一大批因为因为网络问题
+
+
+## **17. 一大批因为因为网络问题**
 
  1. **TLS handshake timeout?**
  2.  **read: connection reset by peer?** 
@@ -246,7 +267,9 @@ headerDepth: 6
 
 <br>
 
-## 18. 添加 天翼189时：设备 ID 不存在，需要二次设备验证 或者验证码
+
+
+## **18. 添加 天翼189时：设备 ID 不存在，需要二次设备验证 或者验证码**
 
 可能是触发了风控。更改密码后，再次添加即可
 
@@ -276,7 +299,9 @@ headerDepth: 6
 
 <br>
 
-## 19. 为什么不能网页看视频
+
+
+## **19. 为什么不能网页看视频**
 
 - 需要浏览器支持的编码
 - 一般浏览器不支持 H.265 编码视频
@@ -290,7 +315,9 @@ headerDepth: 6
 
 <br>
 
-## 20. 怎么给直链添加过期时间
+
+
+## **20. 怎么给直链添加过期时间**
 
 直链链接的过期时间，以小时为单位。如果为 0，则不会过期。默认值为 0。
 
@@ -304,23 +331,27 @@ headerDepth: 6
 
 <br>
 
-## 21. 怎么挂载SMB？
+
+
+## **21. 怎么挂载SMB？**
 
 下面这个链接可能对你有帮助~你试试看呢：https://github.com/alist-org/alist/discussions/2215
 
 <br>
 
-## 22. AList如何让网盘显示文件夹容量?
+
+
+## **22. AList如何让网盘显示文件夹容量?**
 
 目前我知道的只有 **OneDrive** 网盘支持显示文件夹文件容量...别的不知道..没办法人工干预显示
 
 具体怎么搞不知道，建议去问相对应的网盘为什么不支持显示~
 
-
-
 <br>
 
-## 23. 如何禁止游客访问？
+
+
+## **23. 如何禁止游客访问？**
 
 ### 方法1：
 直接在用户里面将 **`guest`** 启用关闭 
@@ -333,15 +364,42 @@ headerDepth: 6
 
 ![](/img/wenti/23.png)
 
-
-
 <br>
 
-## 24. AList v3版本如何备份？
 
-1. 直接把Alist同级目录下的文件夹data/data.db 这个文件备份了
-2. 或者直接把data这个文件夹备份也行...
-3. 后台支持导出数据备份
+
+## **24. AList v3版本如何备份？**
+
+## **方法1-内置**
+
+使用`AList`后台的内置 `备份/恢复`选项
+
+>1. 备份：进行AList数据进行备份（==**不包含索引**==）
+>
+>2. 恢复：恢复之前备份文件
+>
+>3. 覆盖：恢复时选择覆盖会将用户信息进行覆盖
+>
+>4. 加密：填写`加密密码`导出时会将信息进行加密，导入时也需要先输入`加密密码`再点击恢复^3.40.0_新增^
+
+
+
+
+
+## **方法2-sqlite3**
+
+直接将`AList`目录下的 data/`data.db`数据库进行备份，等到了新环境直接进行替换即可(==**包含索引数据**==)
+
+- 现在高版本如果有`data.db-shm`和`data.db-wal`这两个文件也要一起进行备份，恢复时也是一起替换
+- 建议停止运行AList再进行备份，这样`data.db-shm`和`data.db-wal`这两个文件会和`data.db`合并在一起
+
+
+
+
+
+## **方法3-其他数据库**
+
+其他，如果你使用了 `MySQL，Postgres` 等非`sqlite数据库`，请自行解决(==**包含索引数据**==)
 
 以上三个自己选一个
 
@@ -351,7 +409,9 @@ headerDepth: 6
 
 <br>
 
-## 25. 元信息里面的隐藏正则表达式怎么写?
+
+
+## **25. 元信息里面的隐藏正则表达式怎么写?**
 
 粗略的看看吧，写的可能不是很明白，如果不太懂，自己去写一下保存去看看效果大概应纳就能懂了..
 
@@ -373,7 +433,9 @@ headerDepth: 6
 
 <br>
 
-## 26. 如何禁止打包下载？
+
+
+## **26. 如何禁止打包下载？**
 
 可以的 去后台 全局 ——> 打包下载  关闭即可
 
@@ -381,7 +443,9 @@ headerDepth: 6
 
 <br>
 
-## 27. 如何挂载某网盘的指定文件夹
+
+
+## **27. 如何挂载某网盘的指定文件夹**
 
 在挂载的时候把你想挂载的根文件夹ID填到挂载信息里面就行，不同网盘的ID获取方式不一样自己看文档，文档没有的自己试验一下文件夹的名字哩.
 
@@ -391,7 +455,9 @@ headerDepth: 6
 
 <br>
 
-## 28. polyfill.min.js 加载太慢怎么办？
+
+
+## **28. polyfill.min.js 加载太慢怎么办？**
 
 第一个是默认的，自带的
 
@@ -403,11 +469,11 @@ headerDepth: 6
 <script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>  
 ```
 
-
-
 <br>
 
-## 29. 两个 Aria2 有什么不同
+
+
+## **29. 两个 Aria2 有什么不同**
 
 - 图1后台管理中设置的Aria2：用于离线下载，即给定链接和路径后会使用这里的aria2进行下载，完成后上传的路径对应的存储。这里的aria2需要是安装alist的机器可以访问的。
 - 右侧哪个离线下载是前端界面的喔~管理员才能用~
@@ -421,7 +487,9 @@ headerDepth: 6
 
 <br>
 
-## 30. 输入错误密码次数过多
+
+
+## **30. 输入错误密码次数过多**
 
 密码输入次数太多了，等几分钟重试吧，具体多少分钟现在还不晓得...后面如果知道了会更新
 
@@ -431,12 +499,14 @@ headerDepth: 6
 
 <br>
 
-## 31. 本机代理、使用代理URL、302重定向、Web代理 这四个有什么不同
+
+
+## **31. 本机代理、使用代理URL、302重定向、Web代理 这四个有什么不同**
 
 - **302 重定向：重定向到真实链接**	
 
   - 例如你下载的是  **`pan.xx.cn/d/阿里云/图片.mp4`** 这个文件
-  - 等你点击下载后就变成 **`https://cn-beijing-data.aliyundrive.net/oI2jtWhu`** 这个链接，参考下图
+  - 等你点击下载后就变成 **`https://cn-beijing-data.alipan.net/oI2jtWhu`** 这个链接，参考下图
   - ![](/img/wenti/31.png)
 
 - **使用代理 URL：重定向到代理 URL**
@@ -460,7 +530,9 @@ headerDepth: 6
 
 <br>
 
-## 32. 怎么给游客上传权限?
+
+
+## **32. 怎么给游客上传权限?**
 
 元信息  ——> 添加路径 ——> 勾选**写入** 即可，后面的 **应用到子文件夹** 我就不说了自己看着办.
 
@@ -472,7 +544,9 @@ headerDepth: 6
 
 <br>
 
-## 33. 为什么无法打包下载?
+
+
+## **33. 为什么无法打包下载?**
 
 与 PDF 预览相同，需要 **HTTPS** 和 **CORS** 支持，并且：
 
@@ -481,30 +555,17 @@ headerDepth: 6
 
 <br>
 
-### 打开PDF文档以及打包下载长时间转动无反应
 
-可能是没有打开Https，还有一种情况，耽搁了一些人大量的时间，就是你的电脑装有IDM，或者IDM类似的浏览器下载托管软件，因为fetch会被IDM软件拦截，所以PDF文件将无法加载，你可能会收到如下报错：
 
-```htm
-PDF.js v2.12.305 (build: d3e1d7090)
-信息：Failed to fetch
-```
-
-解决方案其实很简单，你可以在IDM等软件中设置取消在本站点自动下载，~~也可以直接删除IDM等软件。。。bushi~~  IDM里面自己试试看吧~
-
-![](/img/wenti/33.png)
-
-<br>
-
-## 34. 123网盘 json: cannot unmarshal string into Go struct field TokenResp.code of type int
+## **34. 123网盘 json: cannot unmarshal string into Go struct field TokenResp.code of type int**
 
 这个是123的api限制，请求稍微过快就会触发这个错误。
 
-
-
 <br>
 
-## 35. System error: SyntaxError: Invalid regular expression: /?/: Nothing to repeat 
+
+
+## **35. System error: SyntaxError: Invalid regular expression: /?/: Nothing to repeat** 
 
 出现如下报错应该是插件冲突了导致的，比如油猴的或者脚本猫中的一个答题脚本导致的，具体的可以看下面标题
 
@@ -514,7 +575,9 @@ PDF.js v2.12.305 (build: d3e1d7090)
 
 <br>
 
-## 36. 如何添加设置 ".epub" 预览.
+
+
+## **36. 如何添加设置 ".epub" 预览**
 
 📣3.7.x 版本及更高的版本已经支持  ".epub" 阅读，
 
@@ -546,7 +609,9 @@ PDF.js v2.12.305 (build: d3e1d7090)
 
 <br>
 
-## 37. 如何添加 3D 模型预览/展示功能
+
+
+## **37. 如何添加 3D 模型预览/展示功能**
 
 📣此方式在任何版本都能用，可能如果预览 OneDrive 网盘需要 3.8.x版本
 
@@ -576,7 +641,9 @@ PDF.js v2.12.305 (build: d3e1d7090)
 
 <br>
 
-## 38. Docker 更新 / 升级 最新版
+
+
+## **38. Docker 更新 / 升级 最新版**
 
 1. docker ps -a #查看容器(找Alist容器的ID)
 
@@ -597,17 +664,19 @@ PDF.js v2.12.305 (build: d3e1d7090)
 
 <br>
 
-## 39. RaiDrive挂载百度网盘，可以下载文件，不能上传文件。往挂载目录丢文件提示“提示“你需要权限来执行此操作”。这个怎么解决？
+
+
+## **39. RaiDrive挂载百度网盘，可以下载文件，不能上传文件。往挂载目录丢文件提示“提示“你需要权限来执行此操作”。这个怎么解决？**
 
 Raidrive 是因为上传文件会预先创建一个空文件 而百度网盘不允许创建空文件
 
 AListv2可以成功是因为v2会忽略空文件上传
 
-
-
 <br>
 
-## 40. 为什么 Terabox 挂载成功了 但是不显示内容？
+
+
+## **40. 为什么 Terabox 挂载成功了 但是不显示内容？**
 
 因为 **Terabox** 限制IP，如果你是本机非海外IP访问，是无法访问的，自然不会显示内容。
 
@@ -631,7 +700,9 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 <br>
 
-## 41. AList如何 使用/吃到 代理/proxy
+
+
+## **41. AList如何 使用/吃到 代理/proxy**
 
 以下配置方式均为 Windows方式，其他的自行解决
 
@@ -697,44 +768,44 @@ Wscript.quit
 
 :::: center
 
-```card
+```component VPCard
 title: jsdelivr-1
 desc: 成品脚本打包下载
 logo: /home.png
 link: https://cdn.jsdelivr.net/gh/anwen-anyi/anwen-anyi.github.io/src/.vuepress/public/code.7z
-color: rgba(153, 255, 255, 0.10)
+color: rgba(13, 109, 252, 0.10)
 ```
 
-```card
+```component VPCard
 title: jsdelivr-2
 desc: 成品脚本打包下载
 logo: /home.png
 link: https://jsd.onmicrosoft.cn/gh/anwen-anyi/anwen-anyi.github.io/src/.vuepress/public/code.7z
-color: rgba(153, 255, 255, 0.20)
+color: rgba(13, 109, 252, 0.80)
 ```
 
-```card
+```component VPCard
 title: 阿里云盘
 desc: 成品脚本打包下载
 logo: /home.png
-link: https://www.aliyundrive.com/s/9pYxPj7mxtH
-color: rgba(153, 255, 255, 0.30)
+link: https://www.alipan.com/s/9pYxPj7mxtH
+color: rgba(13, 109, 252, 0.80)
 ```
 
-```card
+```component VPCard
 title: 蓝奏云盘
 desc: 成品脚本打包下载
 logo: /home.png
 link: https://www.lanzoui.com/iIYrh0vnukje
-color: rgba(153, 255, 255, 0.40)
+color: rgba(13, 109, 252, 0.80)
 ```
 
-```card
+```component VPCard
 title: 123云盘
 desc: 成品脚本打包下载
 logo: /home.png
 link: https://www.123pan.com/s/HEl8Vv-gRtHh
-color: rgba(153, 255, 255, 0.50)
+color: rgba(13, 109, 252, 0.50)
 ```
 
 ![如何让AList吃到proxy(代理)](/img/wenti/41-add-proxy.png)
@@ -763,31 +834,42 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 <br>
 
-## 42. 123云盘挂载时出现 json: cannot unmarshal string into Go struct field TokenResp.data of type struct { Token string "json:"token"" }
 
-![](/img/wenti/41.png)
 
-大概率是你的这台搭建Alist的设备 暂时被 拉黑，冻结，封禁，限制了。先不要挂载了，等几个小时再试试看或者等一天
+## **42. 打开PDF文档以及打包下载长时间转动无反应**
 
-（以上问题已经经过测试得出的结论）
+可能是没有打开Https，还有一种情况，耽搁了一些人大量的时间，就是你的电脑装有IDM，或者IDM类似的浏览器下载托管软件，因为fetch会被IDM软件拦截，所以PDF文件将无法加载，你可能会收到如下报错：
+
+```htm
+PDF.js v2.12.305 (build: d3e1d7090)
+信息：Failed to fetch
+```
+
+解决方案其实很简单，你可以在IDM等软件中设置取消在本站点自动下载，~~也可以直接删除IDM等软件。。。bushi~~  IDM里面自己试试看吧~
+
+![](/img/wenti/33.png)
 
 <br>
 
-## 43. 现在文件后面多了个 sign 的参数是干嘛的？
+
+
+## **43. 现在文件后面多了个 sign 的参数是干嘛的？**
 
 加密了为了账号安全一些，查看详情可以[AList 全局设置](https://alist.nn.ci/zh/config/global.html#签名所有)
 
-
-
 <br>
 
-## 44. lib64/libc.so.6: version `GLIBC_2.28' not found (required by ./alist)或者 accept: function not implemented
+
+
+## **44. lib64/libc.so.6: version `GLIBC_2.28' not found (required by ./alist)或者 accept: function not implemented**
 
 考虑使用 **musl** 版本作为替代，因为在您的平台上的 **glibc** 版本太低
 
 <br>
 
-## 45. 登陆时要求输入OTP代码，请问是什么原因?
+
+
+## **45. 登陆时要求输入OTP代码，请问是什么原因?**
 
 你是不是在登录别人的账号？如果是自己的请输入2FA(两步验证)验证码
 
@@ -795,15 +877,17 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 <br>
 
-## 46. 使用 **sqlite3** 发现 data 文件夹里面出现 data.db-shm、data.db-wal 两个多的文件
+
+
+## **46. 使用 **sqlite3** 发现 data 文件夹里面出现 data.db-shm、data.db-wal 两个多的文件**
 
 具体的你可以查看这里：https://stackoverflow.com/questions/7778723/what-are-the-db-shm-and-db-wal-extensions-in-sqlite-databases
 
-
-
 <br>
 
-## 47. 添加文件上传时，有一个“添加为任务“的选项，是做什么的?
+
+
+## **47. 添加文件上传时，有一个“添加为任务“的选项，是做什么的?**
 
 - 勾选后上传到服务器(搭建AList的机器)，再由服务器上传时到网盘时后台似乎能看到（好像是这样的）
 - 未勾选不会看到，具体的大家可以看下图应该能看出什么问题.
@@ -812,7 +896,9 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 <br>
 
-## 48. Too many unsuccessful sign-in attempts have been made using an incorrect username or password, Try again later.
+
+
+## **48. Too many unsuccessful sign-in attempts have been made using an incorrect username or password, Try again later.**
 
 连续登录输入6次密码错误就会锁定，重启Alist即可重置。
 
@@ -820,7 +906,9 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 <br>
 
-## 49. 添加阿里云盘(分享)时提示 提示Post "[https://auth.aliyundrive.com/v2/account/token](https://auth.aliyundrive.com/v2/account/token)": net/http: TLS handshake timeout
+
+
+## **49. 添加阿里云盘(分享)时提示 提示Post "[https://auth.aliyundrive.com/v2/account/token](https://auth.aliyundrive.com/v2/account/token)": net/http: TLS handshake timeout**
 
 原因：VPS在中国大陆境外，且启用了IPv6 解决方法： 
 

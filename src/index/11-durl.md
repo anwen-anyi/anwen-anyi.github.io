@@ -4,7 +4,7 @@ title: AList如何使用代理下载链接
 # 这是页面的图标
 icon: fa-solid fa-rocket-launch
 # 这是侧边栏的顺序
-order: 3
+order: 5
 # 设置作者
 author: 安稳
 # 设置写作时间
@@ -189,6 +189,7 @@ async function handleDownload(request) {
     return new Response(JSON.stringify(res));
   }
   request = new Request(res.data.url, request);
+  request = new Request(request, { redirect: "follow" });
   if (res.data.header) {
     for (const k in res.data.header) {
       for (const v of res.data.header[k]) {

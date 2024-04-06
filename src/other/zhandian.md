@@ -33,28 +33,35 @@ headerDepth: 6
 
 <!-- more -->
 
-
 :::: center
 :::tip 我的站点服务状态监控
-**https://monitor.safe-education.repl.co/status/my**
+
+**https://jk.izyt.cc/status/my**
 
 **https://stats.uptimerobot.com/7w9kmszqLQ**
 :::
 ::::
 
-::::center
-:::tabs#alitoken
+:::: center
 
-@tab repl
+::: tabs#jiankong
 
-<iframe src="https://repl.izyt.cc/status/my" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1200" style="border-radius: 16px;"></iframe>
+@tab Uptime Kuma
 
-@tab uptimerobot
+<iframe src="https://jk.izyt.cc/status/my" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1800" style="border-radius: 16px;"></iframe>
+
+@tab UptimeRobot
 
 <iframe src="https://uptime.izyt.cc/" name="iframe_a" scrolling="yes" frameborder="0" width="100%" height="1800" style="border-radius: 16px;"></iframe>
 
 :::
 ::::
 
-<iframe plausible-embed src="https://icodeq.izyt.cc/anwen-anyi.github.io?embed=true&theme=light" scrolling="no" frameborder="0" loading="lazy" style="width: 1px; min-width: 100%; height: 1600px;"></iframe>
+<br/>
 
+<br/>
+
+<br/>
+
+
+<iframe plausible-embed src="https://site.izyt.cc/anwen-anyi.github.io?embed=true&theme=system" scrolling="no" frameborder="0" loading="lazy" style="width: 1px; min-width: 100%; height: 1600px;"></iframe>

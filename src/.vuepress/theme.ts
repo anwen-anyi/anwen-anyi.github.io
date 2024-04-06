@@ -19,8 +19,8 @@ export default hopeTheme({
   iconAssets: [
     // "iconfont", //icon: iconfont icon-图标名称
     "//at.alicdn.com/t/c/font_2407338_9gwb60oe2m9.css",
-    "https://npm.onmicrosoft.cn/font6pro@6.4.1/css/fontawesome.min.css",
-    "https://npm.onmicrosoft.cn/font6pro@6.4.1/css/all.min.css",
+    "https://npm.onmicrosoft.cn/font6pro@6.5.1/css/fontawesome.min.css",
+    "https://npm.onmicrosoft.cn/font6pro@6.5.1/css/all.min.css",
     "https://npm.elemecdn.com/font6pro@6.4.0/css/all.min.css",
     "https://npm.elemecdn.com/font6pro@6.4.0/css/fontawesome.min.css",
     
@@ -61,7 +61,8 @@ export default hopeTheme({
       sidebar: zhSidebar,
 
       // footer: "默认页脚",
-      footer: '<p id="hitokoto">  <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </p> <p>本页面<span id="busuanzi_value_page_pv"></span>次,本站<span id="busuanzi_value_site_pv"></span>次,总访客<span id="busuanzi_value_site_uv"></span>人</p>',
+      footer: '<p id="hitokoto">  <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </p>',
+      // <p>本页面<span id="busuanzi_value_page_pv"></span>次,本站<span id="busuanzi_value_site_pv"></span>次,总访客<span id="busuanzi_value_site_uv"></span>人</p>',
 
       displayFooter: true,
 
@@ -80,6 +81,7 @@ export default hopeTheme({
     },
   },
   plugins: {
+    searchPro: true,
     // PWA
     pwa: {
       favicon: "/favicon.ico",
@@ -106,6 +108,7 @@ export default hopeTheme({
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
+      component: true,
       attrs: true,
       chart: true,
       codetabs: true,
@@ -115,26 +118,23 @@ export default hopeTheme({
       imgLazyload: true,
       imgSize: true,
       include: true,
-      katex: true,
-      container: true,  //启用自定义容器支持,提示 警告那些
+      katex: true,      //启动支持KaTeX语法
       checkLinks: {
         status: "dev"   //是否启用链接检查
       },  
       tabs: true,       //否启用选项卡
       tasklist: true,   //启用任务列表格式支持
       gfm: true,        //支持完整的 GFM 语法
+      hint: true,       //启用提示
       flowchart: true,  //启用流程图支持
       mark: true,       //启用标记格式支持
       mermaid: true,    //启用 Mermaid 流程图支持
       sub: true,        //上标
       sup: true,        //下标
       align: true,      //自定义对齐格式支持
-      card: true,       //Markdown 中添加卡片
+      // presentation: true, //开启幻灯片
       playground: {
         presets: ["ts", "vue"],
-      },
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
       },
       stylize: [
         {
@@ -149,8 +149,8 @@ export default hopeTheme({
           },
         },
       ],
-      vPre: true,
-      vuePlayground: true,
+      // vPre: true,
+      // vuePlayground: true,  //Vue 交互演示
       
 
     },
@@ -158,7 +158,6 @@ export default hopeTheme({
     components: {
       components: [
         "ArtPlayer",
-        "AudioPlayer",
         "Badge",
         "BiliBili",
         "CodePen",
@@ -167,9 +166,9 @@ export default hopeTheme({
         "Share",
         "SiteInfo",
         "StackBlitz",
-        "VideoPlayer",
         "XiGua",
-        "YouTube",
+        "VPCard",
+        "VPBanner",
       ],
       // 弹窗提醒
       rootComponents: {

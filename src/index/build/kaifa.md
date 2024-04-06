@@ -173,27 +173,29 @@ VITE_API_URL = "https://alist.xxxx.com/"
 然后可以愉快并且奔放的去**编译或者魔改**啦 :call_me_hand::call_me_hand::call_me_hand::call_me_hand::call_me_hand:
 
 :::center
-```card
+
+```component VPCard
 title: Windows版编译教程¹
 desc: ------------------------------
 logo: /home.png
 link: win.md
-color: rgba(153, 255, 255, 0.20)
+color: rgba(13, 109, 252, 0.80)
 ```
 
-```card
+```component VPCard
 title: Linux版-编译教程²
 desc: ------------------------------
 logo: /home.png
 link: linux.md
-color: rgba(153, 255, 255, 0.30)
+color: rgba(13, 109, 252, 0.80)
 ```
 
-```card
+```component VPCard
 title: 自用的AList魔改教程³
 desc: ------------------------------
 logo: /home.png
 link: ../03-code.md
-color: rgba(153, 255, 255, 0.40)
+color: rgba(13, 109, 252, 0.80)
 ```
+
 :::

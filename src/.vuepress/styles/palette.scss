@@ -71,3 +71,28 @@ span#busuanzi_value_site_uv {
   font-weight: bold;
   color: rgb(13, 109, 252);
 }
+
+// 首页一言样式
+span#hitokoto{
+  color: red;
+  font-weight: bold;
+}
+
+// 请求颜色
+span#post{
+  color: orange;
+  font-weight: bold;
+}
+span#get{
+  color: rgb(15, 155, 15);
+  font-weight: bold;
+}
+span#put{
+  color: blue;
+  font-weight: bold;
+}
+
+// 首页大图高度
+.home .vp-hero-info-wrapper{
+  min-height: 950px;
+}

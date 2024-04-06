@@ -4,7 +4,7 @@ title: AList如何同时安装多个运行
 # 这是页面的图标
 icon: fa-solid fa-rocket-launch
 # 这是侧边栏的顺序
-order: 4
+order: 10
 # 设置作者
 author: 安稳
 # 设置写作时间
