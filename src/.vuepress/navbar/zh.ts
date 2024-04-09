@@ -9,6 +9,11 @@ export const zhNavbar = navbar([
     icon: "fa-solid fa-solar-system",
   },
   {
+    text: "收藏",
+    link: "/collect/",
+    icon: "fa-solid fa-stars",
+  },
+  {
     text: "视频",
     icon: "fa-solid fa-circle-video",
     children: [

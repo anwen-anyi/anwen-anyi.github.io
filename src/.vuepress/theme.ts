@@ -5,7 +5,6 @@ import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
 
 
-
 export default hopeTheme({
   // 爬虫xml
   hostname: "https://anwen-anyi/anwen-anyi.github.io",
@@ -82,11 +81,15 @@ export default hopeTheme({
   },
   plugins: {
     searchPro: true,
+    //  检查链接
+    linksCheck: {
+      dev: true,  
+    },
     // PWA
     pwa: {
       favicon: "/favicon.ico",
-      cacheHTML: true,
-      cachePic: true,
+      // cacheHTML: true,
+      // cachePic: true,
       appendBase: true,
       apple: {
         icon: "/home.png",
@@ -97,7 +100,7 @@ export default hopeTheme({
     // 评论
     comment: {
       provider: "Giscus",
-      repo: "anwen-anyi/doc",
+      repo: "anwen-anyi/anwen-anyi.github.io",
       repoId: "R_kgDOJS60kw",
       category: "Announcements",
       categoryId: "DIC_kwDOJS60k84CVi7q",
@@ -119,9 +122,6 @@ export default hopeTheme({
       imgSize: true,
       include: true,
       katex: true,      //启动支持KaTeX语法
-      checkLinks: {
-        status: "dev"   //是否启用链接检查
-      },  
       tabs: true,       //否启用选项卡
       tasklist: true,   //启用任务列表格式支持
       gfm: true,        //支持完整的 GFM 语法

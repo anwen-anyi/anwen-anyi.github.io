@@ -42,6 +42,20 @@ headerDepth: 6
 
 如果需要修改的话自己clone前端代码哦，可以[**在线调试**](build/kaifa.md)，具体怎么调试也很简单
 
+:::: tip
+
+提供 v50懒人包 付款备注附带你的联系方式，然后 [<i class="fa-solid fa-envelope"></i> 联系我](mailto:anwen_anyi@foxmail.com)
+
+::: details v50 使用
+
+主要是想使用，但是懒得编译的用户 或者不会编译的用户
+
+![](/touwei.png)
+
+:::
+
+::::
+
 下面我们先随便修改个加载缓冲试试水呗~
 
 ## **1. 先修改 Loading 试试水**
