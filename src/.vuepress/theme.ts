@@ -8,12 +8,12 @@ import { zhSidebar } from "./sidebar/index.js";
 export default hopeTheme({
   // 爬虫xml
   hostname: "https://anwen-anyi/anwen-anyi.github.io",
-  
+
   author: {
     name: "安稳",
     url: "/",
   },
-  
+
   // icon图标
   iconAssets: [
     // "iconfont", //icon: iconfont icon-图标名称
@@ -22,14 +22,14 @@ export default hopeTheme({
     "https://npm.onmicrosoft.cn/font6pro@6.5.1/css/all.min.css",
     "https://npm.elemecdn.com/font6pro@6.4.0/css/all.min.css",
     "https://npm.elemecdn.com/font6pro@6.4.0/css/fontawesome.min.css",
-    
+
   ],
   // iconAssets: "iconfont",
 
   logo: "/home.png",
 
   repo: "anwen-anyi/anwen-anyi.github.io",
-  
+
   docsDir: "/src",
 
   locales: {
@@ -60,8 +60,7 @@ export default hopeTheme({
       sidebar: zhSidebar,
 
       // footer: "默认页脚",
-      footer: '<p id="hitokoto">  <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </p>',
-      // <p>本页面<span id="busuanzi_value_page_pv"></span>次,本站<span id="busuanzi_value_site_pv"></span>次,总访客<span id="busuanzi_value_site_uv"></span>人</p>',
+      footer: '<p id="hitokoto">  <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </p> <p>本页面<span id="busuanzi_value_page_pv"></span>次,本站<span id="busuanzi_value_site_pv"></span>次,总访客<span id="busuanzi_value_site_uv"></span>人</p>',
 
       displayFooter: true,
 
@@ -83,7 +82,7 @@ export default hopeTheme({
     searchPro: true,
     //  检查链接
     linksCheck: {
-      dev: true,  
+      dev: true,
     },
     // PWA
     pwa: {
@@ -133,6 +132,7 @@ export default hopeTheme({
       sup: true,        //下标
       align: true,      //自定义对齐格式支持
       // presentation: true, //开启幻灯片
+      spoiler: true,
       playground: {
         presets: ["ts", "vue"],
       },
@@ -151,7 +151,7 @@ export default hopeTheme({
       ],
       // vPre: true,
       // vuePlayground: true,  //Vue 交互演示
-      
+
 
     },
     // 插件选项
@@ -162,7 +162,6 @@ export default hopeTheme({
         "BiliBili",
         "CodePen",
         "PDF",
-        "Replit",
         "Share",
         "SiteInfo",
         "StackBlitz",
@@ -171,26 +170,44 @@ export default hopeTheme({
         "VPBanner",
       ],
       // 弹窗提醒
-      rootComponents: {
-        notice: [
-          {
-            path: "/",
-            title: '温馨提示',
-            content: '<span id="tips2">请仔细查看弹窗提示内容</span></br></br>如是查看美化教程,建议用两个窗口</br>分别是自定义<span id="tips3">"内容和头部"</span>两个窗口</br>因为内容在不同位置,需要同步使用</br></br><span id="tips2">随意点击任意可关闭弹窗不再显示</span>',
-            actions: [
-              {
-                text: "查看内容",
-                link: "#",
-                type: "primary",
-              },
-              // { text: "Default Action" },
-            ],
-            fullscreen: true,
-            showOnce: true,
-            // key: "#",
-          },
-        ],
-      },
+      // rootComponents: {
+      //   notice: [
+      //     {
+      //       path: "/",
+      //       title: '温馨提示',
+      //       content: '<span id="tips2">请仔细查看弹窗提示内容</span></br></br>如是查看美化教程,建议用两个窗口</br>分别是自定义<span id="tips3">"内容和头部"</span>两个窗口</br>因为内容在不同位置,需要同步使用</br></br><span id="tips2">随意点击任意可关闭弹窗不再显示</span>',
+      //       actions: [
+      //         {
+      //           text: "查看内容",
+      //           link: "#",
+      //           type: "primary",
+      //         },
+      //         // { text: "Default Action" },
+      //       ],
+      //       fullscreen: true,
+      //       showOnce: true,
+      //       // key: "#",
+      //     },
+      //   ],
+      // },
+      notice: [
+        {
+          path: "/",
+          title: '温馨提示',
+          content: '<span id="tips2">请仔细查看弹窗提示内容</span></br></br>如是查看美化教程,建议用两个窗口</br>分别是自定义<span id="tips3">"内容和头部"</span>两个窗口</br>因为内容在不同位置,需要同步使用</br></br><span id="tips2">随意点击任意可关闭弹窗不再显示</span>',
+          actions: [
+            {
+              text: "查看内容",
+              link: "#",
+              type: "primary",
+            },
+            // { text: "Default Action" },
+          ],
+          fullscreen: true,
+          confirm: true,
+          // key: "#",
+        },
+      ],
     },
   },
 });

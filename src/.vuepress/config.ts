@@ -34,15 +34,15 @@ export default defineUserConfig({
         src: "https://v1.hitokoto.cn/?encode=js&select=%23hitokoto",
       }
     ],
-    // [
-    //   //  不蒜子
-    //   "script",
-    //   {
-    //     type: "text/javascript",
-    //     charset: "UTF-8",
-    //     src: "https://busuanzi.icodeq.com/busuanzi.pure.mini.js",
-    //   }
-    // ],
+    [
+      //  不蒜子
+      "script",
+      {
+        type: "text/javascript",
+        charset: "UTF-8",
+        src: "https://busuanzi.icodeq.com/busuanzi.pure.mini.js",
+      }
+    ],
     [
       // 站点
       "script",

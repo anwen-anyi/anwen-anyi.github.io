@@ -3,96 +3,132 @@
 // 站点的默认主题颜色
 $theme-color: #70c6be;
 // 文章页面内容宽度
-$content-width: 1200px;
+
+$content-width: 1250px;
 
 // 左侧侧边栏颜色图标颜色
-.vp-sidebar .icon{
-    color: #409EFF;
+.vp-sidebar .icon {
+  color: #409EFF;
 }
+
 // 文章页面内
 // .auto-catalog-wrapper .font-icon{
-  .theme-hope-content .font-icon{
-    color: #409EFF;
+.theme-hope-content .font-icon {
+  color: #409EFF;
 }
 
 // 顶部导航栏
-.vp-navbar .nav-link .icon{
-    color: #70c6be;
+.vp-navbar .nav-link .icon {
+  color: #70c6be;
 }
 
 // image 开始
 .image-preview {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-  .image-preview > img {
-     box-sizing: border-box;
-     width: 33.3% !important;
-     padding: 9px;
-     border-radius: 16px;
-  }
+.image-preview>img {
+  box-sizing: border-box;
+  width: 33.3% !important;
+  padding: 9px;
+  border-radius: 16px;
+}
 
-  @media (max-width: 719px){
-    .image-preview > img {
-      width: 50% !important;
-    }
+@media (max-width: 719px) {
+  .image-preview>img {
+    width: 50% !important;
   }
+}
 
-  @media (max-width: 419px){
-    .image-preview > img {
-      width: 100% !important;
-    }
+@media (max-width: 419px) {
+  .image-preview>img {
+    width: 100% !important;
   }
+}
 // image 结束
+
+
+// image2 开始
+.image-preview2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image-preview2>img {
+  box-sizing: border-box;
+  width: 50% !important;
+  padding: 9px;
+  border-radius: 16px;
+}
+
+@media (max-width: 719px) {
+  .image-preview2>img {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 419px) {
+  .image-preview2>img {
+    width: 100% !important;
+  }
+}
+
 
 // 弹窗提示
 span#tips2 {
   color: red;
   font-weight: bolder;
 }
+
 span#tips3 {
   color: rgb(17, 110, 250);
   font-weight: bolder;
 }
 
 // 卜算子CSS
-span#busuanzi_value_page_pv{
+span#busuanzi_value_page_pv {
   font-weight: bold;
   color: rgb(13, 109, 252);
 }
-span#busuanzi_value_site_pv{
+
+span#busuanzi_value_site_pv {
   font-weight: bold;
   color: rgb(13, 109, 252);
 }
+
 span#busuanzi_value_site_uv {
   font-weight: bold;
   color: rgb(13, 109, 252);
 }
 
 // 首页一言样式
-span#hitokoto{
+span#hitokoto {
   color: red;
   font-weight: bold;
 }
 
 // 请求颜色
-span#post{
+span#post {
   color: orange;
   font-weight: bold;
 }
-span#get{
+
+span#get {
   color: rgb(15, 155, 15);
   font-weight: bold;
 }
-span#put{
+
+span#put {
   color: blue;
   font-weight: bold;
 }
 
 // 首页大图高度
-.home .vp-hero-info-wrapper{
+.home .vp-hero-info-wrapper {
   min-height: 950px;
 }

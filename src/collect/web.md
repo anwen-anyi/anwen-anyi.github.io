@@ -126,6 +126,15 @@ headerDepth: 6
 />
 
 <SiteInfo
+  name="微信/QQ/TIM防撤回补丁"
+  desc="适用于 Windows 下 PC 版微信/QQ/TIM的防撤回补丁。支持最新版微信/QQ/TIM，其中微信能够选择安装多开功能。"
+  url="https://github.com/huiyadanli/RevokeMsgPatcher"
+  logo="/img/start/RevokeMsgPatcher-logo.png"
+  repo="https://github.com/huiyadanli/RevokeMsgPatcher"
+  preview="/img/start/RevokeMsgPatcher-logo.png"
+/>
+
+<SiteInfo
   name="钉钉防撤回"
   desc=""
   url="https://github.com/flydoos/DingTalkRevokeMsgPatcher"
@@ -188,3 +197,20 @@ headerDepth: 6
   preview="/img/start/nginx-logo.svg"
 />
 
+<SiteInfo
+  name="TAURL"
+  desc="构建跨平台的快速、安全、前端隔离应用,将网页打包成客户端"
+  url="https://tauri.app/zh-cn"
+  logo="/img/start/tauri-logo.svg"
+  repo="https://github.com/tauri-apps/tauri"
+  preview="/img/start/tauri-logo.svg"
+/>
+
+<SiteInfo
+  name="He3"
+  desc="开放，智能，高效的开发者工具箱，He3 是一款开发者工具箱有 500+ 工具 并且持续增长。"
+  url="https://he3app.com/zh"
+  logo="https://he3app.com/section/logo.png"
+  repo=""
+  preview="https://he3app.com/section/bg01.png"
+/>

@@ -62,7 +62,7 @@ V3.31.0 优化了部分功能，导致个别位置CSS未修改看起冲突一样
 
 @tab 大于等于v3.31.0版本
 
-```html{30-42,115-183}
+```html{34-46,139-157}
 <!--Alist V3建议添加的，已经默认添加了，如果你的没有建议加上-->
 <script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
 
@@ -70,246 +70,220 @@ V3.31.0 优化了部分功能，导致个别位置CSS未修改看起冲突一样
 <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css" />
 
 <!--评论系统使用的js-->
-<script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
 
 <!--不蒜子计数器-->
 <script async src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"></script>
 
 <!-- Font6，自定义底部使用和看板娘使用的图标和字体文件-->
-<link type='text/css' rel="stylesheet" href="https://npm.elemecdn.com/font6pro@6.3.0/css/fontawesome.min.css" media='all'>
-<link href="https://npm.elemecdn.com/font6pro@6.3.0/css/all.min.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="https://npm.elemecdn.com/font6pro@6.3.0/css/fontawesome.min.css" media="all" />
+<link href="https://npm.elemecdn.com/font6pro@6.3.0/css/all.min.css" rel="stylesheet" />
 
 <!--音乐播放器所用的文件-->
 <!-- require APlayer -->
-<link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css">
+<link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css" />
 <script src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
 <!-- require MetingJS -->
 <script src="https://npm.elemecdn.com/meting2@0.0.1/js/Meting.min.js"></script>
 
 <style>
-/* 去除通知栏 右上角 X */
- .notify-render .hope-close-button {
+  /* 去除通知栏 右上角 X */
+  .notify-render .hope-close-button {
     display: none;
-}
+  }
+  /*去掉底部*/
+  .footer {
+    display: none !important;
+  }
 
-/* 此选项两处CSS 在v3.31.0中已优化 滚动显示 和 右下角设置网格模式尺寸大小 */
-/* 文字超长自动换行 */
-/*.name-box .name {
+  /* 此选项两处CSS 在v3.31.0中已优化 滚动显示 和 右下角设置网格模式尺寸大小 */
+  /* 文字超长自动换行 */
+  /*.name-box .name {
     white-space: unset !important;
     overflow: unset !important;
-}*/
-/* 缩略图图片变大 代码中的160px 自己改 现在是注释状态若需要自行解除注释 */
-/*.obj-box > div {
-grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
-}
-.obj-box > div .item-thumbnail{
-  height: 100px;
-}*/
- 
-/*
-  图片API用法点进去都会有食用说明的,API来自网络不保证实效性稳定性自己测试
-  樱花：https://www.dmoe.cc
-  夏沫：https://cdn.seovx.com
-  搏天：https://api.btstu.cn/doc/sjbz.php
-  姬长信：https://github.com/insoxin/API
-  小歪：https://api.ixiaowai.cn/
-  保罗：https://api.paugram.com
-  墨天逸：https://api.mtyqx.cn
-  岁月小筑：https://img.xjh.me
-  东方Project：https://img.paulzzh.com
-  */
- 
-/*白天背景图*/
- .hope-ui-light {
-    background-image: url("http://pic.rmb.bdstatic.com/bjh/7569b014a1abafd5481298763300ae1d.png") !important;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-attachment:fixed;
-    background-position-x:center;
-}
-/*夜间背景图*/
- .hope-ui-dark {
-    background-image: url("http://pic.rmb.bdstatic.com/bjh/ebe942a9de49856f389c65f25a338335.png") !important;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-attachment:fixed;
-    background-position-x:center;
-}
-/*主列表白天模式透明*/
- .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-igScBhH-css {
-    background-color: rgba(255, 255, 255, 0.5) !important;
-}
-/*主列表夜间模式透明*/
- .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-iigjoxS-css {
-    background-color:rgb(0 0 0 / 50%) !important;
-}
-/*readme白天模式透明*/
- .hope-c-PJLV.hope-c-PJLV-ikSuVsl-css {
-    background-color: rgba(255, 255, 255, 0.5) !important;
-}
-/*readme夜间模式透明*/
- .hope-c-PJLV.hope-c-PJLV-iiuDLME-css {
-    background-color:rgb(0 0 0 / 50%) !important;
-}
+    }*/
+  /* 缩略图图片变大 代码中的160px 自己改 现在是注释状态若需要自行解除注释 */
+  /*.obj-box > div {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
+    }
+    .obj-box > div .item-thumbnail{
+    height: 100px;
+    }*/
 
-/*顶部右上角切换按钮透明*/
- .hope-ui-light .hope-c-ivMHWx-hZistB-cv.hope-icon-button {
+  /*
+    图片API用法点进去都会有食用说明的,API来自网络不保证实效性稳定性自己测试
+    樱花：https://www.dmoe.cc
+    夏沫：https://cdn.seovx.com
+    搏天：https://api.btstu.cn/doc/sjbz.php
+    姬长信：https://github.com/insoxin/API
+    小歪：https://api.ixiaowai.cn/
+    保罗：https://api.paugram.com
+    墨天逸：https://api.mtyqx.cn
+    岁月小筑：https://img.xjh.me
+    东方Project：https://img.paulzzh.com
+    */
+  /*白天背景图*/
+  .hope-ui-light {
+    background-image: url("https://pic.rmb.bdstatic.com/bjh/7569b014a1abafd5481298763300ae1d.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+  }
+  /*夜间背景图*/
+  .hope-ui-dark {
+    background-image: url("https://pic.rmb.bdstatic.com/bjh/ebe942a9de49856f389c65f25a338335.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+  }
+
+  /*主列表白天模式透明*/
+  .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-igScBhH-css {
     background-color: rgba(255, 255, 255, 0.5) !important;
-}
-.hope-ui-dark .hope-c-ivMHWx-hZistB-cv.hope-icon-button {
-    background-color:rgb(0 0 0 / 50%) !important;
-}
-
-/*右下角侧边栏按钮透明 第一个是白天 第二个是夜间*/
- .hope-ui-light .hope-c-PJLV-ijgzmFG-css {
+  }
+  /*主列表夜间模式透明*/
+  .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-iigjoxS-css {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
+  /*readme白天模式透明*/
+  .hope-c-PJLV.hope-c-PJLV-ikSuVsl-css {
     background-color: rgba(255, 255, 255, 0.5) !important;
-}
-.hope-ui-dark .hope-c-PJLV-ijgzmFG-css {
-    background-color:rgb(0 0 0 / 50%) !important;
-}
+  }
+  /*readme夜间模式透明*/
+  .hope-c-PJLV.hope-c-PJLV-iiuDLME-css {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
 
-/*白天模式代码块透明*/
- .hope-ui-light pre {
-    background-color: rgba(255, 255, 255, 0.1)!important;
-}
-/*夜间模式代码块透明*/
- .hope-ui-dark pre {
-    background-color: rgba(255, 255, 255, 0)!important;
-}
 
-/*左侧侧边栏目录*/
-/*白天模式*/
- .hope-ui-light .hope-c-PJLV-ieGWMbI-css {
+  /*顶部右上角切换按钮透明*/
+  .hope-ui-light .hope-c-ivMHWx-hZistB-cv.hope-icon-button {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  .hope-ui-dark .hope-c-ivMHWx-hZistB-cv.hope-icon-button {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
+
+
+  /*右下角侧边栏按钮透明 第一个是白天 第二个是夜间*/
+  .hope-ui-light .hope-c-PJLV-ijgzmFG-css {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  .hope-ui-dark .hope-c-PJLV-ijgzmFG-css {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
+  /*白天模式代码块透明*/
+  .hope-ui-light pre {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  /*夜间模式代码块透明*/
+  .hope-ui-dark pre {
+    background-color: rgba(255, 255, 255, 0) !important;
+  }
+
+
+  /*左侧侧边栏目录*/
+  /*白天模式*/
+  .hope-ui-light .hope-c-PJLV-ieGWMbI-css {
     background: rgba(255, 255, 255, 0.5) !important;
-}
-/*夜间模式*/
- .hope-ui-dark .hope-c-PJLV-ieGWMbI-css {
-    background-color:rgb(0 0 0 / 50%) !important;
-}
-
-/* 返回顶部 */
- .hope-c-PJLV-ihVEsOa-css {
+  }
+  /*夜间模式*/
+  .hope-ui-dark .hope-c-PJLV-ieGWMbI-css {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
+  /* 返回顶部 */
+  .hope-c-PJLV-ihVEsOa-css {
     background: rgba(255, 255, 255, 0.5) !important;
-}
-.hope-ui-dark .hope-c-PJLV-ihVEsOa-css {
-    background-color:rgb(0 0 0 / 50%) !important;
-}
+  }
+  .hope-ui-dark .hope-c-PJLV-ihVEsOa-css {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
 
-/*正常情况未使用吸附功能*/
-/*顶部*/
- .hope-c-PJLV-ikaMhsQ-css {
-    background: rgba(255, 255, 255, 0) !important;
-}
-/*导航条*/ 
-/*白天模式*/
- .hope-ui-light .hope-c-PJLV-idaeksS-css {
-    background-color: rgba(255, 255, 255, 0.5) !important;
-    border-radius: var(--hope-radii-xl) !important;
-}
-/*夜间模式*/
- .hope-ui-dark .hope-c-PJLV-idaeksS-css {
-    background-color:rgb(0 0 0 / 50%) !important;
-    border-radius: var(--hope-radii-xl) !important;
-}
-/* 吸附到页面顶部 */
-/*顶部*/
- .hope-c-PJLV-icWrYmg-css {
-    background: rgba(255, 255, 255, 0) !important;
-}
-/*导航条*/
- .hope-c-PJLV-icKsjdm-css::after {
-    background: rgba(255, 255, 255, 0) !important;
-}
-/*白天模式*/
- .hope-ui-light .hope-c-PJLV-icKsjdm-css {
-    background-color: rgba(255, 255, 255, 0.5) !important;
-    border-radius: var(--hope-radii-xl) !important;
-}
-/*夜间模式*/
- .hope-ui-dark .hope-c-PJLV-icKsjdm-css {
-    background-color:rgb(0 0 0 / 50%) !important;
-    border-radius: var(--hope-radii-xl) !important;
-}
 
-/*仅吸附导航栏*/
-/*导航条*/
- .hope-c-PJLV-ifdXShc-css::after {
-    background: rgba(255, 255, 255, 0) !important;
-}
-/*白天模式*/
- .hope-ui-light .hope-c-hrsMRY {
-    background-color: rgba(255, 255, 255, 0.5) !important;
-    border-radius: var(--hope-radii-xl) !important;
-}
-/*夜间模式*/
- .hope-ui-dark .hope-c-hrsMRY {
-    background-color:rgb(0 0 0 / 50%) !important;
-    border-radius: var(--hope-radii-xl) !important;
-}
+  /*顶部*/
+  #root > .header {
+    background: rgba(255, 255, 255, 0);
+  }
+  /*导航条*/
+  /*白天模式*/
+  .hope-ui-light .body > .nav {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: var(--hope-radii-xl);
+  }
+  /*夜间模式*/
+  .hope-ui-dark .body > .nav {
+    background-color: rgb(0 0 0 / 50%);
+    border-radius: var(--hope-radii-xl);
+  }
+  /*隐藏导航条遮罩*/
+  .body > .nav::after {
+    display: none;
+  }
 
-/*底部CSS，.App .table这三个一起的*/
- dibu {
+
+  /*底部CSS，.App .table这三个一起的*/
+  dibu {
     border-top: 0px;
     position: absolute;
     bottom: 0;
     width: 100%;
     margin: 0px;
     padding: 0px;
-}
-.App {
+  }
+  .App {
     min-height: 85vh;
-}
-.table {
+  }
+  .table {
     margin: auto;
-}
-/*去掉底部*/
- .footer {
-    display: none !important;
-}
-/*全局字体*/
- * {
-    font-family:LXGW WenKai
-}
-* {
-    font-weight:bold
-}
-body {
-    font-family: LXGW WenKai;
-}
+  }
 
-/*以下为评论系统专用*/
-/*适配大小契合度*/
- .newValine {
+  
+  /*全局字体*/
+  * {
+    font-family: LXGW WenKai;
+  }
+  * {
+    font-weight: bold;
+  }
+  body {
+    font-family: LXGW WenKai;
+  }
+
+  /*以下为评论系统专用*/
+  /*适配大小契合度*/
+  .newValine {
     width: min(96%, 940px);
     flex-direction: column;
     row-gap: var(--hope-space-2);
     border-radius: var(--hope-radii-xl);
     padding: var(--hope-space-2);
     box-shadow: var(--hope-shadows-lg);
-}
-/*评论区 - 白天模式透明度*/
- .hope-ui-light .newValine {
+  }
+  /*评论区 - 白天模式透明度*/
+  .hope-ui-light .newValine {
     background-color: rgba(255, 255, 255, 0.5) !important;
-}
-/*评论区 - 夜间模式透明度*/
- .hope-ui-dark .newValine {
-    background-color:rgb(0 0 0 / 50%) !important;
-}
-/*输入栏里面跳舞的小人背景图*/
- .vedit {
-    background-image:url("https://cdn.jsdelivr.net/gh/anwen-anyi/imgAnwen/images/OuNiJiang.gif");
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:right bottom;
-    transition:all 0.25s ease-in-out 0s;
-}
-textarea#comment-textarea:focus {
-    background-position-y:120px;
-    transition:all 0.25s ease-in-out 0s;
-}
+  }
+  /*评论区 - 夜间模式透明度*/
+  .hope-ui-dark .newValine {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
+  /*输入栏里面跳舞的小人背景图,jsdelivr加载慢的可以自己替换或者删掉*/
+  .vedit {
+    background-image: url("https://cdn.jsdelivr.net/gh/anwen-anyi/imgAnwen/images/OuNiJiang.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    transition: all 0.25s ease-in-out 0s;
+  }
+  textarea#comment-textarea:focus {
+    background-position-y: 120px;
+    transition: all 0.25s ease-in-out 0s;
+  }
 
-/*渐变背景CSS*/
- #canvas-basic {
+
+  /*渐变背景CSS*/
+  #canvas-basic {
     position: fixed;
     display: block;
     width: 100%;
@@ -319,16 +293,23 @@ textarea#comment-textarea:focus {
     bottom: 0;
     left: 0;
     z-index: -999;
-}
+  }
 
-/*音乐播放器进一步进行隐藏*/
-/* 需要就加不需要就不用加 */
- .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+
+  /* 以下为音乐播放器额外配置 */
+  /* 如果你想要音乐播放器不是很靠底部可以自己设置一下数值 0是靠最底部 */
+  .aplayer .aplayer-body,
+  .aplayer.aplayer-withlist {
+    bottom: 0rem !important;
+  }
+  /*音乐播放器进一步进行隐藏*/
+  /* 需要就加不需要就不用加 */
+  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
     left: -66px !important;
-}
-.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  }
+  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
     left: 0 !important;
-}
+  }
 </style>
 
 ```
@@ -362,162 +343,156 @@ textarea#comment-textarea:focus {
 <script src="https://npm.elemecdn.com/meting2@0.0.1/js/Meting.min.js"></script>
 
 <style>
-/* 去除通知栏 右上角 X */
-.notify-render .hope-close-button {
+  /* 去除通知栏 右上角 X */
+  .notify-render .hope-close-button {
     display: none;
-}
-/* 文字超长自动换行 */
-.name-box .name {
-	white-space: unset !important;
-	overflow: unset !important;
-}
-/* 缩略图图片变大 代码中的160px 自己改 现在是注释状态若需要自行解除注释 */
-/*.obj-box > div {
-grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
-}
-.obj-box > div .item-thumbnail{
-  height: 100px;
-}*/
-    
-/* 图片API用法点进去都会有食用说明的,API来自网络不保证实效性稳定性自己测试
-  樱花：https://www.dmoe.cc
-  夏沫：https://cdn.seovx.com
-  搏天：https://api.btstu.cn/doc/sjbz.php
-  姬长信：https://github.com/insoxin/API
-  小歪：https://api.ixiaowai.cn/
-  保罗：https://api.paugram.com
-  墨天逸：https://api.mtyqx.cn
-  岁月小筑：https://img.xjh.me
-  东方Project：https://img.paulzzh.com
-  */
+  }
+  /*去掉底部*/
+  .footer {
+    display: none !important;
+  }
 
-/*白天背景图*/
-.hope-ui-light {
-    background-image: url("http://pic.rmb.bdstatic.com/bjh/7569b014a1abafd5481298763300ae1d.png") !important;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-attachment:fixed;
-    background-position-x:center;
-}
-/*夜间背景图*/
-.hope-ui-dark {
-    background-image: url("http://pic.rmb.bdstatic.com/bjh/ebe942a9de49856f389c65f25a338335.png") !important;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-attachment:fixed;
-    background-position-x:center;
-}
-/*主列表白天模式透明*/
-.obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-igScBhH-css {
-    background-color: rgba(255, 255, 255, 0.5)!important;
-}
-/*主列表夜间模式透明*/
- .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-iigjoxS-css {
-    background-color:rgb(0 0 0 / 50%)!important;
-}
+  /* 文字超长自动换行 */
+  .name-box .name {
+    white-space: unset !important;
+    overflow: unset !important;
+  }
+  /* 缩略图图片变大 代码中的160px 自己改 现在是注释状态若需要自行解除注释 */
+  /*.obj-box > div {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
+    }
+    .obj-box > div .item-thumbnail{
+    height: 100px;
+    }*/
 
-/*readme白天模式透明*/
-.hope-c-PJLV.hope-c-PJLV-ikSuVsl-css {
-    background-color: rgba(255, 255, 255, 0.5)!important;
-}
-/*readme夜间模式透明*/
-.hope-c-PJLV.hope-c-PJLV-iiuDLME-css {
-    background-color:rgb(0 0 0 / 50%)!important;
-}
+  /* 图片API用法点进去都会有食用说明的,API来自网络不保证实效性稳定性自己测试
+    樱花：https://www.dmoe.cc
+    夏沫：https://cdn.seovx.com
+    搏天：https://api.btstu.cn/doc/sjbz.php
+    姬长信：https://github.com/insoxin/API
+    小歪：https://api.ixiaowai.cn/
+    保罗：https://api.paugram.com
+    墨天逸：https://api.mtyqx.cn
+    岁月小筑：https://img.xjh.me
+    东方Project：https://img.paulzzh.com
+    */
+  /*白天背景图*/
+  .hope-ui-light {
+    background-image: url("https://pic.rmb.bdstatic.com/bjh/7569b014a1abafd5481298763300ae1d.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+  }
+  /*夜间背景图*/
+  .hope-ui-dark {
+    background-image: url("https://pic.rmb.bdstatic.com/bjh/ebe942a9de49856f389c65f25a338335.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+  }
 
-/*顶部右上角切换按钮透明*/
-.hope-ui-light .hope-c-ivMHWx-hZistB-cv.hope-icon-button {
-    background-color: rgba(255, 255, 255, 0.5)!important;
-}
-.hope-ui-dark .hope-c-ivMHWx-hZistB-cv.hope-icon-button {
-    background-color:rgb(0 0 0 / 50%)!important;
-	
-}
+  /*主列表白天模式透明*/
+  .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-igScBhH-css {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  /*主列表夜间模式透明*/
+  .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-iigjoxS-css {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
+  /*readme白天模式透明*/
+  .hope-c-PJLV.hope-c-PJLV-ikSuVsl-css {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  /*readme夜间模式透明*/
+  .hope-c-PJLV.hope-c-PJLV-iiuDLME-css {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
+  /*顶部右上角切换按钮透明*/
+  .hope-ui-light .hope-c-ivMHWx-hZistB-cv.hope-icon-button {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  .hope-ui-dark .hope-c-ivMHWx-hZistB-cv.hope-icon-button {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
 
-/*右下角侧边栏按钮透明 第一个是白天 第二个是夜间*/
-.hope-ui-light .hope-c-PJLV-ijgzmFG-css {
-    background-color: rgba(255, 255, 255, 0.5)!important;
-}
-.hope-ui-dark .hope-c-PJLV-ijgzmFG-css {
-    background-color:rgb(0 0 0 / 50%)!important;
-}
+  /*右下角侧边栏按钮透明 第一个是白天 第二个是夜间*/
+  .hope-ui-light .hope-c-PJLV-ijgzmFG-css {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  .hope-ui-dark .hope-c-PJLV-ijgzmFG-css {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
+  /*白天模式代码块透明*/
+  .hope-ui-light pre {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  /*夜间模式代码块透明*/
+  .hope-ui-dark pre {
+    background-color: rgba(255, 255, 255, 0) !important;
+  }
 
-/*白天模式代码块透明*/
-.hope-ui-light pre {
-    background-color: rgba(255, 255, 255, 0.1)!important;
-}
-/*夜间模式代码块透明*/
-.hope-ui-dark pre {
-    background-color: rgba(255, 255, 255, 0)!important;
-}
-
-/*底部CSS，.App .table这三个一起的*/
- dibu {
+  /*底部CSS，.App .table这三个一起的*/
+  dibu {
     border-top: 0px;
     position: absolute;
     bottom: 0;
     width: 100%;
     margin: 0px;
     padding: 0px;
-}
-.App {
+  }
+  .App {
     min-height: 85vh;
-}
-.table {
+  }
+  .table {
     margin: auto;
-}
+  }
 
-/*去掉底部*/
-.footer {
-    display: none!important;
-}
-
-/*全局字体*/
- * {
-    font-family:LXGW WenKai
-}
-* {
-    font-weight:bold
-}
-body {
+  /*全局字体*/
+  * {
     font-family: LXGW WenKai;
-}
+  }
+  * {
+    font-weight: bold;
+  }
+  body {
+    font-family: LXGW WenKai;
+  }
 
-
-/*以下为评论系统专用*/
-/*适配大小契合度*/
-.newValine {
+  /*以下为评论系统专用*/
+  /*适配大小契合度*/
+  .newValine {
     width: min(96%, 940px);
     flex-direction: column;
     row-gap: var(--hope-space-2);
     border-radius: var(--hope-radii-xl);
     padding: var(--hope-space-2);
     box-shadow: var(--hope-shadows-lg);
-}
-/*评论区 - 白天模式透明度*/
-.hope-ui-light .newValine {
-    background-color: rgba(255, 255, 255, 0.5)!important;
-}
-/*评论区 - 夜间模式透明度*/
-.hope-ui-dark .newValine {
-    background-color:rgb(0 0 0 / 50%)!important;
-}
-/*输入栏里面跳舞的小人背景图*/
-.vedit {
-    background-image:url(https://cdn.jsdelivr.net/gh/anwen-anyi/imgAnwen/images/OuNiJiang.gif);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:right bottom;
-    transition:all 0.25s ease-in-out 0s;
-}
-textarea#comment-textarea:focus {
-    background-position-y:120px;
-    transition:all 0.25s ease-in-out 0s;
-}
+  }
+  /*评论区 - 白天模式透明度*/
+  .hope-ui-light .newValine {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  /*评论区 - 夜间模式透明度*/
+  .hope-ui-dark .newValine {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
+  /*输入栏里面跳舞的小人背景图,jsdelivr加载慢的可以自己替换或者删掉*/
+  .vedit {
+    background-image: url(https://cdn.jsdelivr.net/gh/anwen-anyi/imgAnwen/images/OuNiJiang.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    transition: all 0.25s ease-in-out 0s;
+  }
+  textarea#comment-textarea:focus {
+    background-position-y: 120px;
+    transition: all 0.25s ease-in-out 0s;
+  }
 
-
-/*渐变背景CSS*/
- #canvas-basic {
+  /*渐变背景CSS*/
+  #canvas-basic {
     position: fixed;
     display: block;
     width: 100%;
@@ -527,18 +502,24 @@ textarea#comment-textarea:focus {
     bottom: 0;
     left: 0;
     z-index: -999;
-}
+  }
 
-
-/*音乐播放器进一步进行隐藏*/
-/* 需要就加不需要就不用加 */
-.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-    left: -66px!important;
-}
-.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-    left: 0!important;
-}
+  /* 以下为音乐播放器额外配置 */
+  /* 如果你想要音乐播放器不是很靠底部可以自己设置一下数值 0是靠最底部 */
+  .aplayer .aplayer-body,
+  .aplayer.aplayer-withlist {
+    bottom: 0rem !important;
+  }
+  /*音乐播放器进一步进行隐藏*/
+  /* 需要就加不需要就不用加 */
+  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+    left: 0 !important;
+  }
 </style>
+
 ```
 
 :::
@@ -572,9 +553,13 @@ textarea#comment-textarea:focus {
 
 ### **只单独添加一个音乐播放器**
 
-#### **方案1**
+::: tabs
 
-自定义头部
+@tab 方案1
+
+分开写自定义头部和自定义内容
+
+- 自定义头部
 
 ```html
 <!--音乐播放器所用的文件-->
@@ -585,9 +570,9 @@ textarea#comment-textarea:focus {
 <script src="https://npm.elemecdn.com/meting2@0.0.1/js/Meting.min.js"></script>
 ```
 
-自定义内容
+- 自定义内容
 
-```html
+```html{6}
 <!--延迟加载-->
 <!--如果要写自定义内容建议都加到这个延迟加载的范围内-->
 <div id="customize" style="display: none;">
@@ -609,11 +594,11 @@ textarea#comment-textarea:focus {
 </script>
 ```
 
-#### **方案2**
+@tab 方案2
 
-直接都写到自定义头部
+将全部内容直接都写到自定义头部
 
-```html
+```html{9}
 <!--音乐播放器所用的文件-->
 <!-- require APlayer -->
 <link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css">
@@ -625,18 +610,26 @@ textarea#comment-textarea:focus {
 <meting-js fixed="true" autoplay="false" theme="#409EFF" list-folded="true" auto="QQ音乐或者网易云的链接"></meting-js>
 ```
 
+:::
+
 #### 一些对播放器适配的CSS
 
 ```css
 <style>
-/*音乐播放器进一步进行隐藏*/
-/* 需要就加不需要就不用加 */
-.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-    left: -66px!important;
-}
-.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-    left: 0!important;
-}
+  /* 以下为音乐播放器额外配置 */
+  /* 如果你想要音乐播放器不是很靠底部可以自己设置一下数值 0是靠最底部 */
+  .aplayer .aplayer-body,
+  .aplayer.aplayer-withlist {
+    bottom: 0rem !important;
+  }
+  /*音乐播放器进一步进行隐藏*/
+  /* 需要就加不需要就不用加 */
+  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+    left: 0 !important;
+  }
 </style>
 ```
 
@@ -648,10 +641,14 @@ textarea#comment-textarea:focus {
 
 
 
-#### **部署到国内和国外有什么区别吗**
+#### **上述音乐播放器部署到国内和国外有什么区别吗**
 
 - 如果部署在国外咱们解析QQ音乐的时候就无法播放了
 - 网易不论部署在国内还是国外都可以解析播放
+
+<br/>
+
+
 
 ## **看板娘代码**
 
@@ -664,6 +661,8 @@ textarea#comment-textarea:focus {
 ![](/img/head/kanbanniang.png)
 
 :::
+
+::: details 看板娘代码 暂时未提供（无法使用），详情可以看上方绿色提示信息
 
 ```html
 <!--看板娘 -自定义大小，隐藏对话框和对话框高度-->
@@ -694,11 +693,17 @@ textarea#comment-textarea:focus {
 <script src="https://luluossfile.lulufind.com/work/teacher_u20221017bb6d7454_1666420849979_19584065_file.js"></script>
 ```
 
-<br/>
+:::
+
+<br/><br/>
+
+
 
 ## **搜索栏美化代码**
 
-### **带毛玻璃效果**
+::: tabs
+
+@tab **带毛玻璃效果**
 
 ```css
 <style>
@@ -744,7 +749,7 @@ textarea#comment-textarea:focus {
 
 
 
-### **不带毛玻璃效果**
+@tab **不带毛玻璃效果**
 
 ```css
 <style>
@@ -782,17 +787,18 @@ textarea#comment-textarea:focus {
 </style>
 ```
 
-
-
-#### **效果预览**
-
-::: center
-左侧为不带毛玻璃效果，右侧为带毛玻璃效果.推荐右侧带毛玻璃效果的
 :::
 
-![](/img/head/baitian.png)
+#### **<i class="fa-solid fa-bell fa-shake" style="color: #63E6BE;"></i> 效果预览**
 
-![](/img/head/heiye.png)
+::: center
+**左侧为不带毛玻璃效果，右侧为带毛玻璃效果.推荐右侧带毛玻璃效果的**
+:::
+
+<div class="image-preview2">
+  <img src="/img/head/baitian.png" />
+  <img src="/img/head/heiye.png" />
+</div>
 
 <br/>
 
@@ -807,6 +813,8 @@ textarea#comment-textarea:focus {
 提供的链接已经失效，有需要的可以自己找一些相关的鼠标手动去替换，按照下面的格式即可
 
 :::
+
+::: details 指针添加代码
 
 ```html
 <!--较为个性化的鼠标指针样式，可结合个人需要自行修改-->
@@ -834,5 +842,7 @@ textarea#comment-textarea:focus {
   }
 </style>
 ```
+
+:::
 
 ![](/img/head/shubiao.png)
