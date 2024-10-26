@@ -40,7 +40,7 @@ headerDepth: 6
   desc="一个网盘列表程序，可以将多种网盘进行挂载"
   url="https://al.nn.ci"
   logo="/img/start/alist-logo.svg"
-  repo="https://github.com/alist-org/alist"
+  repo="https://github.com/AlistGo/alist"
   preview="/img/start/alist-bg.png"
 />
 

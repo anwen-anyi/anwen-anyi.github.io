@@ -67,8 +67,8 @@ collapsible: false
 ### **2.1 Fork两个仓库**
 
 - 分别fork 以下两个仓库
-  - 前端：https://github.com/alist-org/alist-web
-  - 后端：https://github.com/alist-org/alist
+  - 前端：https://github.com/AlistGo/alist-web
+  - 后端：https://github.com/AlistGo/alist
   
 
 <br/>
@@ -154,27 +154,27 @@ collapsible: false
 
 - **.github/workflows/==build.yml==** 原文件第41行^1^和第75行^2^alist-org换成自己的，如果你前端仓库名称也换了也自己修改一下
 
-```diff yaml{4-5}
+```yml{4-5}
       - name: Checkout dist repo
         uses: actions/checkout@v4
         with:
--          repository: alist-org/web-dist
-+          repository: 自己GitHub名字/web-dist
+          repository: alist-org/web-dist // [!code --]
+          repository: 自己GitHub名字/web-dist // [!code ++]
           ref: dev
           path: web-dist
           persist-credentials: false
           fetch-depth: 0
 ```
 
-```diff yaml{7-8}
+```yml{7-8}
       - name: Upload dist files
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.MY_TOKEN }}
           branch: dev
           directory: web-dist
--          repository: alist-org/web-dist
-+          repository: 自己GitHub名字/web-dist
+          repository: alist-org/web-dist // [!code --]
+          repository: 自己GitHub名字/web-dist // [!code ++]
           force: true
 ```
 
@@ -182,49 +182,50 @@ collapsible: false
 
 - **.github/workflows/==release.yml==** 原文件的第56行^1^和85行^2^需要修改，70-78行^3^的需要删除，如果你前端仓库名称也换了也自己修改一下
 
-```diff yaml{4,5}
+```yml{4,5}
       - name: Checkout dist repo
         uses: actions/checkout@v4
         with:
--          repository: alist-org/web-dist
-+          repository: 自己GitHub名字/web-dist
+          repository: alist-org/web-dist // [!code --]
+          repository: 自己GitHub名字/web-dist // [!code ++]
           ref: main
           path: web-dist
           persist-credentials: false
           fetch-depth: 0
 ```
-```diff yaml{7,8}
+
+```yml{7,8}
       - name: Upload dist files
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.MY_TOKEN }}
           branch: main
           directory: web-dist
--          repository: alist-org/web-dist
-+          repository: 自己GitHub名字/web-dist
+          repository: alist-org/web-dist // [!code --]
+          repository: 自己GitHub名字/web-dist // [!code ++]
 ```
 
-```diff yaml{1-8}
--      - name: Publish npm
--        run: |
--          cd alist-web
--          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > ~/.npmrc
--          pnpm publish --no-git-checks
--          cd ..
--        env:
--          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+```yml{1-8}
+      - name: Publish npm // [!code --]
+        run: | // [!code --]
+          cd alist-web // [!code --]
+          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN // [!code --]}" > ~/.npmrc // [!code --]
+          pnpm publish --no-git-checks // [!code --]
+          cd .. // [!code --]
+        env: // [!code --]
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} // [!code --]
 ```
 
 根目录下的**release.sh** 原文件的第9行需要修改【更改语言包为下载方式】
 
-```diff sh{3-6}
+```yml title="sh"
 # build
 pnpm install
--pnpm i18n:release
-+wget https://crowdin.com/backend/download/project/alist/zh-CN.zip 
-+unzip zh-CN.zip 
-+node ./scripts/i18n.mjs
-+rm zh-CN.zip
+pnpm i18n:release // [!code --]
+wget https://crowdin.com/backend/download/project/alist/zh-CN.zip // [!code ++]
+unzip zh-CN.zip  // [!code ++]
+node ./scripts/i18n.mjs // [!code ++]
+rm zh-CN.zip // [!code ++]
 pnpm build
 cp -r dist ../
 cd ..
@@ -236,14 +237,14 @@ cd ..
 
 @tab 繁体
 
-```diff sh{3-7}
+```yml title="sh"
 # build
 pnpm install
--pnpm i18n:release
-+wget https://crowdin.com/backend/download/project/alist/zh-TW.zip 	
-+unzip zh-TW.zip
-+node ./scripts/i18n.mjs
-+rm zh-CN.zip
+pnpm i18n:release // [!code --]
+wget https://crowdin.com/backend/download/project/alist/zh-TW.zip // [!code ++]
+unzip zh-TW.zip // [!code ++]
+node ./scripts/i18n.mjs // [!code ++]
+rm zh-CN.zip // [!code ++]
 pnpm build
 cp -r dist ../
 cd ..
@@ -251,14 +252,14 @@ cd ..
 
 @tab 日语
 
-```diff sh{3-7}
+```yml title="sh"
 # build
 pnpm install
--pnpm i18n:release
-+wget https://crowdin.com/backend/download/project/alist/ja.zip 
-+unzip ja.zip 
-+node ./scripts/i18n.mjs
-+rm ja.zip
+pnpm i18n:release // [!code --]
+wget https://crowdin.com/backend/download/project/alist/ja.zip// [!code ++]
+unzip ja.zip // [!code ++]
+node ./scripts/i18n.mjs // [!code ++]
+rm ja.zip // [!code ++]
 pnpm build
 cp -r dist ../
 cd ..
@@ -266,20 +267,20 @@ cd ..
 
 @tab 三种都要添加
 
-```diff sh{3-13}
+```yml title="sh"
 # build
 pnpm install
--pnpm i18n:release
-+wget https://crowdin.com/backend/download/project/alist/zh-CN.zip 
-+unzip zh-CN.zip
-+wget https://crowdin.com/backend/download/project/alist/zh-TW.zip 	
-+unzip zh-TW.zip
-+wget https://crowdin.com/backend/download/project/alist/ja.zip 
-+unzip ja.zip
-+node ./scripts/i18n.mjs
-+rm zh-CN.zip
-+rm zh-TW.zip
-+rm ja.zip
+pnpm i18n:release // [!code --]
+wget https://crowdin.com/backend/download/project/alist/zh-CN.zip // [!code ++]
+unzip zh-CN.zip // [!code ++]
+wget https://crowdin.com/backend/download/project/alist/zh-TW.zip // [!code ++]
+unzip zh-TW.zip // [!code ++]
+wget https://crowdin.com/backend/download/project/alist/ja.zip // [!code ++]
+unzip ja.zip // [!code ++]
+node ./scripts/i18n.mjs // [!code ++]
+rm zh-CN.zip // [!code ++]
+rm zh-TW.zip // [!code ++]
+rm ja.zip // [!code ++]
 pnpm build
 cp -r dist ../
 cd ..
@@ -297,40 +298,41 @@ cd ..
 
 - **.github/workflows/==release.yml==**  原文件的第50行和75行需要删除（以下代码都进行删除，这个是编译桌面版的）
 
-```diff yml
--  release_desktop:
--    needs: release
--    name: Release desktop
--    runs-on: ubuntu-latest
--    steps:
--      - name: Checkout repo
--        uses: actions/checkout@v4
--        with:
--          repository: alist-org/desktop-release
--          ref: main
--          persist-credentials: false
--          fetch-depth: 0
--
--      - name: Add tag
--        run: |
--          git config --local user.email "bot@nn.ci"
--          git config --local user.name "IlaBot"
--          version=$(wget -qO- -t1 -T2 "https://api.github.com/repos/alist-org/alist/releases/latest" | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/\"//g;s/,//g;s/ //g')
--          git tag -a $version -m "release $version"
--      - name: Push tags
--        uses: ad-m/github-push-action@master
--        with:
--          github_token: ${{ secrets.MY_TOKEN }}
--          branch: main
--          repository: alist-org/desktop-releas
+```yml
+  release_desktop: // [!code --]
+    needs: release // [!code --]
+    name: Release desktop // [!code --]
+    runs-on: ubuntu-latest // [!code --]
+    steps: // [!code --]
+      - name: Checkout repo // [!code --]
+        uses: actions/checkout@v4 // [!code --]
+        with: // [!code --]
+          repository: alist-org/desktop-release // [!code --]
+          ref: main // [!code --]
+          persist-credentials: false // [!code --]
+          fetch-depth: 0 // [!code --]
+‪           // [!code --]
+      - name: Add tag // [!code --]
+        run: | // [!code --]
+          git config --local user.email "bot@nn.ci" // [!code --]
+          git config --local user.name "IlaBot" // [!code --]
+          version=$(wget -qO- -t1 -T2 "https://api.github.com/repos/AlistGo/alist/releases/latest" | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/\"//g;s/,//g;s/ //g') // [!code --]
+          git tag -a $version -m "release $version" // [!code --]
+‪           // [!code --]
+      - name: Push tags // [!code --]
+        uses: ad-m/github-push-action@master // [!code --]
+        with: // [!code --]
+          github_token: ${{ secrets.MY_TOKEN }} // [!code --]
+          branch: main // [!code --]
+          repository: alist-org/desktop-release // [!code --]
 ```
 
 - 根目录下的**build.sh** 文件
 
-```diff sh{2-3,11-12}
+```yml title="sh"
 FetchWebDev() {
--  curl -L https://codeload.github.com/alist-org/web-dist/tar.gz/refs/heads/dev -o web-dist-dev.tar.gz
-+  curl -L https://codeload.github.com/自己GitHub名字/web-dist/tar.gz/refs/heads/dev -o web-dist-dev.tar.gz
+  curl -L https://codeload.github.com/AlistGo/web-dist/tar.gz/refs/heads/dev -o web-dist-dev.tar.gz // [!code --]
+  curl -L https://codeload.github.com/自己GitHub名字/web-dist/tar.gz/refs/heads/dev -o web-dist-dev.tar.gz // [!code ++]
   tar -zxvf web-dist-dev.tar.gz
   rm -rf public/dist
   mv -f web-dist-dev/dist public
@@ -338,8 +340,8 @@ FetchWebDev() {
 }
 
 FetchWebRelease() {
--  curl -L https://github.com/alist-org/alist-web/releases/latest/download/dist.tar.gz -o dist.tar.gz
-+  curl -L https://github.com/自己GitHub名字/alist-web/releases/latest/download/dist.tar.gz -o dist.tar.gz
+  curl -L https://github.com/AlistGo/alist-web/releases/latest/download/dist.tar.gz -o dist.tar.gz // [!code --]
+  curl -L https://github.com/自己GitHub名字/alist-web/releases/latest/download/dist.tar.gz -o dist.tar.gz // [!code ++]
   tar -zxvf dist.tar.gz
   rm -rf public/dist
   mv -f dist public
@@ -406,7 +408,7 @@ FetchWebRelease() {
 
 
 
-现在编译出来也是需要很久，和 [AList](https://github.com/alist-org/alist) 官方编译一样也大概需要25-30分钟，如果只需要个别版本可以自己修改配置文件，修改配置文件后续补上(未知时间)
+现在编译出来也是需要很久，和 [AList](https://github.com/AlistGo/alist) 官方编译一样也大概需要25-30分钟，如果只需要个别版本可以自己修改配置文件，修改配置文件后续补上(未知时间)
 
 - 如果没有修改后端的需求不建议自己编译了，只编译前端就好，看开始提醒
 

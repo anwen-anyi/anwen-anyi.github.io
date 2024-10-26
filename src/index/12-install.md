@@ -79,7 +79,7 @@ Windows的运行多个AList没什么好说的，直接改端口号启动就行
 
 ==推荐先使用视频中的哪种办法，如果你非要试试手动安装你再看下面的教程==
 
-1. 先下载适合自己的架构**https://github.com/alist-org/alist/releases/**
+1. 先下载适合自己的架构**https://github.com/AlistGo/alist/releases/**
 
    - 如果提示 **lib64/libc.so.6: version `GLIBC_2.28' not found (required by ./alist)或者 accept: function not implemented**，我们就要换成文件名带musl的，就像下面的
    - alist-linux-amd64.tar.gz     ===>     alist-linux-musl-amd64.tar.gz

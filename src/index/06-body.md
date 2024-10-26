@@ -50,7 +50,7 @@ headerDepth: 6
 
 ## 自定义内容内代码
 
-```html
+```html :collapsed-lines
 <!--延迟加载-->
 <!--如果要写自定义内容建议都加到这个延迟加载的范围内-->
 <div id="customize" style="display: none;">
@@ -147,7 +147,7 @@ headerDepth: 6
 				<br />
 				<!--添加一个访问量-->
 				<span>
-                    本"<span style="color: rgb(13, 109, 252); font-weight: bold;"><a href="#">目录</a></span>"访问量 <span id="busuanzi_value_page_pv" style="color: rgb(13, 109, 252); font-weight: bold;"></span> 次 本站总访问量 <span id="busuanzi_value_site_pv" style="color: rgb(13, 109, 252); font-weight: bold;"></span>                次 本站总访客数 <span id="busuanzi_value_site_uv" style="color: rgb(13, 109, 252); font-weight: bold;"></span> 人
+                    本"<span style="color: rgb(13, 109, 252); font-weight: bold;"><a href="#">目录</a></span>"访问量 <span id="busuanzi_page_pv" style="color: rgb(13, 109, 252); font-weight: bold;"></span> 次 本站总访问量 <span id="busuanzi_site_pv" style="color: rgb(13, 109, 252); font-weight: bold;"></span>                次 本站总访客数 <span id="busuanzi_site_uv" style="color: rgb(13, 109, 252); font-weight: bold;"></span> 人
                 </span>
                 <br />
 				<!--添加备案信息-->
@@ -208,9 +208,171 @@ var granimInstance = new Granim({
 </script>
 ```
 
-## 网页点击鼠标特效（两个）
+::: normal-demo 演示
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--引入字体，全局字体使用-->
+    <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css" />
+
+    <!--不蒜子计数器-->
+    <script async src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"></script>
+
+    <!-- Font6，自定义底部使用和看板娘使用的图标和字体文件-->
+    <link type="text/css" rel="stylesheet" href="https://npm.elemecdn.com/font6pro@6.3.0/css/fontawesome.min.css"
+        media="all" />
+    <link href="https://npm.elemecdn.com/font6pro@6.3.0/css/all.min.css" rel="stylesheet" />
+
+    <style>
+        /*底部CSS，.App .table这三个一起的*/
+        dibu {
+            border-top: 0px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .App {
+            min-height: 85vh;
+        }
+
+        .table {
+            margin: auto;
+        }
+
+
+        /*全局字体*/
+        * {
+            font-family: LXGW WenKai;
+        }
+
+        * {
+            font-weight: bold;
+        }
+
+        body {
+            font-family: LXGW WenKai;
+        }
+    </style>
+</head>
+
+<body>
+    <!--延迟加载-->
+    <!--如果要写自定义内容建议都加到这个延迟加载的范围内-->
+
+    <center class="dibu">
+        <div style=" line-height: 20px;font-size: 9pt;font-weight: bold;">
+            <span>
+                "
+                <span style="color: rgb(13, 109, 252); font-weight: bold;" id="hitokoto">
+                    <a href="#" id="hitokoto_text">
+                        "人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."
+                    </a>
+                </span> "
+            </span>
+            <p style="margin-left: 10rem;font-size: 8pt;">
+                <small>
+                    —— Anwen's Cloud
+                </small>
+            </p>
+        </div>
+
+        <div style="font-size: 13px; font-weight: bold;">
+            <span class="nav-item">
+                <a class="nav-link" href="xxxxxxxxxx" target="_blank">
+                    <i class="fab fa-qq" style="color:#409EFF" aria-hidden="true">
+                    </i>
+                    QQ |
+                </a>
+            </span>
+            <span class="nav-item">
+                <a class="nav-link" href="mailto:xxxxx@foxmail.com" target="_blank">
+                    <i class="fa-duotone fa-envelope-open" style="color:#409EFF" aria-hidden="true">
+                    </i>
+                    邮箱 |
+                </a>
+            </span>
+            <span class="nav-item">
+                <a class="nav-link" href="xxxxxx" target="_blank">
+                    <i class="fas fa-edit" style="color:#409EFF" aria-hidden="true">
+                    </i>
+                    博客 |
+                </a>
+            </span>
+            <span class="nav-item">
+                <a class="nav-link" href="xxxxxxxx" target="_blank">
+                    <i class="fas fa-comment-lines" style="color:#409EFF;" aria-hidden="true">
+                    </i>
+                    留言 |
+                </a>
+            </span>
+            <span class="nav-item">
+                <a class="nav-link" href="xxxxxxx" target="_blank">
+                    <i class="fa fa-cloud-download" style="color:#409EFF;" aria-hidden="true">
+                    </i>
+                    云盘 |
+                </a>
+            </span>
+            <!--后台入口-->
+            <span class="nav-item">
+                <a class="nav-link" href="/@manage" target="_blank">
+                    <i class="fa-solid fa-folder-gear" style="color:#409EFF;" aria-hidden="true">
+                    </i>
+                    管理 |
+                </a>
+            </span>
+            <!--版权，请尊重作者-->
+            <span class="nav-item">
+                <a class="nav-link" href="https://github.com/Xhofe/alist" target="_blank">
+                    <i class="fa-solid fa-copyright" style="color:#409EFF;" aria-hidden="true">
+                    </i>
+                    Alist
+                </a>
+            </span>
+            <br />
+            <!--添加一个访问量-->
+            <span>
+                本"<span style="color: rgb(13, 109, 252); font-weight: bold;"><a href="#">目录</a></span>"访问量 <span
+                    id="busuanze_page_pv" style="color: rgb(13, 109, 252); font-weight: bold;"></span> 次
+                本站总访问量 <span id="busuanzi_site_pv" style="color: rgb(13, 109, 252); font-weight: bold;"></span> 次
+                本站总访客数 <span id="busuanzi_site_uv" style="color: rgb(13, 109, 252); font-weight: bold;"></span> 人
+            </span>
+            <br />
+            <!--添加备案信息-->
+            <span class="nav-item">
+                <a class="nav-link" href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">
+                    <i class="fa-solid fa-shield-check" style="color:#409EFF;" aria-hidden="true">
+                    </i>
+                    冀 ICP备2222000777号
+                </a>
+            </span>
+        </div>
+    </center>
+    <br />
+    <br />
+
+    <!--一言API-->
+    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+</body>
+
+</html>
+```
+
+:::
+
+## 网页点击鼠标特效（两个，可展开预览效果）
 
 ::: details 核心价值观关键字
+
+<iframe src="/html/hexinjiazhiguan.html" name="iframe_a" scrolling="ok" frameborder="0" width="100%" height="150" style="border-radius: 16px;"></iframe>
 
 ```html
 <!-- 网页鼠标点击特效 - 核心价值观关键字 -->
@@ -261,6 +423,8 @@ var granimInstance = new Granim({
 :::
 
 ::: details 冒爱心
+
+<iframe src="/html/love.html" name="iframe_a" scrolling="ok" frameborder="0" width="100%" height="150" style="border-radius: 16px;"></iframe>
 
 ```html
 <!-- 网页鼠标点击特效 - 爱心 -->
@@ -325,6 +489,62 @@ var granimInstance = new Granim({
 
 ## 音乐播放器添加说明
 
+::: details <i class="fa-solid fa-music fa-bounce" style="color: #74C0FC;"></i> 音乐播放器
+
+<iframe src="/html/yinyue.html" name="iframe_a" scrolling="ok" frameborder="0" width="100%" height="360" style="border-radius: 16px;"></iframe>
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- require APlayer -->
+    <link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css">
+    <script src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <!-- 新的，添加 require MetingJS -->
+    <script src="https://npm.elemecdn.com/meting2@0.0.1/js/Meting.min.js"></script>
+    <title>音乐</title>
+</head>
+
+<body>
+    <!--音乐播放器-->
+    <!--网易云音乐-->
+    <meting-js fixed="false" autoplay="false" theme="#409EFF" list-folded="false" server="netease" type="playlist"
+            id="2195404116"></meting-js>
+    <!--QQ音乐-->
+    <!--<meting-js fixed="true" autoplay="false" theme="#409EFF" list-folded="true" auto="https://y.qq.com/n/yqq/playlist/7927599544.html"></meting-js>-->
+</body>
+
+</html>
+```
+
+可选CSS，需要 `fixed="true"` 时使用
+
+```css
+<style>
+  /* 以下为音乐播放器额外配置 */
+  /* 如果你想要音乐播放器不是很靠底部可以自己设置一下数值 0是靠最底部 */
+  .aplayer .aplayer-body,
+  .aplayer.aplayer-withlist {
+    bottom: 0rem !important;
+  }
+  /*音乐播放器进一步进行隐藏*/
+  /* 需要就加不需要就不用加 */
+  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+    left: 0 !important;
+  }
+</style>
+```
+
+
+
+:::
+
 ### 核心代码（记得引用头部内的喔~）
 
 ```html
@@ -335,13 +555,23 @@ var granimInstance = new Granim({
 
 我使用的是上面这个链接~这个链接怎么获取呢来看图
 
+::: tip
+
 1. https://y.qq.com/n/ryqq/profile/create
+
+
 2. ![](/img/body/qq.png)
+
+
 3. 点击这个歌单后我们能看到 这个歌单的链接是 ：https://y.qq.com/n/ryqq/playlist/7927599544
+
+
 4. 然后我们复制最后的那一串数字  **`7927599544`**
+
+
 5. 然后回到 https://y.qq.com/n/yqq/playlist/7927599544.html 这个链接里面把里面的数字ID替换成你的即可使用
 
-
+:::
 
 ### 网易云音乐
 
@@ -462,3 +692,9 @@ url 肯定是你要添加的音乐链接，cover封面呗~嘿嘿嘿
 | list-folded     | `false`     | indicate whether list should folded at first                 |
 | list-max-height | `340px`     | list max height                                              |
 | storage-name    | `metingjs`  | localStorage key that store player setting                   |
+
+<br/>
+
+
+
+<!-- @include: 05-head.md{862-985} -->

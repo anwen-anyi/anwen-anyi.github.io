@@ -17,9 +17,9 @@ export default defineUserConfig({
 
     // Algolia DocSearch Algolia搜索插件
     // docsearchPlugin({
-      // appId: "G9WNTTQL4R",
-      // apiKey: "b4c123a561b0166b7015df8147771950",
-      // indexName: "anwen-anyiio",
+    // appId: "G9WNTTQL4R",
+    // apiKey: "b4c123a561b0166b7015df8147771950",
+    // indexName: "anwen-anyiio",
     // }),
   ],
   shouldPrefetch: false,
@@ -40,7 +40,7 @@ export default defineUserConfig({
       {
         type: "text/javascript",
         charset: "UTF-8",
-        src: "https://busuanzi.icodeq.com/busuanzi.pure.mini.js",
+        src: "https://busuanzi.9420.ltd/js",
       }
     ],
     [
@@ -74,7 +74,7 @@ export default defineUserConfig({
       level: [2, 3, 4, 5, 6]
     }
   },
-  
+
   // Enable it with pwa
   // shouldPrefetch: false,
 

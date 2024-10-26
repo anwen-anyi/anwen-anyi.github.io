@@ -335,7 +335,7 @@ headerDepth: 6
 
 ## **21. 怎么挂载SMB？**
 
-下面这个链接可能对你有帮助~你试试看呢：https://github.com/alist-org/alist/discussions/2215
+下面这个链接可能对你有帮助~你试试看呢：https://github.com/AlistGo/alist/discussions/2215
 
 <br>
 
@@ -569,7 +569,7 @@ headerDepth: 6
 
 出现如下报错应该是插件冲突了导致的，比如油猴的或者脚本猫中的一个答题脚本导致的，具体的可以看下面标题
 
-解决办法把油猴答题插件关闭：https://github.com/alist-org/alist/discussions/2399
+解决办法把油猴答题插件关闭：https://github.com/AlistGo/alist/discussions/2399
 
 ![](/img/wenti/35.png)
 
@@ -599,7 +599,7 @@ headerDepth: 6
   }
 ```
 
-参考链接：https://github.com/alist-org/alist-web/commit/6e6012d5918589bead414cb3f479421b5e911e66
+参考链接：https://github.com/AlistGo/alist-web/commit/6e6012d5918589bead414cb3f479421b5e911e66
 
 
 
@@ -629,9 +629,9 @@ headerDepth: 6
   }
 ```
 
-参考连接^1^：https://github.com/alist-org/alist/issues/2788
+参考连接^1^：https://github.com/AlistGo/alist/issues/2788
 
-参考链接^2^：https://github.com/alist-org/alist/issues/2805
+参考链接^2^：https://github.com/AlistGo/alist/issues/2805
 
 
 
@@ -714,11 +714,11 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 :::: details 点击查看全部代码配置
 
-根据：**https://github.com/alist-org/alist/discussions/4363**
+根据：**https://github.com/AlistGo/alist/discussions/4363**
 
 1. 先新建一个不用CMD黑窗口就能运行的脚本，**`ALL.vbs`**，代码如下
 
-```vbscript
+```vbscript title="vbscript"
 Dim ws
 Set ws = Wscript.CreateObject("Wscript.Shell")
 ws.run "AList-proxy.bat",vbhide
@@ -736,7 +736,7 @@ start Alist-Start.vbs
 
 3. 然后配置正常启动AList程序的脚本 **`Alist-Start.vbs`** , 代码如下
 
-```vbscript
+```vbscript title="vbscript"
 Dim ws
 Set ws = Wscript.CreateObject("Wscript.Shell")
 ws.run "alist.exe server",vbhide
@@ -745,7 +745,7 @@ Wscript.quit
 
 4. 最后一个是停止运行AList的脚本 **`AList-Stop.vbs`** , 代码如下
 
-```vbscript
+```vbscript title="vbscript"
 Dim ws
 Set ws = Wscript.CreateObject("Wscript.Shell")
 ws.run "taskkill /f /im alist.exe",0
@@ -840,7 +840,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 可能是没有打开Https，还有一种情况，耽搁了一些人大量的时间，就是你的电脑装有IDM，或者IDM类似的浏览器下载托管软件，因为fetch会被IDM软件拦截，所以PDF文件将无法加载，你可能会收到如下报错：
 
-```htm
+```html
 PDF.js v2.12.305 (build: d3e1d7090)
 信息：Failed to fetch
 ```

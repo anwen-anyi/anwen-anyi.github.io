@@ -48,7 +48,7 @@ collapsible: false
 <BiliBili bvid="BV1ye4y1m7e1" />
 
 ### 1.2 编译之前的前提条件
-大家可以看一下这里需要啥：https://github.com/alist-org/alist/blob/main/CONTRIBUTING.md
+大家可以看一下这里需要啥：https://github.com/AlistGo/alist/blob/main/CONTRIBUTING.md
 
 编译AList Go竟然需要 1.20+了...呜呜呜
 
@@ -106,7 +106,7 @@ set GOPROXY=https://goproxy.cn,direct
 
 ### 1.3 编译前端前准备
 
-**编译前我们看看文档怎么编译**：https://github.com/alist-org/alist/blob/main/CONTRIBUTING.md
+**编译前我们看看文档怎么编译**：https://github.com/AlistGo/alist/blob/main/CONTRIBUTING.md
 
 ![](/img/build/build02.jpeg)
 
@@ -121,12 +121,12 @@ set GOPROXY=https://goproxy.cn,direct
 ```bash
 alist.git是后端，alist-web.git是前端
 无代理
-git clone https://github.com/alist-org/alist.git
-git clone --recurse-submodules https://github.com/alist-org/alist-web.git
+git clone https://github.com/AlistGo/alist.git
+git clone --recurse-submodules https://github.com/AlistGo/alist-web.git
 
 代理 - （大白提供-可能服务中断了）
-git clone https://hub.cooluc.com/alist-org/alist.git
-git clone --recurse-submodules https://hub.cooluc.com/alist-org/alist-web.git
+git clone https://hub.cooluc.com/AlistGo/alist.git
+git clone --recurse-submodules https://hub.cooluc.com/AlistGo/alist-web.git
 ```
 
 前后端 拉取/克隆(clone)好了
@@ -218,7 +218,7 @@ node ./scripts/i18n.mjs
 - 下载前端带上 `--recurse-submodules` 参数去下载
 
 ```bash
-git clone --recurse-submodules https://github.com/alist-org/alist-web.git
+git clone --recurse-submodules https://github.com/AlistGo/alist-web.git
 ```
 
 
@@ -242,7 +242,7 @@ goVersion=$(go version | sed 's/go version //')
 gitAuthor=$(git show -s --format='format:%aN <%ae>' HEAD)
 gitCommit=$(git log --pretty=format:"%h" -1)
 version=$(git describe --long --tags --dirty --always)
-webVersion=$(wget -qO- -t1 -T2 "https://api.github.com/repos/alist-org/alist-web/releases/latest" | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/\"//g;s/,//g;s/ //g')
+webVersion=$(wget -qO- -t1 -T2 "https://api.github.com/repos/AlistGo/alist-web/releases/latest" | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/\"//g;s/,//g;s/ //g')
 ldflags="\
 -w -s \
 -X 'github.com/alist-org/alist/v3/internal/conf.BuiltAt=$builtAt' \

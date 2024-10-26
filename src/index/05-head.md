@@ -73,7 +73,7 @@ V3.31.0 优化了部分功能，导致个别位置CSS未修改看起冲突一样
 <script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
 
 <!--不蒜子计数器-->
-<script async src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"></script>
+<script async src="https://busuanzi.9420.ltd/js"></script>
 
 <!-- Font6，自定义底部使用和看板娘使用的图标和字体文件-->
 <link type="text/css" rel="stylesheet" href="https://npm.elemecdn.com/font6pro@6.3.0/css/fontawesome.min.css" media="all" />
@@ -329,7 +329,7 @@ V3.31.0 优化了部分功能，导致个别位置CSS未修改看起冲突一样
 <script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
 
 <!--不蒜子计数器-->
-<script async src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"></script>
+<script async src="https://busuanzi.9420.ltd/js"></script>
 
 <!-- Font6，自定义底部使用和看板娘使用的图标和字体文件-->
 <link type='text/css' rel="stylesheet" href="https://npm.elemecdn.com/font6pro@6.3.0/css/fontawesome.min.css" media='all'>
@@ -695,6 +695,14 @@ V3.31.0 优化了部分功能，导致个别位置CSS未修改看起冲突一样
 
 :::
 
+<br/>
+
+
+
+#### **新增**
+
+- 来自 网友 提供的：**https://github.com/nova1751/live2d-api** 
+
 <br/><br/>
 
 
@@ -846,3 +854,132 @@ V3.31.0 优化了部分功能，导致个别位置CSS未修改看起冲突一样
 :::
 
 ![](/img/head/shubiao.png)
+
+<br/>
+
+
+
+## **卜蒜子(计数器)**
+
+来自：**https://busuanzi.9420.ltd**、Api：**https://busuanzi.apifox.cn**、GitHub：**https://github.com/soxft/busuanzi**
+
+如果丢数据或者觉的不稳定可自建卜蒜子计数器，支持 Windows、Linux、Docker，使用 Golang + Redis 实现
+
+搭建方法：**https://busuanzi.apifox.cn/doc-5083724**
+
+<br/>
+
+
+
+#### **详细搭建方法**
+
+这里以Windows为例
+
+首先得安装了 [**Redis**](https://github.com/tporadowski/redis/releases)，安装好后启动 **`redis-server.exe`** 就可以，可以看到和下面的一样的，就是启动了Redis 数据库
+
+- Linux Redis 下载地址：**http://redis.io/download**
+
+![Redis Server](/img/head/busuanzi/redis_server.png)
+
+把之前 [BuSuanZi GitHub](https://github.com/soxft/busuanzi) 下载好的配置文件进行修改（如果不想显示这个黑窗口，可以使用脚步启动隐藏黑窗口）
+
+分别下载源代码和二进制启动程序（主要是`config.yaml`和`dist`文件夹）都在一个目录里面才可以启动
+
+- 分别修改（看需求），默认不需要修改可以直接运行
+  - `config.yaml`
+  - `dist/busuanzi.js`
+- 如果你修改了`config.yaml`的端口号  那就也需要修改 `dist/busuanzi.js`的配置，如果不修改可以直接启动
+
+```yaml title="config.yaml" :collapsed-lines=8
+Web:
+  Address: 0.0.0.0:8080 # 监听地址 // [!code ++]
+  Cors: "https://xsot.cn,https://google.com" # 跨域访问
+  Debug: false # 是否开启debug模式
+  Log: true # 是否开启日志
+Redis:
+  Address: redis:6379 # redis地址
+  Password:
+  Database: 0
+  TLS: false      # 是否使用TLS连接redis
+  Prefix: bsz     # redis前缀
+  MaxIdle: 25     # 最大空闲连接数
+  MaxActive: 100  # 最大连接数
+  MinIdle: 25     # 最小空闲连接数
+  MaxRetries: 3   # 最大重试次数
+Bsz:
+  Expire: 0        # 统计数据过期时间 单位秒, 请输入整数 (无任何访问, 超过这个时间后, 统计数据将被清空, 0为不过期)
+  Secret: "bsz"    # JWT签名密钥 // 请设置为任意长度的随机值
+  Encrypt: "MD516" # 加密算法 (MD516 / MD532) 老版本请使用 MD532
+  PathStyle: true  # 路径样式 (false: url&path, true: path) 老版本请使用 false,  true 更便于数据迁移
+
+
+# TIPS, 所有 config 内的设置, 均可使用 环境变量 覆盖
+# Ex BSZ_SECRET=123 将覆盖 config.yaml 中的 Bsz.Secret
+```
+
+`dist/busuanzi.js`这个js文件我进行了格式化，默认是一行代码显示的，这里为了方便查看进行了格式化操作
+
+- 如果在公网进行部署，建议修改成绑定的域名信息
+
+```js title="dist/busuanzi.js" :collapsed-lines=8
+! function () {
+    var t = ["site_pv", "site_uv", "page_pv", "page_uv"],
+        e = document.currentScript,
+        a = e.hasAttribute("pjax"),
+        n = e.getAttribute("data-api") || "http://127.0.0.1:8080/api", // [!code ++]
+        n = e.getAttribute("data-api") || "https://bsz.explorer.com/api", // [!code --]
+        i = e.getAttribute("data-prefix") || "busuanzi",
+        r = "bsz-id",
+        s = function () {
+            var e = new XMLHttpRequest;
+            e.open("POST", n, !0);
+            var a = localStorage.getItem(r);
+            null != a && e.setRequestHeader("Authorization", "Bearer " + a), e.setRequestHeader("x-bsz-referer", window
+                .location.href), e.onreadystatechange = function () {
+                if (4 === e.readyState && 200 === e.status) {
+                    var a = JSON.parse(e.responseText);
+                    if (!0 === a.success) {
+                        t.map((function (t) {
+                            var e = document.getElementById("".concat(i, "_").concat(t));
+                            null != e && (e.innerHTML = a.data[t]);
+                            var n = document.getElementById("".concat(i, "_container_").concat(t));
+                            null != n && (n.style.display = "inline")
+                        }));
+                        var n = e.getResponseHeader("Set-Bsz-Identity");
+                        null != n && "" != n && localStorage.setItem(r, n)
+                    }
+                }
+            }, e.send()
+        };
+    if (s(), a) {
+        var o = window.history.pushState;
+        window.history.pushState = function () {
+            o.apply(this, arguments), s()
+        }, window.addEventListener("popstate", (function (t) {
+            s()
+        }), !1)
+    }
+}();
+```
+
+<br/>
+
+::: tip
+
+具体导入网站使用方法 **https://busuanzi.apifox.cn/doc-5083722**
+
+:::
+
+<br/>
+
+查看 Redis 链接访问的数据，我们可以使用可视化 Redis 管理工具 [**AnotherRedisDesktopManager**](https://github.com/qishibo/AnotherRedisDesktopManager)
+
+下载好后连接 Redis，地址我在本地搭建的就写 `127.0.0.1`，端口号如果默认没改过就是 `6379`
+
+![Redis Manage](/img/head/busuanzi/redis_manage.png)
+
+<br/>
+
+连接好后如果我们要修改数据，可以参考下面的示例
+
+![Redis busuanzi](/img/head/busuanzi/redis_busuanzi.png)

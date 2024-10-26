@@ -2,8 +2,8 @@
 // $theme-color: #096dd9;
 // 站点的默认主题颜色
 $theme-color: #70c6be;
-// 文章页面内容宽度
 
+// 文章页面内容宽度
 $content-width: 1250px;
 
 // 左侧侧边栏颜色图标颜色
@@ -29,20 +29,17 @@ $content-width: 1250px;
   align-items: center;
   flex-wrap: wrap;
 }
-
 .image-preview>img {
   box-sizing: border-box;
   width: 33.3% !important;
   padding: 9px;
   border-radius: 16px;
 }
-
 @media (max-width: 719px) {
   .image-preview>img {
     width: 50% !important;
   }
 }
-
 @media (max-width: 419px) {
   .image-preview>img {
     width: 100% !important;
@@ -58,20 +55,17 @@ $content-width: 1250px;
   align-items: center;
   flex-wrap: wrap;
 }
-
 .image-preview2>img {
   box-sizing: border-box;
   width: 50% !important;
   padding: 9px;
   border-radius: 16px;
 }
-
 @media (max-width: 719px) {
   .image-preview2>img {
     width: 50% !important;
   }
 }
-
 @media (max-width: 419px) {
   .image-preview2>img {
     width: 100% !important;
@@ -84,7 +78,6 @@ span#tips2 {
   color: red;
   font-weight: bolder;
 }
-
 span#tips3 {
   color: rgb(17, 110, 250);
   font-weight: bolder;
@@ -95,12 +88,10 @@ span#busuanzi_value_page_pv {
   font-weight: bold;
   color: rgb(13, 109, 252);
 }
-
 span#busuanzi_value_site_pv {
   font-weight: bold;
   color: rgb(13, 109, 252);
 }
-
 span#busuanzi_value_site_uv {
   font-weight: bold;
   color: rgb(13, 109, 252);
@@ -117,12 +108,10 @@ span#post {
   color: orange;
   font-weight: bold;
 }
-
 span#get {
   color: rgb(15, 155, 15);
   font-weight: bold;
 }
-
 span#put {
   color: blue;
   font-weight: bold;

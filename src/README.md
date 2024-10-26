@@ -89,8 +89,8 @@ highlights:
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
     highlights:
       - title: V3文档：<a href="https://alist.nn.ci/zh/">https://alist.nn.ci/zh/</a>
-      - title: V3后端：<a href="https://github.com/alist-org/alist">https://github.com/alist-org/alist</a>
-      - title: V3前端：<a href="https://github.com/alist-org/alist-web">https://github.com/alist-org/alist-web</a>
+      - title: V3后端：<a href="https://github.com/AlistGo/alist">https://github.com/AlistGo/alist</a>
+      - title: V3前端：<a href="https://github.com/AlistGo/alist-web">https://github.com/AlistGo/alist-web</a>
       - title: V3语言：<a href="https://crowdin.com/project/alist">https://crowdin.com/project/alist</a>   
 
   - header: 赞助以及投喂

@@ -41,10 +41,10 @@ collapsible: false
 
 ### **1.1 调试前准备**
 
-我们先下载一个编译好的AList，然后将AList前端代码([**alist-web**](https://github.com/alist-org/alist-web))下载到本地
+我们先下载一个编译好的AList，然后将AList前端代码([**alist-web**](https://github.com/AlistGo/alist-web))下载到本地
 
 - 下载已经可以直接使用的AList，然后启动
-- 下载AList前端代码：**git clone --recurse-submodules https://github.com/alist-org/alist-web.git**
+- 下载AList前端代码：**git clone --recurse-submodules https://github.com/AlistGo/alist-web.git**
   - 仔细看有 **`--recurse-submodules`** 参数，如果不加会缺少`solid-router`运行的时候会报错
 
 <br/>
@@ -55,7 +55,7 @@ collapsible: false
 
 进入调试工具打开前端的代码，执行如下代码
 
-```pnpm
+```pnpm title="pnpm"
 pnpm install
 ```
 

@@ -1,4 +1,4 @@
-import { hopeTheme, getComponentsPlugin } from "vuepress-theme-hope";
+import { hopeTheme, getComponentsPlugin, sidebar } from "vuepress-theme-hope";
 // import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { zhNavbar } from "./navbar/index.js";
 // import { enSidebar, zhSidebar } from "./sidebar/index.js";
@@ -60,7 +60,7 @@ export default hopeTheme({
       sidebar: zhSidebar,
 
       // footer: "默认页脚",
-      footer: '<p id="hitokoto">  <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </p> <p>本页面<span id="busuanzi_value_page_pv"></span>次,本站<span id="busuanzi_value_site_pv"></span>次,总访客<span id="busuanzi_value_site_uv"></span>人</p>',
+      footer: '<p id="hitokoto">  <a href="#" id="hitokoto_text">"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."</a> </p> <p>本页面<span id="busuanzi_page_pv"></span>次,本站<span id="busuanzi_site_pv"></span>次,总访客<span id="busuanzi_site_uv"></span>人</p>',
 
       displayFooter: true,
 
@@ -84,6 +84,15 @@ export default hopeTheme({
     linksCheck: {
       dev: true,
     },
+    shiki: {
+      langs: ["ts", "text", 'json', 'vue', 'md','bash','php','diff','dockerfile','bat','powershell','sh','shell','yml','yaml'],
+      notationDiff: true,   //是否启用差异标记
+      notationFocus: true,  //是否启用聚焦标记
+      notationWordHighlight: true,  //是否启用词高亮标记
+      notationErrorLevel:true,      //是否启用错误级别标记
+      collapsedLines: true,         //代码折叠
+    },
+
     // PWA
     pwa: {
       favicon: "/favicon.ico",
@@ -109,22 +118,30 @@ export default hopeTheme({
     // {rootComponents: { backToTop: true }},
 
     // all features are enabled for demo, only preserve features you need here
+    markdownMath: {
+      type: "katex",   //启动支持KaTeX语法
+    },
+    markdownTab: {
+      tabs: true,     // 否启用选项卡
+      codeTabs: true, // 代码块分组
+    },
+    markdownHint: {
+      hint: true,     // 启用提示
+    },
+    markdownImage: {
+      lazyload: true, // 启用图片懒加载
+      size: true,     // 启用图片大小
+      figure: true,   // 启用 figure
+    },
     mdEnhance: {
       component: true,
       attrs: true,
       chart: true,
-      codetabs: true,
       demo: true,
       echarts: true,
-      figure: true,
-      imgLazyload: true,
-      imgSize: true,
       include: true,
-      katex: true,      //启动支持KaTeX语法
-      tabs: true,       //否启用选项卡
       tasklist: true,   //启用任务列表格式支持
       gfm: true,        //支持完整的 GFM 语法
-      hint: true,       //启用提示
       flowchart: true,  //启用流程图支持
       mark: true,       //启用标记格式支持
       mermaid: true,    //启用 Mermaid 流程图支持

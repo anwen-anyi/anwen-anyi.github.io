@@ -65,7 +65,7 @@ headerDepth: 6
 @tab Cloudflare Workers
 可以使用 Cloudflare Workers 做代理，这里填写 Workers 地址即可。
 
-Workers 代码可以在 https://github.com/alist-org/alist-proxy/blob/main/alist-proxy.js 找到，实际使用时需要替换其中的这两个变量：
+Workers 代码可以在 https://github.com/AlistGo/alist-proxy/blob/main/alist-proxy.js 找到，实际使用时需要替换其中的这两个变量：
 
 - ADDRESS: 你的 AList 地址，必须加上协议头，后面不能跟 `/`。如 `https://pan.nn.ci`；
 - TOKEN: 在 AList 管理页面中进入“其他设置”得到。
@@ -77,7 +77,7 @@ Workers 代码可以在 https://github.com/alist-org/alist-proxy/blob/main/alist
 详细文字教程：[点击查看](#_1-cloudflare-workers)
 
 @tab 通用二进制
-也可以使用另一台机器进行代理，在 https://github.com/alist-org/alist-proxy/releases 下载程序通过 `./alist-proxy -help` 查看使用方法后
+也可以使用另一台机器进行代理，在 https://github.com/AlistGo/alist-proxy/releases 下载程序通过 `./alist-proxy -help` 查看使用方法后
 
 详细文字教程：[点击查看](#_2-通用二进制)
 
@@ -101,7 +101,7 @@ Workers 代码可以在 https://github.com/alist-org/alist-proxy/blob/main/alist
 
 ![](/img/proxy/proxy-3.png)
 
-然后我们将AList提供的[**proxy.js**](https://github.com/alist-org/alist-proxy/blob/main/alist-proxy.js)代码复制进去，进行修改内容，然后右上角部署保存，保存好后继续回到这个**Workers** 应用程序內
+然后我们将AList提供的[**proxy.js**](https://github.com/AlistGo/alist-proxy/blob/main/alist-proxy.js)代码复制进去，进行修改内容，然后右上角部署保存，保存好后继续回到这个**Workers** 应用程序內
 
 - "YOUR_ADDRESS"：我们改成需要被代理的AList链接，链接需要携带请求头 HTTP或者HTTPS，链接最面不可以带 `/`
 
@@ -309,7 +309,7 @@ A^3^：有的，Cloudflare Workers 中转AList，AList的端口只能跑在80或
 
 ### **2. 通用二进制**
 
-先来到 [alist-proxy二进制 ](https://github.com/alist-org/alist-proxy/releases) 下载二进制程序包，下载好解压出来
+先来到 [alist-proxy二进制 ](https://github.com/AlistGo/alist-proxy/releases) 下载二进制程序包，下载好解压出来
 
 使用前也是需要进行授权，授权完使用`./alist-proxy -help`都有哪些命令
 

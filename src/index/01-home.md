@@ -30,7 +30,7 @@ headerDepth: 6
 <!-- 你可以通过设置页面的 Frontmatter，在页面禁用功能与布局。 -->
 
 <!-- more -->
-首先我们来安装，可以自己看文档 "https://alist.nn.ci/zh/guide/" 写很清楚了，再看不懂看视频教程吧
+首先我们来安装，可以自己看文档 **https://alist.nn.ci/zh/guide** 写很清楚了，再看不懂看视频教程吧
 
 ## 1.安装Alist，并且使用
 
@@ -40,27 +40,83 @@ headerDepth: 6
 
 ### 安装以及脚本
 
-1. Alist Windows启动脚本(开机自启可用)：
+1. AList Windows启动脚本(开机自启可用)：
    - 如何添加开机自启查看下面：**[BV1DG411s7j5](https://www.bilibili.com/video/BV1DG411s7j5?t=266.0)**
-2. **AList** 手动下载GitHub地址:**https://github.com/alist-org/alist/releases**
+2. **AList** 手动下载GitHub地址:**https://github.com/AlistGo/alist/releases**
 3. 路由器等**opwert**安装(大白维护编译发布的)：**https://github.com/sbwml/luci-app-alist**
 4. 群辉NAS安装：
-   - Dsm6.x矿神SPK套件源：https://spk.imnks.com/
-   - Dsm7.x矿神SPK套件源：https://spk7.imnks.com/
+   - Dsm6.x矿神SPK套件源：https://spk.imnks.com
+   - Dsm7.x矿神SPK套件源：https://spk7.imnks.com
+5. Termux：[AList如何在安卓手机安装](14-android_install.md)
 
 ### 安装后查看密码
 
-1. **Windows：alist.exe admin**
-2. **Linux	 :** **./alist admin**
-3. **docker	 :** **docker exec -it alist ./alist admin**
-   - 注：**Windows，Linux**，要到文件的的目录里面去执行喔~
-     - **比如下图的，Alist执行程序在V3这个文件夹，我们就要进入V3这个文件夹在执行命令**
-     - ![](/img/home/01-install.png)
-     
-   - **Linux**：一键脚本安装的在 **`/opt/alist`**
-	  1. **我们就输入** **`cd /opt/alist `**,进入alist文件夹
-      2. **我们再输入查看密码命令 /alist admin**
-      3. **如果是自定义就自己 cd 进入你安装的文件夹里面去就行，不多说了**
+:::tabs#os
+@tab Windows
+
+```yaml
+# 获得管理员信息 以下两个不同版本，新版本也有随机生成和手动设置
+# 低于v3.25.0版本
+.\alist.exe admin
+
+# 高于v3.25.0版本
+# 随机生成一个密码
+.\alist.exe admin random
+# 手动设置一个密码 `NEW_PASSWORD`是指你需要设置的密码
+.\alist.exe admin set NEW_PASSWORD
+```
+
+@tab Linux
+
+```yaml
+# 获得管理员信息 以下两个不同版本，新版本也有随机生成和手动设置
+# 低于v3.25.0版本
+./alist admin
+
+# 高于v3.25.0版本
+# 随机生成一个密码
+./alist admin random
+# 手动设置一个密码 `NEW_PASSWORD`是指你需要设置的密码
+./alist admin set NEW_PASSWORD
+```
+
+@tab Mac
+
+```yaml
+# 获得管理员信息 以下两个不同版本，新版本也有随机生成和手动设置
+# 低于v3.25.0版本
+./alist admin
+
+#高于v3.25.0版本
+# 随机生成一个密码
+./alist admin random
+# 手动设置一个密码 `NEW_PASSWORD`是指你需要设置的密码
+./alist admin set NEW_PASSWORD
+```
+
+@tab Docker
+
+```yaml
+# 获得管理员信息 以下两个不同版本，新版本也有随机生成和手动设置
+# 低于v3.25.0版本
+docker exec -it alist ./alist admin
+
+# 随机生成一个密码
+docker exec -it alist ./alist admin random
+# 手动设置一个密码,`NEW_PASSWORD`是指你需要设置的密码
+docker exec -it alist ./alist admin set NEW_PASSWORD
+```
+
+:::
+
+- 注：**Windows，Linux，Mac**，要到文件的的目录里面去执行喔~
+  - **比如下图的，AList执行程序在V3这个文件夹，我们就要进入V3这个文件夹在执行命令**
+  - ![](/img/home/01-install.png)
+  
+- **Linux**：一键脚本安装的在 **`/opt/alist`**
+  1. **我们就输入** **`cd /opt/alist `**,进入alist文件夹
+   2. **我们再输入查看密码命令 /alist admin**
+   3. **如果是自定义就自己 cd 进入你安装的文件夹里面去就行，不多说了**
 
 #### 坑^1^:有的人说手动查看的密码和脚本启动查看的密码不一样..就是因为没有手动进入哪个Alist程序所在的文件夹查看密码导致的.....
 
@@ -253,7 +309,7 @@ headerDepth: 6
 
    - Paths填写示例：
 
-     ```path
+     ```text title="path"
      /本地1/本地
      /本地2/本地
      ```
@@ -264,7 +320,7 @@ headerDepth: 6
 
    - Paths填写示例：
 
-     ```path
+     ```text title="path"
      #示例1 直接写根文件夹
      本地:/本地1
      本地:/本地2
@@ -325,7 +381,7 @@ headerDepth: 6
 
 ``` 
 http://pic.rmb.bdstatic.com/bjh/aff9c9c8817d943d6857a73188958d45.jpeg
-https://raw.githubusercontent.com/alist-org/alist/main/README_cn.md
+https://raw.githubusercontent.com/AlistGo/alist/main/README_cn.md
 ```
 
 ##### 输出
@@ -347,17 +403,17 @@ https://raw.githubusercontent.com/alist-org/alist/main/README_cn.md
 http://pic.rmb.bdstatic.com/bjh/aff9c9c8817d943d6857a73188958d45.jpeg
 folder:
   http://pic.rmb.bdstatic.com/bjh/aff9c9c8817d943d6857a73188958d45.jpeg
-  https://raw.githubusercontent.com/alist-org/alist/main/README_cn.md
+  https://raw.githubusercontent.com/AlistGo/alist/main/README_cn.md
 ```
 ``` 
 http://pic.rmb.bdstatic.com/bjh/aff9c9c8817d943d6857a73188958d45.jpeg
 folder:
   http://pic.rmb.bdstatic.com/bjh/aff9c9c8817d943d6857a73188958d45.jpeg
-  https://raw.githubusercontent.com/alist-org/alist/main/README_cn.md
+  https://raw.githubusercontent.com/AlistGo/alist/main/README_cn.md
 http://pic.rmb.bdstatic.com/bjh/a66923e9bfefd03c2998ee998d3b55e7.jpeg
 folde2r:
   http://pic.rmb.bdstatic.com/bjh/e919290bf3b8396817d369cedf33b8cd.jpeg
-  https://raw.githubusercontent.com/alist-org/alist/main/CONTRIBUTING.md
+  https://raw.githubusercontent.com/AlistGo/alist/main/CONTRIBUTING.md
 ```
 
 ##### 输出
@@ -394,14 +450,14 @@ folde2r:
 
 ```
 新名称.jpeg:1024:http://pic.rmb.bdstatic.com/bjh/aff9c9c8817d943d6857a73188958d45.jpeg
-新名称2.md:2048:https://raw.githubusercontent.com/alist-org/alist/main/README_cn.md
+新名称2.md:2048:https://raw.githubusercontent.com/AlistGo/alist/main/README_cn.md
 ```
 
 文件大小不用写也是可以重新命名的
 
 ```
 新名称.jpeg:1024:http://pic.rmb.bdstatic.com/bjh/aff9c9c8817d943d6857a73188958d45.jpeg
-新名称2.md:2048:https://raw.githubusercontent.com/alist-org/alist/main/README_cn.md
+新名称2.md:2048:https://raw.githubusercontent.com/AlistGo/alist/main/README_cn.md
 ```
 
 
@@ -415,7 +471,7 @@ folde2r:
 ```
 folder:
   http://pic.rmb.bdstatic.com/bjh/aff9c9c8817d943d6857a73188958d45.jpeg
-  https://raw.githubusercontent.com/alist-org/alist/main/README_cn.md
+  https://raw.githubusercontent.com/AlistGo/alist/main/README_cn.md
 ```
 
 
@@ -493,7 +549,7 @@ folder22:
 <Badge text="5" type="info" vertical="middle" />全部整合起来的举例用法，有常规的，有分类，有重命名，有标注文件大小
 
 ```
-https://jsd.nn.ci/gh/alist-org/alist/README.md
+https://jsd.nn.ci/gh/AlistGo/alist/README.md
 文档:
   Readme.md:https://pic.rmb.bdstatic.com/bjh/说明.md
   Doc:
@@ -722,7 +778,7 @@ Readme也很简单，就是一个类似说明的东西吧
 
 来到左侧栏找到 `登录与分享`  ==填写回调参数 **`http://127.0.0.1:5234/api/auth/sso_callback`**== 
 
-```回调参数示例
+```text title="回调参数示例"
 http://127.0.0.1:5244/api/auth/sso_callback
 ```
 
@@ -748,7 +804,7 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 
 微软回调参数：必须以"HTTPS"或"http://localhost开头 （我这里是本地测试就用了localhost）
 
-```回调参数示例
+```text title="回调参数示例"
 http://localhost:5244/api/auth/sso_callback?method=sso_get_token
 http://localhost:5244/api/auth/sso_callback?method=get_sso_id
 ```
@@ -791,7 +847,7 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 
 - 应用类型 选择 Web 应用，名称随便写
 - 然后在 已获授权的重定向 URI 添加我们的两个回调参数
-```回调参数示例
+```text title="回调参数示例"
 http://127.0.0.1:5244/api/auth/sso_callback?method=get_sso_id
 http://127.0.0.1:5244/api/auth/sso_callback?method=sso_get_token
 ```
@@ -849,22 +905,27 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 
 手机用户看的话记得右侧还有哦~记得滑动一下
 
-|     开始     |     截止     |                       arm64 (A8 - A11)                       |                 arm64e (A12 - A17 / M1 - M2)                 |
-| :----------: | :----------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|  13.7及更早  |  13.7及更早  |                            不支持                            |                            不支持                            |
-|     14.0     |    14.8.1    | [Installing TrollStore (TrollHelper)](https://ios.cfw.guide/installing-trollhelper) | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) |
-|     15.0     | 15.5 beta 4  | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) |
-|     15.5     |     15.5     | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) |
-| 15.6 beta 1  | 15.6 beta 5  | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) |
-|     15.6     |    15.6.1    | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) |
-|     15.7     |    15.7.1    | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) |
-|    15.7.2    |    15.8.1    | [Installing TrollStore (TrollMisaka)](https://ios.cfw.guide/installing-trollhelper-trollmisaka) | [Installing TrollStore (TrollMisaka)](https://ios.cfw.guide/installing-trollhelper-trollmisaka) |
-|     16.0     |    16.1.2    | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) |
-|     16.2     |    16.6.1    | [Installing TrollStore (TrollStar)](https://ios.cfw.guide/installing-trollhelper-trollstar) | [Installing TrollStore (TrollStar)](https://ios.cfw.guide/installing-trollhelper-trollstar) |
-|   16.7 RC    |   16.7 RC    | [Installing TrollStore (TrollHelper)](https://ios.cfw.guide/installing-trollhelper) |                 没有安装方法（等待后续完善）                 |
-|     16.7     |    16.7.5    |                            不支持                            |                            不支持                            |
-|     17.0     |     17.0     | [Installing TrollStore (TrollHelper)](https://ios.cfw.guide/installing-trollhelper) |                 没有安装方法（等待后续完善）                 |
-| 17.0.1及以后 | 17.0.1及以后 |                            不支持                            |                            不支持                            |
+图表信息可能更新不及时可以前往查看  <i class="fa-regular fa-hand-point-right" style="color: #B197FC;"></i> https://ios.cfw.guide/installing-trollstore
+
+|       开始        |       截止        |                        **arm64 (A8)**                        |                        arm64 (A9-A11)                        |                    arm64e (A12-A17/M1-M2)                    |
+| :---------------: | :---------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| 14.0 beta 1及更早 | 14.0 beta 1及更早 |                            不支持                            |                            不支持                            |                            不支持                            |
+|    14.0 beta 2    |      14.8.1       | [TrollInstallerX](https://ios.cfw.guide/installing-trollstore-trollinstallerx) | [TrollInstallerX](https://ios.cfw.guide/installing-trollstore-trollinstallerx) | [TrollHelperOTA](https://ios.cfw.guide/installing-trollstore-trollhelperota) |
+|       15.0        |    15.5 beta 4    | [TrollHelperOTA](https://ios.cfw.guide/installing-trollstore-trollhelperota) | [TrollHelperOTA](https://ios.cfw.guide/installing-trollstore-trollhelperota) | [TrollHelperOTA](https://ios.cfw.guide/installing-trollstore-trollhelperota) |
+|       15.5        |       15.5        | [TrollInstallerMDC](https://ios.cfw.guide/installing-trollstore-trollinstallermdc) | [TrollInstallerX](https://ios.cfw.guide/installing-trollstore-trollinstallerx) | [TrollHelperOTA](https://ios.cfw.guide/installing-trollstore-trollhelperota) |
+|    15.6 beta 1    |    15.6 beta 3    | [TrollHelperOTA](https://ios.cfw.guide/installing-trollstore-trollhelperota) | [TrollHelperOTA](https://ios.cfw.guide/installing-trollstore-trollhelperota) | [TrollHelperOTA](https://ios.cfw.guide/installing-trollstore-trollhelperota) |
+|    15.6 beta 4    |      15.6.1       | [TrollInstallerMDC](https://ios.cfw.guide/installing-trollstore-trollinstallermdc) | [TrollInstallerX](https://ios.cfw.guide/installing-trollstore-trollinstallerx) | [TrollHelperOTA](https://ios.cfw.guide/installing-trollstore-trollhelperota) |
+|       15.7        |      15.7.1       | [TrollInstallerMDC](https://ios.cfw.guide/installing-trollstore-trollinstallermdc) | [TrollInstallerX](https://ios.cfw.guide/installing-trollstore-trollinstallerx) | [TrollInstallerX](https://ios.cfw.guide/installing-trollstore-trollinstallerx) |
+|      15.7.2       |      15.8.2       | [TrollMisaka](https://ios.cfw.guide/installing-trollstore-trollmisaka) | [TrollInstallerX](https://ios.cfw.guide/installing-trollstore-trollinstallerx) | [TrollInstallerX](https://ios.cfw.guide/installing-trollstore-trollinstallerx) |
+|    16.0 beta 1    |    16.0 beta 3    |                        Not Applicable                        | [TrollInstallerX](https://ios.cfw.guide/installing-trollstore-trollinstallerx) | [TrollHelperOTA](https://ios.cfw.guide/installing-trollstore-trollhelperota) |
+|    16.0 beta 4    |      16.6.1       |                        Not Applicable                        | [TrollInstallerX](https://ios.cfw.guide/installing-trollstore-trollinstallerx) | [TrollInstallerX](https://ios.cfw.guide/installing-trollstore-trollinstallerx) |
+|      16.7 RC      |      16.7 RC      |                        Not Applicable                        | [TrollRestore](https://ios.cfw.guide/installing-trollstore-trollrestore) | [TrollRestore](https://ios.cfw.guide/installing-trollstore-trollrestore) |
+|       16.7        |      16.7.10      |                        Not Applicable                        |                            不支持                            |                            不支持                            |
+|    17.0 beta 1    |    17.0 beta 4    |                        Not Applicable                        | [TrollInstallerX](https://ios.cfw.guide/installing-trollstore-trollinstallerx) | [TrollRestore](https://ios.cfw.guide/installing-trollstore-trollrestore) |
+|    17.0 beta 5    |       17.0        |                        Not Applicable                        | [TrollRestore](https://ios.cfw.guide/installing-trollstore-trollrestore) | [TrollRestore](https://ios.cfw.guide/installing-trollstore-trollrestore) |
+|   17.0.1及更高    |   17.0.1及更高    |                        Not Applicable                        |                            不支持                            |                            不支持                            |
+
+<span><a href="https://www.alipan.com/s/Z3mrsfdFY5h"><i class="fa-solid fa-party-horn fa-shake" style="color: #74C0FC;"></i> IPA Resources</a></span> :gift:
 
 |      |  轻松签  |                     轻松签+ A12+                     |                    轻松签+ iOS15+                    |
 | :--: | :------: | :--------------------------------------------------: | :--------------------------------------------------: |

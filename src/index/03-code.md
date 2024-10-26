@@ -165,7 +165,7 @@ headerDepth: 6
               <img src="http://pic.rmb.bdstatic.com/bjh/705fab74d0dfc00bae9166288f23b4dc.png" width="50%" height ="50%"></img>
             </HStack>
             {/* <HStack spacing="$2">
-              <img src="https://cdn.jsdelivr.net/gh/alist-org/logo@main/logo.svg" width="40%" height ="40%"></img>
+              <img src="https://cdn.jsdelivr.net/gh/AlistGo/logo@main/logo.svg" width="40%" height ="40%"></img>
             </HStack> */}
 
           </>
@@ -756,7 +756,7 @@ export default Ipa
 
 infuse官网：[Firecore - Video Player for iOS, Apple TV, and Mac](https://firecore.com/)
 
- ==(新)源码文件位置：**alist-web/src/pages/home/previews/[video_box.tsx](https://github.com/alist-org/alist-web/blob/main/src/pages/home/previews/video_box.tsx#L17-L21)**==
+ ==(新)源码文件位置：**alist-web/src/pages/home/previews/[video_box.tsx](https://github.com/AlistGo/alist-web/blob/main/src/pages/home/previews/video_box.tsx#L17-L21)**==
 
 (旧)源码文件位置：**alist-web\src\pages\home\previews\video.tsx**
 
@@ -1331,7 +1331,7 @@ const [layout, setLayout] = createStorageSignal<LayoutType>("layout", "list")
 ```html{3}
     <link
       rel="apple-touch-icon"
-      href="https://jsd.nn.ci/gh/alist-org/logo@main/logo.png"
+      href="https://jsd.nn.ci/gh/AlistGo/logo@main/logo.png"
     />
 ```
 
@@ -1349,7 +1349,7 @@ const [layout, setLayout] = createStorageSignal<LayoutType>("layout", "list")
   "name": "AList",
   "icons": [
     {
-      "src": "https://jsd.nn.ci/gh/alist-org/logo@main/logo.png",
+      "src": "https://jsd.nn.ci/gh/AlistGo/logo@main/logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
