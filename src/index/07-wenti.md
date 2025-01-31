@@ -718,7 +718,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 1. 先新建一个不用CMD黑窗口就能运行的脚本，**`ALL.vbs`**，代码如下
 
-```vbscript title="vbscript"
+```bash title="vbscript"
 Dim ws
 Set ws = Wscript.CreateObject("Wscript.Shell")
 ws.run "AList-proxy.bat",vbhide
@@ -736,7 +736,7 @@ start Alist-Start.vbs
 
 3. 然后配置正常启动AList程序的脚本 **`Alist-Start.vbs`** , 代码如下
 
-```vbscript title="vbscript"
+```bash title="vbscript"
 Dim ws
 Set ws = Wscript.CreateObject("Wscript.Shell")
 ws.run "alist.exe server",vbhide
@@ -745,7 +745,7 @@ Wscript.quit
 
 4. 最后一个是停止运行AList的脚本 **`AList-Stop.vbs`** , 代码如下
 
-```vbscript title="vbscript"
+```bash title="vbscript"
 Dim ws
 Set ws = Wscript.CreateObject("Wscript.Shell")
 ws.run "taskkill /f /im alist.exe",0

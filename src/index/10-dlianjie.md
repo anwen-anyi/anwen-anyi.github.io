@@ -394,7 +394,7 @@ location / {try_files $uri $uri/ /yourls-loader.php$is_args$args;}
 ```
 
 例如:
-```conf{3}
+```bash{3} title="conf"
     access_log  /ect/xx/d.alist.org.log;
     error_log  /etc/xx/d.alist.org.error.log;
     location / {try_files $uri $uri/ /yourls-loader.php$is_args$args;}

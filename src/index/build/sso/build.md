@@ -55,7 +55,7 @@ Cadoor是什么我这里就不说了，有需要的应该知道是什么，不�
 
 然后我们将开源代码下载下来，或者使用 [Git Bash](https://git-scm.com/download/win) clone到本地
 
-```git title="git"
+```bash title="git"
 git clone https://github.com/casdoor/casdoor
 ```
 
@@ -116,7 +116,7 @@ yarn build
 
 ## **casdoor配置文件**
 
-```conf title="conf"
+```bash title="conf"
 appname = casdoor
 httpport = 8000
 runmode = dev
@@ -148,7 +148,7 @@ initDataFile = "./init_data.json"
 
 casdoor默认使用的是**MySQL**数据库，如果你也是使用**MySQL**可以按照以下格式填写,应该看得懂什么意思 实在不懂可以评论区问问
 
-```conf{2-4} title="conf"
+```bash{2-4} title="conf"
 	......
 driverName = mysql
 dataSourceName = root:123123@tcp(localhost:3306)/
@@ -158,7 +158,7 @@ dbName = casdoor
 
 如果你要使用**Sqlite3**，可以改成如下配置
 
-```conf{2-4} title="conf"
+```bash{2-4} title="conf"
 	......
 driverName = sqlite
 dataSourceName = "file:casdoor.db?cache=shared"
@@ -170,7 +170,7 @@ dbName = casdoor
 
 <br/>
 
-```conf{2} title="conf"
+```bash{2} title="conf"
 appname = casdoor
 httpport = 8000
 runmode = dev

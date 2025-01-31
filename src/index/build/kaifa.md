@@ -55,7 +55,7 @@ collapsible: false
 
 进入调试工具打开前端的代码，执行如下代码
 
-```pnpm title="pnpm"
+```bash title="pnpm"
 pnpm install
 ```
 
