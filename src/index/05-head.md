@@ -665,6 +665,11 @@ V3.31.0 优化了部分功能，导致个别位置CSS未修改看起冲突一样
 ::: details 看板娘代码 暂时未提供（无法使用），详情可以看上方绿色提示信息
 
 ```html
+### 新的看板娘
+<!--看板娘 新的链接，来自Github[stevenjoezhang/live2d-widget]-->
+<script src="https://fastly.jsdelivr.net/gh/username/live2d-widget@latest/autoload.js"></script>
+只需要在头部引用这一段js即可
+
 <!--看板娘 -自定义大小，隐藏对话框和对话框高度-->
 <style type="text/css">
   #waifu #live2d {
