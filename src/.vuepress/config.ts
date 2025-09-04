@@ -44,22 +44,32 @@ export default defineUserConfig({
       }
     ],
     [
-      // 站点
+      //  site 统计脚本
       "script",
       {
-        defer: true,
-        "data-domain": "anwen-anyi.github.io",
-        src: "https://site.izyt.cc/js/script.js"
-      }
-    ],
-    [
-      // site
-      "script",
-      {
-        async: true,
-        src: "https://site.izyt.cc/js/embed.host.js"
+        defer: "",
+        src: "https://site.izyt.cc/script.js",
+        "data-website-id": "17379446-2387-4c0c-b1dc-1dbcafc16f56"
       }
     ]
+    // [
+    //   // 站点
+    //   "script",
+    //   {
+    //     defer: true,
+    //     "data-domain": "anwen-anyi.github.io",
+    //     src: "https://site.izyt.cc/js/script.js"
+    //   }
+    // ],
+    // [
+    //   // site
+    //   "script",
+    //   {
+    //     async: true,
+    //     src: "https://site.izyt.cc/js/embed.host.js"
+    //   }
+    // ]
+
   ],
   locales: {
     "/": {
